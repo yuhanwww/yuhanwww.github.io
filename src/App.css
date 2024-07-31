@@ -158,11 +158,11 @@ img{
   background-color: var(--title-color-dark);
 }
 
-.button__icton{
+.button_icton{
   margin-left: var(--mb-0-5);
 }
 
-.button--flex{
+.button-flex{
   display: inline-flex;
   align-items: center;
 }
