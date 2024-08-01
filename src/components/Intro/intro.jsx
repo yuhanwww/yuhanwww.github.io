@@ -5,13 +5,16 @@ import Data from './data';
 
 const Intro = () => {
   return (
-    <section className="home section">
-        <div className="home_container container grid">
-            <Icons />
+    <section className="intro section">
+        <div className="intro_container container grid">
+            <div className="intro_content grid">
+              <Icons />
 
-            <div className="home_img"></div>
+              <div className="intro_img"></div>
 
-            <Data />
+              <Data />
+            </div>
+            
 
         </div>
     </section>
