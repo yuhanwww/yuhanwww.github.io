@@ -2,6 +2,7 @@ import React from 'react';
 import './intro.css';
 import Icons from './icons';
 import Data from './data';
+import ScrollDown from './scrollDown';
 
 const Intro = () => {
   return (
@@ -13,8 +14,10 @@ const Intro = () => {
               <div className="intro_img"></div>
 
               <Data />
+
+              
             </div>
-            
+            <ScrollDown />
 
         </div>
     </section>
