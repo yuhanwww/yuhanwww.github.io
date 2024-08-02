@@ -91,7 +91,7 @@
 }
 
 .intro_scroll-name{
-    color: var(--title-color);
+    color: var(--hover-color);
     font-weight: var(--font-medium);
     margin-right: (--mb-0-25);
     margin-left: 2px;
