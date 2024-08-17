@@ -10,8 +10,8 @@
   --body-color: rgb(241,240,235); /*canvas*/
   --text-color: rgb(75,71,63); /*dark grey*/
   --highlight-color: rgb(241,60,31); /*red*/
-  --title-color: rgb(64,86,161); /*blue*/
-  --hover-color:rgba(64,86,161,0.5); /*yellow*/
+  --title-color: rgb(32, 59, 147); /*blue*/
+  --hover-color:rgba(32,59,147,0.5); /*yellow*/
   --active-color: rgb(238, 183, 19); /*yellow*/
   --decoration-color: rgb(148,136,0); /*green brown*/
   --other-color: rgb(28,87,43); /*dark green*/

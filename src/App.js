@@ -1,14 +1,28 @@
 import './App.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+
 import NavBar from './components/NavBar/navbar';
 import Intro from "./components/Intro/intro";
+import Project from './components/Project/project';
+import Gallery from './components/Gallery/gallery';
 
 function App() {
   return (
-    <div className="Intro">
+    <BrowserRouter>
       <NavBar />
-      <Intro />
+      <Routes>
+        <Route exact path="/" element={<Intro />} />
+        <Route exact path="/" element={<Project />} />
+        <Route path="/gallery" element={<Gallery />} />
 
-    </div>
+      </Routes>
+      
+
+    </BrowserRouter>
   );
 }
 

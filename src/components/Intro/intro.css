@@ -31,7 +31,7 @@
     background: url('../../assets/profile.JPG');
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0 0  0 9px rgb(255 255 255/30%);
+    box-shadow: inset 0 0 0 9px var(--hover-color);
     order: 1;
     justify-self: center;
     width: 300px;
@@ -91,7 +91,7 @@
 }
 
 .intro_scroll-name{
-    color: var(--hover-color);
+    color: var(--text-color);
     font-weight: var(--font-medium);
     margin-right: (--mb-0-25);
     margin-left: 2px;
@@ -123,7 +123,7 @@
     .intro_img{
         width: 250px;
         height: 250px;
-        box-shadow: inset 0 0  0 8px rgb(255 255 255/30%);
+        box-shadow: inset 0 0  0 8px var(--hover-color);
     }
 
     .intro_scroll{
@@ -157,7 +157,7 @@
     }
 
     .intro_img{
-        box-shadow: inset 0 0  0 6px rgb(255 255 255/30%);
+        box-shadow: inset 0 0  0 6px var(--hover-color);
         width: 200px;
         height: 200px;
     }

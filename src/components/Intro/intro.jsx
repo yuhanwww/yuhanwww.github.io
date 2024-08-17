@@ -1,7 +1,7 @@
 import React from 'react';
 import './intro.css';
 import Icons from './icons';
-import Data from './data';
+import IntroData from './data_intro';
 import ScrollDown from './scrollDown';
 
 const Intro = () => {
@@ -12,10 +12,8 @@ const Intro = () => {
               <Icons />
 
               <div className="intro_img"></div>
-
-              <Data />
-
-              
+              <IntroData />
+               
             </div>
             <ScrollDown />
 

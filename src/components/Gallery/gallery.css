@@ -1,0 +1,24 @@
+.grid-wrap {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--mb-1);
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.grid-item{
+    margin-bottom: var(--mb-0-5);
+}
+
+.grid-item-media{
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-item-description{
+    margin-top: var(--mb-0-5);
+    font-size: var(--normal-font-size);
+    text-align: right;
+}
+
+
