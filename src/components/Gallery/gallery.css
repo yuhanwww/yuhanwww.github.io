@@ -7,10 +7,10 @@
 }
 
 .grid-item{
-    margin-bottom: var(--mb-0-5);
+    margin-bottom: var(--mb-1);
 }
 
-.grid-item-media{
+.grid-item-media{ 
     width: 100%;
     object-fit: cover;
 }
