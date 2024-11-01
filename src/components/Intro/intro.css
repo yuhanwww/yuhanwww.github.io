@@ -54,8 +54,7 @@
 
 .intro_description{
     max-width: 400px;
-    margin-bottom: var(--mb-3);
-
+    margin-bottom: var(--mb-1);
 }
 
 .socialIcons{

@@ -15,7 +15,7 @@ const Intro = () => {
               <IntroData />
                
             </div>
-            <ScrollDown />
+            {/* <ScrollDown /> */}
 
         </div>
     </section>
