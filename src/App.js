@@ -7,7 +7,7 @@ import {
 
 import NavBar from './components/NavBar/navbar';
 import Intro from "./components/Intro/intro";
-import Project from './components/Project/project';
+import Projects from './components/Projects/projects';
 import Gallery from './components/Gallery/gallery';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Intro />} />
-        <Route path="/project" element={<Project />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/gallery" element={<Gallery />} />
 
       </Routes>
