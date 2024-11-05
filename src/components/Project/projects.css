@@ -23,11 +23,12 @@
 
 .card-title{
     font-size: var(--h4-font-size);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .card-description{
     font-size: var(--small-font-size);
+    margin-bottom: 0.75rem;
 }
 
 .card-thumbnail {
@@ -35,3 +36,19 @@
     height: 100px;
     object-fit: cover;
 }
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.tag {
+    font-size: var(--tiny-font-size);
+    background-color: var(--hover-color);
+    text-align: center;
+    color: white;
+    padding: 0.2rem 0.3rem;
+}
+  
