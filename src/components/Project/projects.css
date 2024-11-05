@@ -1,20 +1,24 @@
 .card{
     border: 1px solid var(--hover-color);
-    border-width: 4px;
+    border-width: 2px;
     border-style: double;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
-    padding: 1rem;
+    padding: 0.5rem;
     margin-left: auto;
     margin-right: auto;
-    /* text-align: left; */
-    width: 70%;
+    width: 65%;
+    margin-bottom: 1rem;
+}
+
+.card-content{
+    margin: 0 1rem;
     display: flex;
     justify-content: space-between;
 }
 
 .card-text{
-    margin: 1rem;
+    margin: auto 1rem;
 }
 
 .card-title{
@@ -23,12 +27,11 @@
 }
 
 .card-description{
-    font-size: var(--normal-font-size);
+    font-size: var(--small-font-size);
 }
 
-.card-img{
-    height: 130px;
-    width: 130px;
-    margin-left: 0.5rem;
-    float: left;
+.card-thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
