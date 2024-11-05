@@ -29,11 +29,11 @@ const NavBar = () => {
 
                         <li className="nav_item">
                             <NavLink
-                                to="projects" 
+                                to="project" 
                                 className={({ isActive }) => isActive ? "nav_link active-link" : "nav_link"}
                             >
                                 <i className="uil uil-file-alt nav_icon"></i>
-                                Projects
+                                Project
                             </NavLink>
                         </li>
 
