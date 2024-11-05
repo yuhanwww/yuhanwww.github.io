@@ -24,23 +24,15 @@
   --h1-font-size: 2.5rem;
   --h2-font-size: 2rem;
   --h3-font-size: 1.75rem;
-  --normal-font-size: 1.25rem;
-  --small-font-size: 0.875rem;
-  --tiny-font-size: 0.625rem;
+  --h4-font-size: 1.5rem;
+  --normal-font-size: 16px;
+  --small-font-size: 14px;
+  --tiny-font-size: 10px;
  
   /*=====  Font Weight =====*/  
   --font-normal: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
-
-  /*===== Margins Bottom =====*/
-  --md-0-25: 0.25rem;
-  --mb-0-5: 0.5rem;
-  --mb-0-75: 0.75rem;
-  --mb-1: 1rem;
-  --mb-2: 2rem;
-  --mb-2-5: 2.5rem;
-  --mb-3: 3rem;
  
   /*===== z-index =====*/
   --z-tooltip: 10;
@@ -55,9 +47,10 @@
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --tiny-font-size: 0.75rem;
+    --h4-font-size: 1rem;
+    --normal-font-size: 14px;
+    --small-font-size: 11px;
+    --tiny-font-size: 9px;
   }
 }
 
@@ -88,6 +81,12 @@ body{
 
 h1,h2,h3{
   font-family: var(--header-font);
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+}
+
+h4{
+  font-family: var(--body-font);
   color: var(--title-color);
   font-weight: var(--font-bold);
 }

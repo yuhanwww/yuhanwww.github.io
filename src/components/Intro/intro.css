@@ -41,20 +41,20 @@
 
 .intro_title{
     font-size: var(--big-font-size);
-    margin-bottom: var(--mb-0-5);
+    margin-bottom: 0.5rem;
 }
 
 .intro_subtitle {
     position: relative;
     font-size: var(--h3-font-size);
     /* padding-left: 5.4rem; */
-    font-weight: var(--mb-1);
-    margin-bottom: var(--mb-1);
+    font-weight: var(--h3-font-size);
+    margin-bottom: 1rem;
 }
 
 .intro_description{
     max-width: 400px;
-    margin-bottom: var(--mb-1);
+    margin-bottom: 1rem;
 }
 
 .socialIcons{
