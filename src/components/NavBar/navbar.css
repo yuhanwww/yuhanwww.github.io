@@ -43,9 +43,18 @@
     display: none;
 }
 
+.nav_logo-img{
+    height: 50px;
+    width: auto;
+}
+
 /* Active Link */
 .active-link{
-    color: var(--active-color);
+    color: var(--title-color);
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 1px;
 }
 
 .nav_link:hover {
@@ -115,9 +124,9 @@
         display: block;
     }
 
-    .nav_logo{
-        height: 50px;
-        width: 50px;
+    .nav_logo-img{
+        height: 30px;
+        width: auto;
     }
   }
   

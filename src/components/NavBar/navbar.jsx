@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import { NavLink } from 'react-router-dom';
 import './navbar.css';
 import logo from '../../assets/icons/logo.png';
 
@@ -9,38 +10,51 @@ const NavBar = () => {
     return (
         <header className="navbar">
             <nav className="nav container">
-                <a href="" className="nav_logo">
+                <a href="/" className="nav_logo">
                     <img src={logo} alt="YW" className="nav_logo-img" />
                 </a>
 
                 <div className={Toggle ? "nav_menu show-menu" : "nav_menu"}>
                     <ul className="nav_list grid">
                         <li className="nav_item">
-                            <a href="#home" className="nav_link">
+                            <NavLink
+                                to="/" 
+                                className={({ isActive }) => isActive ? "nav_link active-link" : "nav_link"}
+                                end
+                            >
                                 <i className="uil uil-user nav_icon"></i>
                                 Home
-                            </a>
+                            </NavLink>
                         </li>
 
                         <li className="nav_item">
-                            <a href="#projects" className="nav_link">
+                            <NavLink
+                                to="projects" 
+                                className={({ isActive }) => isActive ? "nav_link active-link" : "nav_link"}
+                            >
                                 <i className="uil uil-file-alt nav_icon"></i>
                                 Projects
-                            </a>
+                            </NavLink>
                         </li>
 
                         <li className="nav_item">
-                            <a href="#gallery" className="nav_link">
+                            <NavLink
+                                to="gallery" 
+                                className={({ isActive }) => isActive ? "nav_link active-link" : "nav_link"}
+                            >
                                 <i className="uil uil-scenery nav_icon"></i>
                                 Gallery
-                            </a>
+                            </NavLink>
                         </li>
 
                         <li className="nav_item">
-                            <a href="#more" className="nav_link">
+                            <NavLink
+                                to="more" 
+                                className={({ isActive }) => isActive ? "nav_link active-link" : "nav_link"}
+                            >
                                 <i className="uil uil-ellipsis-h nav_icon"></i>
                                 More
-                            </a>
+                            </NavLink>
                         </li>
                     </ul>
 
