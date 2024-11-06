@@ -123,7 +123,7 @@ img{
 .section_subtitle{
   display: block;
   font-size: var(--small-font-size);
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
 }
 
 .section_title,
@@ -133,7 +133,7 @@ img{
 
 /* LAYOUT */
 .container{
-  max-width: 968px;
+  max-width: 982px;
   margin-left: auto;
   margin-right: auto;
 }

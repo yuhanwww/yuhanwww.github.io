@@ -21,23 +21,23 @@ const Data = [
     //     category:["HCI","research"],
     // },
 
-    {
-        id: 9,
-        image: dinoWorld,
-        alt: "Visualization of communication trend, network and table of a give moment",
-        title: "Visual Analytics on VAST Challenge datasets",
-        description: "Projects in CSC235 Visual Analytics",
-        category:["Visualization"],
-    },
+    // {
+    //     id: 9,
+    //     image: dinoWorld,
+    //     alt: "Visualization of communication trend, network and table of a give moment",
+    //     title: "Visual Analytics on VAST Challenge datasets",
+    //     description: "Projects in CSC235 Visual Analytics",
+    //     category:["Visualization"],
+    // },
 
-    {
-        id: 8,
-        image: wechat_prototype,
-        alt: "JAYC App Front Page",
-        title: "JAYC App for international community",
-        description: "Final Project for CS 325 HCI",
-        category:["Website Design"],
-    },
+    // {
+    //     id: 8,
+    //     image: wechat_prototype,
+    //     alt: "JAYC App Front Page",
+    //     title: "JAYC App for international community",
+    //     description: "Final Project for CS 325 HCI",
+    //     category:["Website Design"],
+    // },
 
     {
       id: 7,
@@ -72,7 +72,7 @@ const Data = [
         alt: "Bat Fungus Wordcloud",
         title: "Break Through Tech AI",
         description: "Application of Machine Learning on Bat Fungus Detection and Plant Speciman Classification",
-        category:["Machine Learning"],
+        category:["Machine Learning","Intern"],
     },
 
     {
@@ -145,7 +145,7 @@ const Projects = () => {
         ? Data
         : Data.filter((project) => project.category.includes(selectedTag));
 
-    const allTags = ["All", ...new Set(Data.flatMap((project) => project.category))];
+    const allTags = ["All", ...new Set(Data.flatMap((project) => project.category))].sort();
 
     return (
         <div className="project-list">
@@ -163,7 +163,7 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className="projects-list">
+            <div className="projects-list container">
                 {filteredData.map((project) => (
                     <Card
                         key={project.id}
