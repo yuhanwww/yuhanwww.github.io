@@ -61,7 +61,7 @@
 .card-title{
     font-size: var(--h4-font-size);
     margin-bottom: 0.5rem;
-    font-family: "Gideon Roman", serif;
+    font-family: var(--subtitle-font);
 }
 
 .card-description{

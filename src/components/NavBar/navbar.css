@@ -62,8 +62,18 @@
 }
 
 /* BREAKPOINTS */
-/*Large Devices*/
 @media screen and (max-width: 992px) {
+    .nav_logo{
+        margin-left: 3%;
+    }
+
+    .nav_menu{
+        margin-right: 3%;
+    }
+}
+
+/*Large Devices*/
+@media screen and (max-width: 768px) {
     .navbar{
         top:initial;
         bottom: 0;
