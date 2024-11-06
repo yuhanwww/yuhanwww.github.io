@@ -1,3 +1,34 @@
+.project-list{
+    margin-top: -1rem;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+  
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filter-tag {
+    cursor: pointer;
+    padding: 0.2rem 0.4rem;
+    font-size: var(--tiny-font-size);
+    color: white;
+    background-color: var(--hover-color);
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.filter-tag.selected {
+    background-color: var(--other-color);
+}
+
 .card{
     border: 1px solid var(--hover-color);
     border-width: 2px;
@@ -24,6 +55,7 @@
 .card-title{
     font-size: var(--h4-font-size);
     margin-bottom: 0.75rem;
+    font-family: "Gideon Roman", serif;
 }
 
 .card-description{
@@ -51,4 +83,3 @@
     color: white;
     padding: 0.2rem 0.3rem;
 }
-  

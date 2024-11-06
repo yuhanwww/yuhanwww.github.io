@@ -1,5 +1,5 @@
 /* GOOGLE FONTS*/
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Comfortaa:wght@300..700&family=Fredericka+the+Great&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gideon+Roman&display=swap');
 
 /* VARIABLE CSS*/
 :root {
@@ -17,14 +17,14 @@
   --other-color: rgb(26, 85, 140); /*blue*/
 
   /*=====  Font & Typography =====*/  
-  --header-font: "Fredericka the Great", sans-serif;
-  --body-font: "Calibri",sans-serif;
+  --header-font: "Fredericka the Great", serif;
+  --body-font: "Calibri", sans-serif;
 
   --big-font-size: 4rem;
   --h1-font-size: 2.5rem;
   --h2-font-size: 2rem;
   --h3-font-size: 1.75rem;
-  --h4-font-size: 1.25rem;
+  --h4-font-size: 1.5rem;
   --normal-font-size: 16px;
   --small-font-size: 14px;
   --tiny-font-size: 10px;

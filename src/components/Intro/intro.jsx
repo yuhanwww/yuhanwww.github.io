@@ -2,7 +2,7 @@ import React from 'react';
 import './intro.css';
 import Icons from './icons';
 import IntroData from './data_intro';
-import ScrollDown from './scrollDown';
+// import ScrollDown from './scrollDown';
 
 const Intro = () => {
   return (
