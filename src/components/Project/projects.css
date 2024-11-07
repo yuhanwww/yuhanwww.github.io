@@ -22,7 +22,7 @@
 .filter-tag {
     cursor: pointer;
     padding: 0.2rem 0.4rem;
-    font-size: var(--tiny-font-size);
+    font-size: var(--small-font-size);
     color: var(--title-color);
     border: 1px solid var(--hover-color);
     border-radius: 0.5rem;

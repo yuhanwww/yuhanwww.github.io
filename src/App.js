@@ -10,6 +10,7 @@ import Intro from "./components/Intro/intro";
 import Project from './components/Project/project';
 import Gallery from './components/Gallery/gallery';
 import Footer from './components/Footer/footer';
+import Phyllo from './components/Project/pages/phyllo';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Intro />} />
           <Route path="/project" element={<Project />} />
+          <Route path="/project/phyllo" element={<Phyllo />} />
           <Route path="/gallery" element={<Gallery />} />
 
         </Routes>

@@ -1,0 +1,32 @@
+.project{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.project-image {
+    width: 65vw;
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-content{
+    width: 70%;
+    max-width: 972px;
+}
+
+.project-description {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    margin-bottom: 0.75rem;
+    text-align: justify;
+}
+
+.project-subdescription {
+    font-family: var(--body-font);
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
