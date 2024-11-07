@@ -1,5 +1,5 @@
 /* GOOGLE FONTS*/
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gideon+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gideon+Roman&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /* VARIABLE CSS*/
 :root {
@@ -8,7 +8,8 @@
   /*=====  Colors =====*/  
   /*Color mode rgb/rgba (r,g,b,a)*/
   --body-color: rgb(224, 224, 221); /*canvas*/
-  --text-color: rgb(75,71,63); /*dark grey*/
+  --text-color: rgb(70, 68, 63); /*dark grey*/
+  --text-light-color:  rgba(70, 68, 63,0.6); /*light grey*/
   --highlight-color: rgb(241,60,31); /*red*/
   --title-color: rgb(4, 57, 39); /*green*/
   --hover-color:rgba(4, 57, 39,0.5); /*green semi transparent*/
@@ -19,7 +20,7 @@
   /*=====  Font & Typography =====*/  
   --header-font: "Fredericka the Great", serif;
   --subtitle-font: "Gideon Roman", serif;
-  --body-font: "Calibri", sans-serif;
+  --body-font: "Open Sans", Helvetica, Arial, sans-serif; 
 
   --big-font-size: 4rem;
   --h1-font-size: 2.5rem;
@@ -119,12 +120,14 @@ img{
 .section_title{
   font-size: var(--h1-font-size);
   color: var(--title-color);
+  margin-bottom: 0.5rem;
 }
 
 .section_subtitle{
   display: block;
   font-size: var(--normal-font-size);
   margin-bottom: 1.5rem;
+  width: 70%;
 }
 
 .section_title,

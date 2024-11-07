@@ -5,7 +5,7 @@ const Footer = () => {
   const [year, setYear] = useState(new Date().getFullYear());
     return (
         <footer className="footer">
-            &#169; {year} Yuhan ≽^•⩊•^≼ | Poweverd by &#9829; from family & friends
+            &#169; {year} Yuhan ≽^•⩊•^≼ | Poweverd by &#9829; from Decora D
         </footer>
     )
 };
