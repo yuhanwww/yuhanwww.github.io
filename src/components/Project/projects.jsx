@@ -86,7 +86,7 @@ const Data = [
         title: "Smith Makers Map",
         description: "An Interactive Making Resource Map for Smith College",
         category:["Website Design","Intern"],
-        link: '',
+        link: 'https://smithmakersmaps.com',
     },
 
     {
@@ -96,7 +96,7 @@ const Data = [
         title: "Brown exploreCSR",
         description:"SVG creations from the exploreCSR program @Brown Spring 2023",
         category:["Website Design","Research"],
-        link: '',
+        link: 'https://github.com/yuhanwww/SVG-creations',
     },
 
     {
