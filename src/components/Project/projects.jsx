@@ -40,13 +40,14 @@ const Data = [
     // },
 
     {
-      id: 7,
-      image: guerilla_girl,
-      alt: "Guerilla Girl Artwork",
-      title: "Guerilla AI",
-      description: "A Computer Vision-Assisted Investigation inspired by Guerilla Girls",
-      category:["Machine Learning","Art History"],
-  },
+        id: 7,
+        image: guerilla_girl,
+        alt: "Guerilla Girl Artwork",
+        title: "Guerilla AI",
+        description: "A Computer Vision-Assisted Investigation inspired by Guerilla Girls",
+        category:["Machine Learning","Art History"],
+        link: '',
+    },
 
     {
         id: 6,
@@ -55,6 +56,7 @@ const Data = [
         title: "TDA on Phyllotaxis",
         description: "A Topological Data Analysis study on Phyllotaxis in Prof. Christophe Golé's lab",
         category:["Visualization","Topological Data Analysis","Research"],
+        link: "/project/phyllo",
     },
 
     {
@@ -64,6 +66,7 @@ const Data = [
         title: "Mystery Art Recognizer",
         description: "Final Project for MTH 353 Deep Learning Seminar & ARH 212 Ancient Cities & Sanctuaries",
         category:["Machine Learning","Art History"],
+        link: '',
     },
 
     {
@@ -73,6 +76,7 @@ const Data = [
         title: "Break Through Tech AI",
         description: "Application of Machine Learning on Bat Fungus Detection and Plant Speciman Classification",
         category:["Machine Learning","Intern"],
+        link: '',
     },
 
     {
@@ -82,6 +86,7 @@ const Data = [
         title: "Smith Makers Map",
         description: "An Interactive Making Resource Map for Smith College",
         category:["Website Design","Intern"],
+        link: '',
     },
 
     {
@@ -91,6 +96,7 @@ const Data = [
         title: "Brown exploreCSR",
         description:"SVG creations from the exploreCSR program @Brown Spring 2023",
         category:["Website Design","Research"],
+        link: '',
     },
 
     {
@@ -100,6 +106,7 @@ const Data = [
         title: "Valet Bike",
         description:"A Bike Rental Website with Ruby on Rails by team Bugz for CSC 223 Software EGR",
         category:["Website Design","Software Engineering"],
+        link: '',
     },
 
     // {
@@ -114,24 +121,29 @@ const Data = [
 ];
 
 
-const Card = ({ image, alt, title, description, category }) => {
-  return (
-    <div className='card'>
-      <div className="card-content">
-        <div className="card-text">
-          <h4 className='card-title'>{title}</h4>
-          <p className='card-description'>{description}</p>
-          <div className="tags">
-            {category.map((tag, index) => (
-              <span key={index} className="tag">{tag}</span>
-            ))}
-          </div>
-        </div>
-        <img className="card-thumbnail" src={image} alt={alt}/>
-      </div>
-    </div>
+const Card = ({ image, alt, title, description, category, link }) => {
+
+    const isExternalLink = link && link.startsWith('http');
     
-  )
+    return (
+        <div className='card'>
+            <a href={link} className="card-content-link">
+                <div className="card-content">
+                    <div className="card-text">
+                        <h4 className='card-title'>{title}</h4>
+                        <p className='card-description'>{description}</p>
+                        <div className="tags">
+                            {category.map((tag, index) => (
+                            <span key={index} className="tag">{tag}</span>
+                            ))}
+                        </div>
+                    </div>
+                    <img className="card-thumbnail" src={image} alt={alt}/>
+                </div>
+            </a>
+        </div>
+        
+    )
 }
 
 const Projects = () => {
@@ -172,6 +184,7 @@ const Projects = () => {
                         title={project.title}
                         description={project.description}
                         category={project.category}
+                        link={project.link}
                     />
                 ))}
             </div>
