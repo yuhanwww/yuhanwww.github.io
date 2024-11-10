@@ -4,7 +4,7 @@ import './projects.css';
 import wechat_prototype from '../../assets/projects/HCI/wechat_prototype.png'
 import dinoWorld from '../../assets/projects/visualAnalytics/dinoWorld.png'
 import guerilla_girl from '../../assets/projects/guerillaAI/guerilla_girl.jpg'
-import phyllotaxis from '../../assets/projects/phyllotaxis/phyllotaxis.png';
+import hexagons from '../../assets/projects/phyllotaxis/hexagons.png';
 import artRecognizer from '../../assets/projects/artRecognizer/myster_art_recognizer.png';
 import bat_detection from '../../assets/projects/bttai/bat_detection.png';
 import makersmap from '../../assets/projects/makersmap/makersmap.png';
@@ -51,7 +51,7 @@ const Data = [
 
     {
         id: 6,
-        image: phyllotaxis,
+        image: hexagons,
         alt: "Phyllotaxis Hexagonal Heatmap",
         title: "TDA on Phyllotaxis",
         description: "A Topological Data Analysis study on Phyllotaxis in Prof. Christophe Golé's lab",

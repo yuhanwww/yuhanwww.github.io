@@ -16,7 +16,7 @@
 .project_title-image {
     width: 65vw;
     height: auto;
-    margin: 0 auto;
+    margin: 1rem auto;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@
 .project-content{
     width: 60%;
     max-width: 972px;
-    margin: 0.5rem auto;
+    margin: 1.5rem auto;
     align-items: center;
     justify-content: center;
 }
