@@ -1,15 +1,5 @@
 import React, { useState } from 'react';
-import './projects.css';
-
-import wechat_prototype from '../../assets/projects/HCI/wechat_prototype.png'
-import dinoWorld from '../../assets/projects/visualAnalytics/dinoWorld.png'
-import guerilla_girl from '../../assets/projects/guerillaAI/guerilla_girl.jpg'
-import hexagons from '../../assets/projects/phyllotaxis/hexagons.png';
-import artRecognizer from '../../assets/projects/artRecognizer/myster_art_recognizer.png';
-import bat_detection from '../../assets/projects/bttai/bat_detection.png';
-import makersmap from '../../assets/projects/makersmap/makersmap.png';
-import exploreCSR from '../../assets/projects/exploreCSR/exploreCSR.png';
-import valetbike from '../../assets/projects/valetbike/valetbike.png';
+import './artworks.css';
 
 const Data = [
     // {
@@ -146,7 +136,7 @@ const Card = ({ image, alt, title, description, category, link }) => {
     )
 }
 
-const Projects = () => {
+const Artworks = () => {
     const [selectedTag, setSelectedTag] = useState("All");
 
     const handleTagClick = (tag) => {
@@ -192,4 +182,4 @@ const Projects = () => {
   );
 }
 
-export default Projects;
+export default Artworks;

@@ -39,21 +39,21 @@ const NavBar = () => {
 
                         <li className="nav_item">
                             <NavLink
-                                to="gallery" 
+                                to="artwork" 
                                 className={({ isActive }) => isActive ? "nav_link active-link" : "nav_link"}
                             >
-                                <i className="uil uil-scenery nav_icon"></i>
-                                Gallery
+                                <i className="uil uil-ellipsis-h nav_icon"></i>
+                                Artwork
                             </NavLink>
                         </li>
 
                         <li className="nav_item">
                             <NavLink
-                                to="more" 
+                                to="gallery" 
                                 className={({ isActive }) => isActive ? "nav_link active-link" : "nav_link"}
                             >
-                                <i className="uil uil-ellipsis-h nav_icon"></i>
-                                More
+                                <i className="uil uil-scenery nav_icon"></i>
+                                Gallery
                             </NavLink>
                         </li>
                     </ul>

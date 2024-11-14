@@ -57,6 +57,11 @@
 .card:hover {
     box-shadow: 2px 2px 2px var(--text-light-color);
 }
+
+.card.no-hover:hover {
+    transform: none;
+    cursor: default;
+}
   
 .card-content{
     margin: 0 1rem;

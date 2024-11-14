@@ -11,6 +11,8 @@ import Project from './components/Project/project';
 import Gallery from './components/Gallery/gallery';
 import Footer from './components/Footer/footer';
 import Phyllo from './components/Project/pages/phyllo';
+import ArtRecognizer from './components/Project/pages/artRecognizer';
+import Artwork from './components/Artwork/artwork';
 
 function App() {
   return (
@@ -18,9 +20,13 @@ function App() {
       <NavBar />
         <Routes>
           <Route exact path="/" element={<Intro />} />
+
           <Route path="/project" element={<Project />} />
           <Route path="/project/phyllo" element={<Phyllo />} />
+          <Route path="/project/artRecognizer" element={<ArtRecognizer />} />
           <Route path="/gallery" element={<Gallery />} />
+
+          <Route path="/artwork" element={<Artwork />} />
 
         </Routes>
       <Footer />
