@@ -1,120 +1,72 @@
 import React, { useState } from 'react';
 import './artworks.css';
 
+import dti_blender from "../../assets/artworks/DTI_blender/DTI_blender.PNG";
+import flipBrasil from "../../assets/artworks/FlipBrasil/flipBrasil.png";
+import infoShredder from "../../assets/artworks/InfoShredder/working.png";
+import stupid_ml from "../../assets/artworks/StupidML/stupid_ml.png";
+import theGame from "../../assets/artworks/TheGame/r3.PNG";
+import yuhanMap from "../../assets/artworks/YuhansMap/yuhan_map.png";
+
 const Data = [
-    // {
-    //     id: 10,
-    //     image: na,
-    //     alt: "Trust in AI",
-    //     title: "Honors Thesis Project",
-    //     description: "Honor Thesis Project on factors that influence trust in AI in higher education",
-    //     category:["HCI","research"],
-    // },
-
-    // {
-    //     id: 9,
-    //     image: dinoWorld,
-    //     alt: "Visualization of communication trend, network and table of a give moment",
-    //     title: "Visual Analytics on VAST Challenge datasets",
-    //     description: "Projects in CSC235 Visual Analytics",
-    //     category:["Visualization"],
-    // },
-
-    // {
-    //     id: 8,
-    //     image: wechat_prototype,
-    //     alt: "JAYC App Front Page",
-    //     title: "JAYC App for international community",
-    //     description: "Final Project for CS 325 HCI",
-    //     category:["Website Design"],
-    // },
-
-    // {
-    //     id: 7,
-    //     image: guerilla_girl,
-    //     alt: "Guerilla Girl Artwork",
-    //     title: "Guerilla AI",
-    //     description: "A Computer Vision-Assisted Investigation inspired by Guerilla Girls",
-    //     category:["Machine Learning","Art History"],
-    //     link: '',
-    // },
-
     {
         id: 6,
-        image: hexagons,
-        alt: "Phyllotaxis Hexagonal Heatmap",
-        title: "TDA on Phyllotaxis",
-        description: "A Topological Data Analysis study on Phyllotaxis in Prof. Christophe Golé's lab",
-        category:["Visualization","Topological Data Analysis","Research"],
-        link: "/project/phyllo",
+        image: flipBrasil,
+        alt: "flipBrasil",
+        title: "Flip Brasil",
+        description: "An interactive installation based on 10 day experience of Brasil art and culture",
+        link: "",
     },
 
     {
         id: 5,
-        image: artRecognizer,
-        alt: "Artwork Matrix",
-        title: "Mystery Art Recognizer",
-        description: "Final Project for MTH 353 Deep Learning Seminar & ARH 212 Ancient Cities & Sanctuaries",
-        category:["Machine Learning","Art History"],
-        link: '',
+        image: infoShredder,
+        alt: "infoShredder interface",
+        title: '"Information Shredder At Your Door"',
+        description: "A mixed-media installation that shreds information physically & ritually",
+        link: "",
     },
 
     {
         id: 4,
-        image: bat_detection,
-        alt: "Bat Fungus Wordcloud",
-        title: "Break Through Tech AI",
-        description: "Application of Machine Learning on Bat Fungus Detection and Plant Speciman Classification",
-        category:["Machine Learning","Intern"],
-        link: '',
+        image: stupid_ml,
+        alt: "Stupid Machine Learning Interface",
+        title: "Stupid Machine Learning",
+        description: "A digital program that asks users to train an AI by fixing a biased dataset",
+        link: "",
     },
 
     {
         id: 3,
-        image: makersmap,
-        alt: "Smith Makers Map",
-        title: "Smith Makers Map",
-        description: "An Interactive Making Resource Map for Smith College",
-        category:["Website Design","Intern"],
-        link: 'https://smithmakersmaps.com',
+        image: theGame,
+        alt: "The Game Interface",
+        title: '"You are Programmed"',
+        description: "A phone-based program that reflects on how phone shapes one's actions",
+        link: "",
     },
 
     {
         id: 2,
-        image: exploreCSR,
-        alt: "phyllotaxis hexagonal heatmap",
-        title: "Brown exploreCSR",
-        description:"SVG creations from the exploreCSR program @Brown Spring 2023",
-        category:["Website Design","Research"],
-        link: 'https://github.com/yuhanwww/SVG-creations',
+        image: dti_blender,
+        alt: "Photorealistic picture of DTI classroom",
+        title: "DTI classroom in Blender",
+        description:"A photorealistic 3D model of a classroom in campus makerspace",
+        link: "",
     },
 
     {
         id: 1,
-        image: valetbike,
-        alt: "Valet Bike App Homepage",
-        title: "Valet Bike",
-        description:"A Bike Rental Website with Ruby on Rails by team Bugz for CSC 223 Software EGR",
-        category:["Website Design","Software Engineering"],
-        link: '',
+        image: yuhanMap,
+        alt: "Yuhan's Map",
+        title: "Yuhan's Map 2023",
+        description:"A Map reflecting life journey and identity",
+        link: "",
     },
-
-    // {
-    //     id: 0,
-    //     image: phyllotaxis,
-    //     alt: "Health App Wireframe",
-    //     title: "Campus Mental Health App",
-    //     description:"A Mental Health App Prototype for EGR 100 Topics in Health",
-    //     category:["Prototype","HCI"],
-    // },
-
 ];
 
 
 const Card = ({ image, alt, title, description, category, link }) => {
 
-    const isExternalLink = link && link.startsWith('http');
-    
     return (
         <div className='card'>
             <a href={link} className="card-content-link">
