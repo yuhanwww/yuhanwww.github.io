@@ -16,7 +16,7 @@ import Artwork from './components/Artwork/artwork';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <NavBar />
         <Routes>
           <Route exact path="/" element={<Intro />} />
