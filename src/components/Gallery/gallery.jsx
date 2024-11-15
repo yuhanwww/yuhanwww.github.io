@@ -49,7 +49,7 @@ const Gallery = () => {
             rightColRef.current.style.transform = `skewY(${(distance/50)}deg)`;
         });
 
-        Promise.all([preloadImages(".grid-item-media")]) .then(()=>{
+        Promise.all([preloadImages(".grid-item-media")]).then(()=>{
             scrollElement.update();
         });
     },[]);
