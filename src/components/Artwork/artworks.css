@@ -49,7 +49,7 @@
 }
 
 .artwork-card-title {
-    font-family: var(--header-font);
+    font-family: var(--subtitle-font);
     font-size: var(--h4-font-size);
     color: white;
     margin-bottom: 1rem;

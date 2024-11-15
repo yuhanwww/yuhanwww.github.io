@@ -1,16 +1,19 @@
 import React from 'react';
 import './artworks.css';
 
-import dti_blender from "../../assets/artworks/DTI_blender/DTI_blender.PNG";
 import flipBrasil from "../../assets/artworks/FlipBrasil/flipBrasil.png";
 import infoShredder from "../../assets/artworks/InfoShredder/working.png";
 import stupid_ml from "../../assets/artworks/StupidML/stupid_ml.png";
 import theGame from "../../assets/artworks/TheGame/r3.PNG";
 import yuhanMap from "../../assets/artworks/YuhansMap/yuhan_map.png";
+import self_writing from "../../assets/artworks/self_writing/self_writing_zoom.png"
+import nurse_shave_hair from '../../assets/artworks/nurse_shave_hair/nurseshavehair.png';
+import mother_claw from "../../assets/artworks/boymother/mother_claw.JPG";
+import campus_map from "../../assets/artworks/campus_map/campus_map.png";
 
 const Artwork_Data = [
     {
-        id: 6,
+        id: 8,
         image: flipBrasil,
         alt: "flipBrasil",
         title: "Flip Brasil",
@@ -19,7 +22,7 @@ const Artwork_Data = [
     },
 
     {
-        id: 5,
+        id: 7,
         image: infoShredder,
         alt: "infoShredder interface",
         title: "Information Shredder At Your Door",
@@ -28,7 +31,7 @@ const Artwork_Data = [
     },
 
     {
-        id: 4,
+        id: 6,
         image: stupid_ml,
         alt: "Stupid Machine Learning Interface",
         title: "Stupid Machine Learning",
@@ -37,7 +40,7 @@ const Artwork_Data = [
     },
 
     {
-        id: 3,
+        id: 5,
         image: theGame,
         alt: "The Game Interface",
         title: "You are Programmed.",
@@ -46,20 +49,47 @@ const Artwork_Data = [
     },
 
     {
+        id: 4,
+        image: yuhanMap,
+        alt: "Yuhan's Map",
+        title: "Yuhan's Map 2023",
+        description:"A Map reflecting life journey and identity",
+        link: "",
+    },
+
+    {
+        id: 3,
+        image: self_writing,
+        alt: "A calligraphy piece where English is mapped on Chinese",
+        title: "Self Writing",
+        description:"A Map reflecting life journey and identity",
+        link: "",
+    },
+
+    {
         id: 2,
-        image: dti_blender,
-        alt: "Photorealistic picture of DTI classroom",
-        title: "DTI classroom in Blender",
-        description:"A photorealistic 3D model of a classroom in campus makerspace",
+        image: campus_map,
+        alt: "Campus Map",
+        title: "Collective Campus Map",
+        description:"A Map created collectively inspired by Papunya Tula art",
         link: "",
     },
 
     {
         id: 1,
-        image: yuhanMap,
-        alt: "Yuhan's Map",
-        title: "Yuhan's Map 2023",
-        description:"A Map reflecting life journey and identity",
+        image: mother_claw,
+        alt: "Clay Figurine work of Boy running away from mother",
+        title: "Boy Running from His Mother’s Talon",
+        description:"A clay figurine work reflecting on suicide among adolescents",
+        link: "",
+    },
+
+    {
+        id: 0,
+        image: nurse_shave_hair,
+        alt: "Clay Figurine work of nurses being shaved hair on the left & a bald female doctor walking determinated on the right",
+        title: "Nurses have hair",
+        description:"A clay figurine work reflection on nurses shave hair incident during Covid-19",
         link: "",
     },
 ];
