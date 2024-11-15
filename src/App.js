@@ -16,7 +16,7 @@ import Artwork from './components/Artwork/artwork';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/yuhanwww.github.io">
       <NavBar />
         <Routes>
           <Route exact path="/" element={<Intro />} />
