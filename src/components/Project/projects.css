@@ -35,7 +35,7 @@
     color: white;
 }
 
-.card{
+.project-card{
     /* border: 1px solid var(--hover-color);
     border-width: 2px;
     border-style: double;
@@ -49,42 +49,43 @@
     text-align: left;
 }
 
-.card-content-link {
+.project-card-content-link {
     text-decoration: none;
     color: inherit;        
 }
 
-.card:hover {
+.project-card:hover {
     box-shadow: 2px 2px 2px var(--text-light-color);
 }
 
-.card.no-hover:hover {
+.project-card.no-hover:hover {
     transform: none;
     cursor: default;
 }
   
-.card-content{
+.project-card-content{
     margin: 0 1rem;
     display: flex;
     justify-content: space-between;
 }
 
-.card-text{
+.project-card-text{
     margin: 1rem 1rem auto 1rem;
+    color: var(--text-color);
 }
 
-.card-title{
+.project-card-title{
     font-size: var(--h4-font-size);
     margin-bottom: 0.5rem;
     font-family: var(--subtitle-font);
 }
 
-.card-description{
+.project-card-description{
     font-size: var(--small-font-size);
     margin-bottom: 0.75rem;
 }
 
-.card-thumbnail {
+.project-card-thumbnail {
     width: 150px;
     height: 150px;
     object-fit: cover;

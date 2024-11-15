@@ -126,19 +126,19 @@ const Card = ({ image, alt, title, description, category, link }) => {
     const isExternalLink = link && link.startsWith('http');
     
     return (
-        <div className='card'>
-            <a href={link} className="card-content-link">
-                <div className="card-content">
-                    <div className="card-text">
-                        <h4 className='card-title'>{title}</h4>
-                        <p className='card-description'>{description}</p>
+        <div className='project-card'>
+            <a href={link} className="project-card-content-link">
+                <div className="project-card-content">
+                    <div className="project-card-text">
+                        <h4 className='project-card-title'>{title}</h4>
+                        <p className='project-card-description'>{description}</p>
                         <div className="tags">
                             {category.map((tag, index) => (
                             <span key={index} className="tag">{tag}</span>
                             ))}
                         </div>
                     </div>
-                    <img className="card-thumbnail" src={image} alt={alt}/>
+                    <img className="project-card-thumbnail" src={image} alt={alt}/>
                 </div>
             </a>
         </div>
