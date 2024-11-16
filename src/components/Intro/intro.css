@@ -48,6 +48,7 @@
     position: relative;
     font-size: var(--h3-font-size);
     /* padding-left: 5.4rem; */
+    font-family: var(--subtitle-font);
     font-weight: var(--h3-font-size);
     margin-bottom: 1rem;
 }
