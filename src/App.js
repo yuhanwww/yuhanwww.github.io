@@ -1,6 +1,6 @@
 import './App.css';
 import {
-  HashRouter,
+  BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -16,7 +16,7 @@ import Artwork from './components/Artwork/artwork';
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter basename="/">
       <NavBar />
         <Routes>
           <Route exact path="/" element={<Intro />} />
@@ -30,7 +30,7 @@ function App() {
 
         </Routes>
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
