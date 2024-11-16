@@ -39,15 +39,15 @@ const Data = [
     //     category:["Website Design"],
     // },
 
-    // {
-    //     id: 7,
-    //     image: guerilla_girl,
-    //     alt: "Guerilla Girl Artwork",
-    //     title: "Guerilla AI",
-    //     description: "A Computer Vision-Assisted Investigation inspired by Guerilla Girls",
-    //     category:["Machine Learning","Art History"],
-    //     link: '',
-    // },
+    {
+        id: 7,
+        image: guerilla_girl,
+        alt: "Guerilla Girl Artwork",
+        title: "Guerilla AI",
+        description: "A Computer Vision-Assisted Investigation inspired by Guerilla Girls",
+        category:["Machine Learning","Art History"],
+        link: "https://fangyizhu.github.io/guerilla-ai/",
+    },
 
     {
         id: 6,

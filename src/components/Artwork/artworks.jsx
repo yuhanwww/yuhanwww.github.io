@@ -88,7 +88,7 @@ const Artwork_Data = [
         id: 0,
         image: nurse_shave_hair,
         alt: "Clay Figurine work of nurses being shaved hair on the left & a bald female doctor walking determinated on the right",
-        title: "Nurses have hair",
+        title: "Nurses Have Hair",
         description:"A clay figurine work reflection on nurses shave hair incident during Covid-19",
         link: "",
     },
