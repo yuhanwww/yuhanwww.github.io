@@ -18,17 +18,17 @@ function App() {
   return (
     <BrowserRouter basename="/">
       <NavBar />
-        <Routes>
-          <Route exact path="/" element={<Intro />} />
+      <Routes>
+        <Route exact path="/" element={<Intro />} />
 
-          <Route path="/project" element={<Project />} />
-          <Route path="/project/phyllo" element={<Phyllo />} />
-          <Route path="/project/artRecognizer" element={<ArtRecognizer />} />
-          <Route path="/gallery" element={<Gallery />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/project/phyllo" element={<Phyllo />} />
+        <Route path="/project/artRecognizer" element={<ArtRecognizer />} />
+        <Route path="/gallery" element={<Gallery />} />
 
-          <Route path="/artwork" element={<Artwork />} />
+        <Route path="/artwork" element={<Artwork />} />
 
-        </Routes>
+      </Routes>
       <Footer />
     </BrowserRouter>
   );

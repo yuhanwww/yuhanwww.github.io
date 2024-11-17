@@ -6,6 +6,6 @@
     justify-content: center;
     font-weight: 300;
     font-size: small;
-    color: var(--hover-color);
+    color: var(--title-color);
     font-family: var(--subtitle-font);
 }

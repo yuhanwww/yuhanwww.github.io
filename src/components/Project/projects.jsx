@@ -36,7 +36,7 @@ const Data = [
     //     alt: "JAYC App Front Page",
     //     title: "JAYC App for international community",
     //     description: "Final Project for CS 325 HCI",
-    //     category:["Website Design"],
+    //     category:["HCI"],
     // },
 
     {
@@ -55,7 +55,7 @@ const Data = [
         alt: "Phyllotaxis Hexagonal Heatmap",
         title: "TDA on Phyllotaxis",
         description: "A Topological Data Analysis study on Phyllotaxis in Prof. Christophe Golé's lab",
-        category:["Visualization","Topological Data Analysis","Research"],
+        category:["Visualization","Data Analysis","Research"],
         link: "/project/phyllo",
     },
 
@@ -75,7 +75,7 @@ const Data = [
         alt: "Bat Fungus Wordcloud",
         title: "Break Through Tech AI",
         description: "Application of Machine Learning on Bat Fungus Detection and Plant Speciman Classification",
-        category:["Machine Learning","Intern"],
+        category:["Machine Learning"],
         link: '',
     },
 
@@ -85,7 +85,7 @@ const Data = [
         alt: "Smith Makers Map",
         title: "Smith Makers Map",
         description: "An Interactive Making Resource Map for Smith College",
-        category:["Website Design","Intern"],
+        category:["Website Design"],
         link: 'https://smithmakersmaps.com',
     },
 
@@ -127,20 +127,40 @@ const Card = ({ image, alt, title, description, category, link }) => {
     
     return (
         <div className='project-card'>
-            <a href={link} className="project-card-content-link">
+            {link ? (
+                <a 
+                    href={link} 
+                    className="project-card-content-link" 
+                    target={isExternalLink ? "_blank" : "_self"} // Open in new tab for external links
+                    rel={isExternalLink ? "noopener noreferrer" : undefined} // Security for external links
+                >
+                    <div className="project-card-content">
+                        <div className="project-card-text">
+                            <h4 className="project-card-title">{title}</h4>
+                            <p className="project-card-description">{description}</p>
+                            <div className="tags">
+                                {category.map((tag, index) => (
+                                    <span key={index} className="tag">{tag}</span>
+                                ))}
+                            </div>
+                        </div>
+                        <img className="project-card-thumbnail" src={image} alt={alt} />
+                    </div>
+                </a>
+            ) : (
                 <div className="project-card-content">
                     <div className="project-card-text">
-                        <h4 className='project-card-title'>{title}</h4>
-                        <p className='project-card-description'>{description}</p>
+                        <h4 className="project-card-title">{title}</h4>
+                        <p className="project-card-description">{description}</p>
                         <div className="tags">
                             {category.map((tag, index) => (
-                            <span key={index} className="tag">{tag}</span>
+                                <span key={index} className="tag">{tag}</span>
                             ))}
                         </div>
                     </div>
-                    <img className="project-card-thumbnail" src={image} alt={alt}/>
+                    <img className="project-card-thumbnail" src={image} alt={alt} />
                 </div>
-            </a>
+            )}
         </div>
         
     )
