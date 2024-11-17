@@ -4,7 +4,7 @@ import linkedinIcon from '../../assets/icons/linkedinIcon.svg';
 import githubIcon from '../../assets/icons/githubIcon.svg';
 import cvIcon from '../../assets/icons/cvIcon.svg';
 import { Link } from 'react-scroll'; 
-import CV from '../../assets/files/Resume_Yuhan Wang.pdf';
+import CV from '../../assets/files/CV_Yuhan_Wang.pdf';
 import './intro.css';
 
 
