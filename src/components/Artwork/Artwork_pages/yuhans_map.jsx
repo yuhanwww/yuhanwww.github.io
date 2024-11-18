@@ -1,5 +1,6 @@
 import React from 'react';
 import './artwork_page.css';
+import ImageGallery from 'react-image-gallery';
 
 import names_overlayed from '../../../assets/artworks/YuhansMap/names_overlayed.png';
 import names from '../../../assets/artworks/YuhansMap/names.png';
@@ -12,11 +13,43 @@ import yuhan_map from '../../../assets/artworks/YuhansMap/yuhan_map.png';
 import inspiration from '../../../assets/artworks/YuhansMap/inspiration.png';
 
 const YuhansMap = () => {
+
+  const images = [
+    {
+      original: names_overlayed,
+      thumbnail: names_overlayed,
+    },
+    {
+      original: names,
+      thumbnail: names,
+    },
+    {
+      original: places,
+      thumbnail: places,
+    },
+    {
+      original: places_names,
+      thumbnail: places_names,
+    },
+    {
+      original: routes,
+      thumbnail: routes,
+    },
+    {
+      original: yuhan_map,
+      thumbnail: yuhan_map,
+    },
+  
+  ];
+
   return (
     <section className="project section">
       <h2 className="section_title project-header">Yuhan's Map 2023</h2>
       <span className="section_subtitle project-header">A Map reflecting life journey and identity</span>
-        <img src={yuhan_map} alt="Yuhan's Map 2023" className="project_title-image" />
+      
+      {/* Image Gallery */}
+      <div className="project_title-image"><ImageGallery items={images} /></div>
+
       <span className="project-content">
       
         <p className="project-description quote">
