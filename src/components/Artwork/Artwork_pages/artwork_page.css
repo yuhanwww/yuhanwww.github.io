@@ -1,5 +1,3 @@
-@import "~react-image-gallery/styles/css/image-gallery.css";
-
 .project{
     display: flex;
     flex-direction: column;
@@ -15,14 +13,43 @@
     margin: 0 auto 1rem auto;
 }
 
-.project_title-image {
-    width: 65vw;
-    height: auto;
-    margin: 1rem auto;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.project-gallery {
+    width: 65vw; 
+    max-width: 678px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
 }
+  
+.slick-slide img {
+    width: 100%; 
+    height: auto; 
+}
+
+.slick-dots {
+    font-size: 0.5rem;
+    bottom: -1.5rem;
+}
+
+.slick-prev::before, 
+.slick-next::before {
+    display: none; /* remove original arrow image */
+}
+
+.slick-next:hover svg,
+.slick-prev:hover svg {
+  stroke: var(--hover-color);
+  transition: transform 0.2s ease, stroke 0.2s ease;
+}
+
+.slick-dots li button:before {
+    font-size: 1rem;
+    color: var(--text-light-color);
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--title-color);
+}
+  
 
 .project-content{
     width: 60%;

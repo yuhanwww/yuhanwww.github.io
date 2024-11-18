@@ -1,6 +1,8 @@
 import React from 'react';
 import './artwork_page.css';
-import ImageGallery from 'react-image-gallery';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 import names_overlayed from '../../../assets/artworks/YuhansMap/names_overlayed.png';
 import names from '../../../assets/artworks/YuhansMap/names.png';
@@ -14,32 +16,77 @@ import inspiration from '../../../assets/artworks/YuhansMap/inspiration.png';
 
 const YuhansMap = () => {
 
-  const images = [
-    {
-      original: names_overlayed,
-      thumbnail: names_overlayed,
-    },
-    {
-      original: names,
-      thumbnail: names,
-    },
-    {
-      original: places,
-      thumbnail: places,
-    },
-    {
-      original: places_names,
-      thumbnail: places_names,
-    },
-    {
-      original: routes,
-      thumbnail: routes,
-    },
-    {
-      original: yuhan_map,
-      thumbnail: yuhan_map,
-    },
+  function NextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={style}
+        onClick={onClick}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="var(--title-color)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          style={{ cursor: "pointer" }}
+        >
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
+      </div>
+    );
+  }
   
+  function PrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={style}
+        onClick={onClick}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="var(--title-color)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          style={{ cursor: "pointer" }}
+        >
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+      </div>
+    );
+  }
+  
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+  }
+
+  const images = [
+    { src: yuhan_map, alt: "Yuhan's Map 2023" },
+    { src: names_overlayed, alt: "Names Overlayed" },
+    { src: names, alt: "Names" },
+    { src: places, alt: "Places" },
+    { src: places_names, alt: "Places with Names" },
+    { src: places_routes, alt: "Places with Routes" },
+    { src: routes, alt: "Routes" },
+    { src: routes_names, alt: "Routes with Names" },
   ];
 
   return (
@@ -48,8 +95,17 @@ const YuhansMap = () => {
       <span className="section_subtitle project-header">A Map reflecting life journey and identity</span>
       
       {/* Image Gallery */}
-      <div className="project_title-image"><ImageGallery items={images} /></div>
-
+      <div className="project-gallery">
+        <Slider {...settings}>
+          {images.map((image, index) => (
+            <div key={index}>
+              <img src={image.src} alt={image.alt} className="project-image" />
+            </div>
+          ))}
+        </Slider>
+      </div>
+      <br/>
+      
       <span className="project-content">
       
         <p className="project-description quote">
