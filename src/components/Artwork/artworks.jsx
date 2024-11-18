@@ -25,7 +25,7 @@ const Artwork_Data = [
         id: 7,
         image: infoShredder,
         alt: "infoShredder interface",
-        title: "Information Shredder",
+        title: "Information Destruction",
         description: "A mixed-media installation that shreds information physically & ritually",
         link: "",
     },
