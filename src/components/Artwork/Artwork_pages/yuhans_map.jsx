@@ -79,14 +79,14 @@ const YuhansMap = () => {
   }
 
   const images = [
-    { src: yuhan_map, alt: "Yuhan's Map 2023" },
-    { src: places_names, alt: "Places with Names" },
-    { src: places_routes, alt: "Places with Routes" },
-    { src: places, alt: "Places" },
-    { src: names, alt: "Names" },
-    { src: routes, alt: "Routes" },
-    { src: routes_names, alt: "Routes with Names" },
-    { src: names_overlayed, alt:"Name Overlayed" },
+    { src: yuhan_map, alt: "Yuhan's Map 2023", description: "Yuhan's Map 2023, names called on paths between on places of importance." },
+    { src: places_names, alt: "Places with Names", description: "Map with names that I've been called in those places." },
+    { src: places_routes, alt: "Places with Routes", description: "Map with paths I took in-between those places." },
+    { src: places, alt: "Places", description: "Map with places, sizes & colors were based on how well I know the place and sense of belongingness." },
+    { src: names, alt: "Names", description: "Names I've been called in blocks." },
+    { src: routes, alt: "Routes", description: "Routes in-between. An aesthetic choice of how to draw the lines was involved." },
+    { src: routes_names, alt: "Routes with Names", description: "Names overlayed with places." },
+    { src: names_overlayed, alt:"Name Overlayed", description: "Names overlayed. May it showed my accumulated identity." },
   ];
 
   return (
@@ -99,7 +99,8 @@ const YuhansMap = () => {
         <Slider {...settings}>
           {images.map((image, index) => (
             <div key={index}>
-              <img src={image.src} alt={image.alt} className="project-image" />
+              <img src={image.src} alt={image.alt}  />
+              <p className="gallery-image-description">{image.description}</p>
             </div>
           ))}
         </Slider>

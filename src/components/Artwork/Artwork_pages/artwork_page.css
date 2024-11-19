@@ -50,6 +50,11 @@
     color: var(--title-color);
 }
   
+.gallery-image-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--text-color);
+}
 
 .project-content{
     width: 60%;
