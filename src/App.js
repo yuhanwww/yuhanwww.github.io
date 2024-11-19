@@ -1,6 +1,6 @@
 import './App.css';
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -18,7 +18,7 @@ import YuhansMap from './components/Artwork/Artwork_pages/yuhans_map';
 
 function App() {
   return (
-    <BrowserRouter basename="/">
+    <HashRouter>
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Intro />} />
@@ -33,7 +33,7 @@ function App() {
 
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
