@@ -7,11 +7,11 @@ import IntroData from './data_intro';
 const Intro = () => {
   return (
     <section className="intro section">
-        <div className="intro_container container grid">
-            <div className="intro_content grid">
+        <div className="intro-container container grid">
+            <div className="intro-content grid">
               <Icons />
 
-              <div className="intro_img"></div>
+              <div className="intro-img"></div>
               <IntroData />
                
             </div>

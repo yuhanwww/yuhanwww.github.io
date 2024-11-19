@@ -14,8 +14,9 @@
 }
 
 .project_title-image {
-    width: 65vw;
-    height: auto;
+    max-width: 55vw;
+    /* height: auto; */
+    max-height: 60vh;
     margin: 1rem auto;
     align-items: center;
     display: flex;

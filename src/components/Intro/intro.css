@@ -1,8 +1,8 @@
-.intro_container{
+.intro-container{
     row-gap: 7rem;
 }
 
-.intro_content{
+.intro-content{
     grid-template-columns: 116px repeat(2,1fr);
     padding-top: 10rem;
     column-gap: 2rem;
@@ -27,7 +27,7 @@
     }
 }
 
-.intro_img {
+.intro-img {
     background: url('../../assets/profile_photos/profile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,12 +43,12 @@
     animation: profile_animate 8s ease-in-out infinite 1s;
 }
 
-.intro_title{
+.intro-title{
     font-size: var(--big-font-size);
     margin-bottom: 0.5rem;
 }
 
-.intro_subtitle {
+.intro-subtitle {
     position: relative;
     font-size: var(--h3-font-size);
     /* padding-left: 5.4rem; */
@@ -57,9 +57,15 @@
     margin-bottom: 1rem;
 }
 
-.intro_description{
+.intro-description{
     max-width: 400px;
     margin-bottom: 1rem;
+}
+
+.intro-subdescription {
+    font-size: var(--small-font-size);
+    color: var(--text-light-color);
+    height: auto;
 }
 
 .socialIcons{
@@ -76,7 +82,7 @@
     cursor: pointer;
 }
 
-.intro_scroll{
+.intro-scroll{
     margin-left: 9.25rem;
 }
 
