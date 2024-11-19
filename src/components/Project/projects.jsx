@@ -56,7 +56,7 @@ const Data = [
         title: "TDA on Phyllotaxis",
         description: "A Topological Data Analysis study on Phyllotaxis in Prof. Christophe Golé's lab",
         category:["Visualization","Data Analysis","Research"],
-        link: "/project/phyllo",
+        link: "#/project/phyllo",
     },
 
     {
@@ -66,7 +66,7 @@ const Data = [
         title: "Mystery Art Recognizer",
         description: "Final Project for MTH 353 Deep Learning Seminar & ARH 212 Ancient Cities & Sanctuaries",
         category:["Machine Learning","Art History"],
-        link: '',
+        link: '#/project/art_recognizer',
     },
 
     {

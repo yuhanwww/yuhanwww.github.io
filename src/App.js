@@ -25,7 +25,7 @@ function App() {
 
         <Route path="/project" element={<Project />} />
         <Route path="/project/phyllo" element={<Phyllo />} />
-        <Route path="/project/artRecognizer" element={<ArtRecognizer />} />
+        <Route path="/project/art_recognizer" element={<ArtRecognizer />} />
         <Route path="/gallery" element={<Gallery />} />
 
         <Route path="/artwork" element={<Artwork />} />

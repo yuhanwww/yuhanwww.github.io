@@ -80,13 +80,13 @@ const YuhansMap = () => {
 
   const images = [
     { src: yuhan_map, alt: "Yuhan's Map 2023" },
-    { src: names_overlayed, alt: "Names Overlayed" },
-    { src: names, alt: "Names" },
-    { src: places, alt: "Places" },
     { src: places_names, alt: "Places with Names" },
     { src: places_routes, alt: "Places with Routes" },
+    { src: places, alt: "Places" },
+    { src: names, alt: "Names" },
     { src: routes, alt: "Routes" },
     { src: routes_names, alt: "Routes with Names" },
+    { src: names_overlayed, alt:"Name Overlayed" },
   ];
 
   return (

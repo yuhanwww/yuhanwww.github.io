@@ -54,7 +54,7 @@ const Artwork_Data = [
         alt: "Yuhan's Map",
         title: "Yuhan's Map 2023",
         description:"A Map reflecting life journey and identity",
-        link: "",
+        link: "#/artwork/yuhans_map",
     },
 
     {
@@ -123,6 +123,7 @@ const Artworks = () => {
                     alt={project.alt} 
                     title={project.title} 
                     description={project.description}
+                    link = {project.link}
                 />
             ))}
         </div>
