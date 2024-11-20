@@ -12,14 +12,14 @@ import exploreCSR from '../../assets/projects/exploreCSR/exploreCSR.png';
 import valetbike from '../../assets/projects/valetbike/valetbike.png';
 
 const Data = [
-    // {
-    //     id: 10,
-    //     image: na,
-    //     alt: "Trust in AI",
-    //     title: "Honors Thesis Project",
-    //     description: "Honor Thesis Project on factors that influence trust in AI in higher education",
-    //     category:["HCI","research"],
-    // },
+    {
+        id: 10,
+        image: wechat_prototype,
+        alt: "Trust in AI",
+        title: "Honors Thesis Project",
+        description: "Honor Thesis Project on factors that influence trust in AI in higher education",
+        category:["HCI","research"],
+    },
 
     // {
     //     id: 9,

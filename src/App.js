@@ -8,7 +8,7 @@ import {
 import NavBar from './components/NavBar/navbar';
 import Intro from "./components/Intro/intro";
 import Project from './components/Project/project';
-import Gallery from './components/Gallery/gallery';
+// import Gallery from './components/Gallery/gallery';
 import Footer from './components/Footer/footer';
 import Phyllo from './components/Project/Project_pages/phyllo';
 import ArtRecognizer from './components/Project/Project_pages/artRecognizer';
@@ -18,22 +18,35 @@ import YuhansMap from './components/Artwork/Artwork_pages/yuhans_map';
 
 function App() {
   return (
-    <HashRouter>
+    // <HashRouter>
+    //   <Routes>
+    //     <Route exact path="/" element={<Intro />} />
+
+    //     <Route path="/project" element={<Project />} />
+    //     <Route path="/project/phyllo" element={<Phyllo />} />
+    //     <Route path="/project/art_recognizer" element={<ArtRecognizer />} />
+    //     <Route path="/gallery" element={<Gallery />} /> 
+
+    //     <Route path="/artwork" element={<Artwork />} />
+    //     <Route path="/artwork/yuhans_map" element={<YuhansMap />} />
+
+    //   </Routes>
+    // </HashRouter>
+    <>
       <NavBar />
-      <Routes>
-        <Route exact path="/" element={<Intro />} />
-
-        <Route path="/project" element={<Project />} />
-        <Route path="/project/phyllo" element={<Phyllo />} />
-        <Route path="/project/art_recognizer" element={<ArtRecognizer />} />
-        <Route path="/gallery" element={<Gallery />} />
-
-        <Route path="/artwork" element={<Artwork />} />
-        <Route path="/artwork/yuhans_map" element={<YuhansMap />} />
-
-      </Routes>
+      <main>
+        <section id="intro">
+          <Intro />
+        </section>
+        <section id="project">
+          <Project />
+        </section>
+        <section id="artwork">
+          <Artwork />
+        </section>
+      </main>
       <Footer />
-    </HashRouter>
+    </>
   );
 }
 
