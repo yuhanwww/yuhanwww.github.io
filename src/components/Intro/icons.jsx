@@ -12,7 +12,7 @@ import './intro.css';
 const Icons = () => {
   return (
     <div className="socialIcons">
-        <Link type='email' className="socialIcon" onClick={() => { window.location.href = 'mailto:ywang70@smith.edu'; } }><img src={emailIcon} alt='email' className="socialIconImg" /></Link>
+        {/* <Link type='email' className="socialIcon" onClick={() => { window.location.href = 'mailto:ywang70@smith.edu'; } }><img src={emailIcon} alt='email' className="socialIconImg" /></Link> */}
         <Link type='github' className="socialIcon" onClick={() => window.open('https://github.com/yuhanwww', '_blank', 'noopener,noreferrer')}><img src={githubIcon} alt='Github' className="socialIconImg" /></Link>
         <Link type='instagram' className="socialIcon" onClick={() => window.open('https://www.instagram.com/yaaaarth/', '_blank', 'noopener,noreferrer')}><img src={instagramIcon} alt='Instagram' className="socialIconImg" /></Link>
         <Link type='linkedin' className="socialIcon" onClick={() => window.open('https://www.linkedin.com/in/yuhan-wang-yw/', '_blank', 'noopener,noreferrer')}><img src={linkedinIcon} alt='LinkedIn'className="socialIconImg" /></Link>

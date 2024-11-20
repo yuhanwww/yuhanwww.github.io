@@ -41,9 +41,9 @@
 }
 
 .project-image {
-    width: 60vw;
-    height: auto;
-    margin: 1rem auto 0.5rem auto;
+    max-width: 55vw;
+    max-height: 60vh;
+    margin: 1rem auto 1rem auto;
     display: flex;
     justify-content: center;
 }
@@ -75,7 +75,7 @@
 
 .project-subtitle{
     font-family: var(--subtitle-font);
-    font-size: var(--h4-font-size);
+    font-size: var(--h3-font-size);
     color: var(--title-color);
     text-align: left;
     margin: 0 auto;
