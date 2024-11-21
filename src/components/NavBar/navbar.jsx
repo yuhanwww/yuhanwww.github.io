@@ -25,7 +25,7 @@ const NavBar = () => {
                 });
             }
         
-            console.log(`Active Section: ${currentSection}`);
+            // console.log(`Active Section: ${currentSection}`);
             setActiveSection(currentSection);
             };
         

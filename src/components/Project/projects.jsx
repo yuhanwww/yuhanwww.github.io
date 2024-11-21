@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './projects.css';
 
+import ai_poster from '../../assets/projects/thesis/ai_poster.png';
 import wechat_prototype from '../../assets/projects/HCI/wechat_prototype.png'
 import dinoWorld from '../../assets/projects/visualAnalytics/dinoWorld.png'
 import guerilla_girl from '../../assets/projects/guerillaAI/guerilla_girl.jpg'
@@ -11,14 +12,16 @@ import makersmap from '../../assets/projects/makersmap/makersmap.png';
 import exploreCSR from '../../assets/projects/exploreCSR/exploreCSR.png';
 import valetbike from '../../assets/projects/valetbike/valetbike.png';
 
+
 const Data = [
     {
         id: 10,
-        image: wechat_prototype,
-        alt: "Trust in AI",
+        image: ai_poster,
+        alt: "AI Trust in Higher Education",
         title: "Honors Thesis Project",
-        description: "Honor Thesis Project on factors that influence trust in AI in higher education",
+        description: "Honor Thesis project surveying the perception and usage of AI in higher education.",
         category:["HCI","research"],
+        link:"#/project/thesis"
     },
 
     // {

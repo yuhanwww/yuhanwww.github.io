@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 
+import Thesis from './components/Project/Project_pages/thesis';
 import Phyllo from './components/Project/Project_pages/phyllo';
 import ArtRecognizer from './components/Project/Project_pages/artRecognizer';
 import YuhansMap from './components/Artwork/Artwork_pages/yuhans_map';
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/" element={<Homepage />} />
 
         {/* ===Project Pages=== */}
+        <Route path="/project/thesis" element={<Thesis />} />
         <Route path="/project/phyllo" element={<Phyllo />} />
         <Route path="/project/art_recognizer" element={<ArtRecognizer />} />
 
