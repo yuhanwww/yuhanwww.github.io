@@ -76,18 +76,7 @@ const NavBar = () => {
                             </HashLink>
                         </li>
 
-                        {/* <li className="nav_item">
-                            <NavLink
-                                to="gallery" 
-                                className={({ isActive }) => isActive ? "nav_link active-link" : "nav_link"}
-                            >
-                                <i className="uil uil-scenery nav_icon"></i>
-                                Gallery
-                            </NavLink>
-                        </li> */}
                     </ul>
-
-                    {/* <i className="uil uil-times nav_close" onClick={() => showMenu(!Toggle)}></i> */}
                 </div>
 
             </nav>
