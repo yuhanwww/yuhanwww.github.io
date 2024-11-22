@@ -11,10 +11,12 @@ import ArtRecognizer from './components/Project/Project_pages/artRecognizer';
 import YuhansMap from './components/Artwork/Artwork_pages/yuhans_map';
 
 import Homepage from './components/Homepage';
+import ScrollToTop from './components/scroll_to_top';
 
 function App() {
   return (
     <HashRouter>
+      <ScrollToTop/>
       <Routes>
         <Route exact path="/" element={<Homepage />} />
 
