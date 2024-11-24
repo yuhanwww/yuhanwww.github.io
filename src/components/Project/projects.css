@@ -54,7 +54,9 @@
 }
 
 .project-card:hover {
-    box-shadow: 2px 2px 2px var(--text-light-color);
+    /* box-shadow: 2px 2px 2px var(--text-light-color); */
+    border-block: dotted var(--hover-color);
+    writing-mode: horizontal-tb;
 }
 
 .project-card.no-hover:hover {
@@ -69,7 +71,7 @@
 }
 
 .project-card-text{
-    margin: 1rem 1rem auto 1rem;
+    margin: auto 1rem;
     color: var(--text-color);
 }
 

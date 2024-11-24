@@ -19,7 +19,7 @@ const Data = [
         image: ai_poster,
         alt: "AI Trust in Higher Education",
         title: "Honors Thesis Project",
-        description: "Honor Thesis project surveying the perception and usage of AI in higher education.",
+        description: "Research on AI trust in higher education",
         category:["HCI","research"],
         link:"#/project/thesis"
     },
@@ -77,9 +77,9 @@ const Data = [
         image: bat_detection,
         alt: "Bat Fungus Wordcloud",
         title: "Break Through Tech AI",
-        description: "Application of Machine Learning on Bat Fungus Detection and Plant Speciman Classification",
+        description: "Apply Machine Learning on Bat Fungus Detection and Plant Speciman Classification",
         category:["Machine Learning"],
-        link: '',
+        link: "#/project/btt_ai_mit",
     },
 
     {
@@ -102,15 +102,15 @@ const Data = [
         link: 'https://github.com/yuhanwww/SVG-creations',
     },
 
-    {
-        id: 1,
-        image: valetbike,
-        alt: "Valet Bike App Homepage",
-        title: "Valet Bike",
-        description:"A Bike Rental Website with Ruby on Rails by team Bugz for CSC 223 Software EGR",
-        category:["Website Design","Software Engineering"],
-        link: '',
-    },
+    // {
+    //     id: 1,
+    //     image: valetbike,
+    //     alt: "Valet Bike App Homepage",
+    //     title: "Valet Bike",
+    //     description:"A Bike Rental Website with Ruby on Rails by team Bugz for CSC 223 Software EGR",
+    //     category:["Website Design","Software Engineering"],
+    //     link: '',
+    // },
 
     // {
     //     id: 0,
@@ -141,11 +141,11 @@ const Card = ({ image, alt, title, description, category, link }) => {
                         <div className="project-card-text">
                             <h4 className="project-card-title">{title}</h4>
                             <p className="project-card-description">{description}</p>
-                            <div className="tags">
+                            {/* <div className="tags">
                                 {category.map((tag, index) => (
                                     <span key={index} className="tag">{tag}</span>
                                 ))}
-                            </div>
+                            </div> */}
                         </div>
                         <img className="project-card-thumbnail" src={image} alt={alt} />
                     </div>
@@ -155,11 +155,11 @@ const Card = ({ image, alt, title, description, category, link }) => {
                     <div className="project-card-text">
                         <h4 className="project-card-title">{title}</h4>
                         <p className="project-card-description">{description}</p>
-                        <div className="tags">
+                        {/* <div className="tags">
                             {category.map((tag, index) => (
                                 <span key={index} className="tag">{tag}</span>
                             ))}
-                        </div>
+                        </div> */}
                     </div>
                     <img className="project-card-thumbnail" src={image} alt={alt} />
                 </div>

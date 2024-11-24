@@ -7,7 +7,7 @@ const Project = () => {
         <h2 className="section_title">Project</h2>
         <span className="section_subtitle"></span>
         <div className="container">
-        <Projects/>
+          <Projects/>
         </div>
     </section>
   )
