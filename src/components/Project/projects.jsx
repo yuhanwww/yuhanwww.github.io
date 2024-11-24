@@ -20,7 +20,7 @@ const Data = [
         alt: "AI Trust in Higher Education",
         title: "Honors Thesis Project",
         description: "Research on AI trust in higher education",
-        category:["HCI","research"],
+        category:["HCI","Research"],
         link:"#/project/thesis"
     },
 
@@ -58,7 +58,7 @@ const Data = [
         alt: "Phyllotaxis Hexagonal Heatmap",
         title: "TDA on Phyllotaxis",
         description: "A Topological Data Analysis study on Phyllotaxis in Prof. Christophe Golé's lab",
-        category:["Visualization","Data Analysis","Research"],
+        category:["Visualization","Research"],
         link: "#/project/phyllo",
     },
 
@@ -88,7 +88,7 @@ const Data = [
         alt: "Smith Makers Map",
         title: "Smith Makers Map",
         description: "An Interactive Making Resource Map for Smith College",
-        category:["Website Design"],
+        category:["Website Design","HCI"],
         link: 'https://smithmakersmaps.com',
     },
 
