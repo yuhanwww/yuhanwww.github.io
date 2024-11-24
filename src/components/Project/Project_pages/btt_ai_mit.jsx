@@ -3,8 +3,9 @@ import ReactEmbedGist from 'react-embed-gist';
 
 import arrow from '../../../assets/icons/arrow.svg';
 import conf_mtx_wordcloud from '../../../assets/projects/bttai/conf_mtx_wordcloud.png';
-
-
+import approach from '../../../assets/projects/bttai/approach.png';
+import two_model_comparison from '../../../assets/projects/bttai/2model_comparison.png';
+import NYBG_data_snippet from '../../../assets/projects/bttai/NYBG_data_snippet.png';
 
 const BTTAI = () => {
     return (
@@ -16,75 +17,48 @@ const BTTAI = () => {
 
             {/* =========== Intro ============*/}
             <p className="project-description">
-            From Summer 2023 - Spring 2024, I participated in the <a target="_blank" rel="noopener noreferrer" href="https://www.breakthroughtech.org/programs/the-ai-program/"><i>Break Through Tech AI @ MIT</i></a>, where I took the Machine Learning (ML) Foundation course and applied ML in 2 projects -- bat fungus detection and NYBG plant classification.
-            <br/><br/>
-            The year-long program allowed me to gain essential knowledge in ML and apply ML in multiple fields, which also led to my reflection on AI & technology in general.
+                From Summer 2023 - Spring 2024, I participated in the <a target="_blank" rel="noopener noreferrer" href="https://www.breakthroughtech.org/programs/the-ai-program/"><i>Break Through Tech AI @ MIT</i></a>, where I took the Machine Learning (ML) Foundation course and applied ML in 2 projects
+                -- <a target="_blank" rel="noopener noreferrer" href="https://github.com/yuhanwww/Bat-Detection-Model">bat fungus detection</a> and <a target="_blank" rel="noopener noreferrer" href="https://github.com/yuhanwww/BTTAI-NYBG-Kaggle-Competition">NYBG plant classification</a>.
+                <br/><br/>
+                The year-long program allowed me to gain essential knowledge in ML and apply ML in multiple fields, which also led to my reflection on AI & technology in general.
             </p>
             <hr className="project-line" />
 
             {/* =========== Bata Detection ============*/}
             <p className="project-title">
-            Bat Detection
+                Bat Detection
             </p>
             <p className="project-description">
-            For data collection, I used <a target="_blank" rel="noopener noreferrer"href="https://www.wikiart.org/"><i>WikiArt</i></a> and the <a target="_blank" rel="noopener noreferrer"href="https://www.metmuseum.org/about-the-met/policies-and-documents/open-access"><i>MET (the Metropolitan Museum of Art)</i> collection</a>. <i>WikiArt</i>'s have fewer images, and they visually appear in different settings under different shooting conditions with the <i>MET</i> collection ones. 
-            Therefore, the final data solely came from the <i>MET Collection</i>.
+                White Nose Syndrome (WNS) is a fungal disease that infects skin of the muzzle, ears, wings of hibernating bats and has ravaged North American bat populations. 
+                This project aimed to understand the outlook for bat population decline in North America due to WNS, use machine Learning models to predict what features signal population decline, and so to provide insight to guide efficient bioengineered solutions to combat WNS for Biointerphase.
             </p>
             <p className="project-description">
-            Four main categories were chosen: Near East, Egyptian, Greek, and Roman, because these 4 were the ones coverd in the art history course. While there are abundant Greek and Egyptian artworks, Near East and Roman ones are fewer. 
-            Therefore, I included 3 ways of distributing the data. Greek & Roman ones were combined in the 2nd distribution because of their proximity, and Near East was excluded from the 3rd distribution because there were just too few. 
+                In the project, we struggled finding enough data for Bat Fungus & WNS detection. Combining 3 datasets from USGS, we used an NLP model and then a Random Forest model. The final result showed a disconnection, that detecting WNS-fungus positive does not directly link to getting WNS. 
+                Beyond the actual result, we gained lots of insights on 
+                <br/><br/>how different ML models function 
+                <img src={two_model_comparison} alt="NLP & Random Forest Project Comparison" className="project-image" />
+                and project management.
+                <img src={approach} alt="Project Timeline Overvieew" className="project-image" />
             </p>
-            {/* <img src={data_distribution} alt="Data Distribution Table" className="project-image" /> */}
-            <p className="project-subdescription">
-            Data Distribution table
-            </p>
-            <p className="project-description">
-            <br/>For the “Mystery Art Object Reconition” part, I used the images in “Mixed_Categories”, which are images that have multiple styles as labels or don’t have a settled style from <i>MET</i>.
-            </p>
-            <p className="project-description">
-            The picutres were processed to the same size with labels as shown on top of the page. In addition, data augmentation was incorporated to prevent overfittting, given a small dataset.
-            </p>
-            {/* <img src={img_augmentation} alt="Image Augmentation Example" className="project-image" /> */}
-            <p className="project-subdescription">
-            Data Augmentation Example
-            </p>
+            <p className="project-description">Check out the <a target="_blank" rel="noopener noreferrer" href="https://github.com/yuhanwww/Bat-Detection-Model">Bat Detection Github Repo</a> for full record~</p>
             <hr className="project-line" />
 
-            <ReactEmbedGist gist="yuhanwww/1ae0dcfd17641c8330489c477d4a6aa1"/>
-
-
-            {/* =========== Evaluation & Results ============*/}
+            {/* =========== Plant Classification ============*/}
             <p className="project-subtitle">
-            Plant Classification
+                Plant Classification
             </p>
             <p className="project-description">
-            <b>Training Result</b><br/>The model overall reached an accuracy around 60%, which is not as ideal. Because the training takes much time, and the artwroks from ancient cultures indeed have many similar features, it is hard to know whether this is a good stopping point, 
-            or there are some potential places to work on to improve the model. The model’s performance at this stage seems to really be dependent on the data available for one category. 
+                This is the Spring Kaggle Competition from the BTTAI program. I was in <i>Team Orchid</i> and we won the <i>Most Submission</i> award by the end.
+                We were asked to classify plant specimen from the <a target="_blank" rel="noopener noreferrer" href="nybg.org">New York Botanic Garden</a>.
+                Our model reached 97.7% accuracy in the end. Below is a snippet from the plant specimen data:
             </p>
-            <p className="project-description">
-            Results of 2 models on the original dataset:
-            </p>
-            {/* <img src={two_model_vis_bar} alt="2 Bar Plot showing Model Training Result from 2 Models" className="project-image" /> */}
-            {/* <img src={two_model_vis_conv} alt="2 Convolutional Matrix showing Model Training Result from 2 Models" className="project-image" /> */}
-            <p className="project-description">
-            Then coming to different categorizations, it definitely helps to improve the model’s performance. Deleting Roman yields an 80% accuracy for Greek; and building a balanced dataset yields a 67% overall accuracy rate.I think it will be more interesting to dig deeper into the model and find out what features of the images lead to its prediction at this moment.
-            </p>
-            <p className="project-description">
-            Results of Tensorflow model on 3 different categorizations:
-            </p>
-            {/* <img src={three_model_vis_bar} alt="3 Bar Plots showing Model Training Result from 2 Models" className="project-image" /> */}
+            <img src={NYBG_data_snippet} alt="Plant Data Snippet" className="project-image" />
             <br/>
-            <p className="project-description">
-            <b>Mystery Object Prediction</b><br/> Finally coming to the prediction, the model definitely is more confident to (or prefer to) predicting Greek and Egyptian, as it never predicts the artwork to be Roman even though it is trained on 4 categories.
-            </p>
-            {/* <img src={mystery_pred} alt="2 Bar Plot showing Model Training Result from 2 Models" className="project-image" /> */}
-            <p className="project-description">
-            Greek and Egyptian are the two that are predicted the most, while Roman is never predicted as the highest probable culture origin. To officially implement the model in real art recognition, more work is needed to decipher how the model predicts, which will more effectively provide insights about what features link to what prediction.
-            </p>
+            <p className="project-description">Check out the <a target="_blank" rel="noopener noreferrer" href="https://github.com/yuhanwww/BTTAI-NYBG-Kaggle-Competition">BTTAI-NYBG-Kaggle-Competition Github Repo</a> for full record~</p>
             <hr className="project-line" />
 
             {/* =========== Final Thoughts ============*/}
-            <p className="project-subtitle">
+            {/* <p className="project-subtitle">
             Final Thoughts
             </p>
             <p className="project-description">
@@ -98,7 +72,7 @@ const BTTAI = () => {
             A similar project I am currently invovled in is using ML to prove Guerilla Girl's artwork. You can learn more through <a target="_blank" rel="noopener noreferrer" href="https://fangyizhu.github.io/guerilla-ai/">link to <b>Guerilla AI</b></a>.
             <br />
             An artwork reflecting on this idea where users need to fix a dataset to train a ML is stored on <a target="_blank" rel="noopener noreferrer" href=""><i><b>Stupid Machine Learning</b></i> page</a>.
-            </p>
+            </p> */}
 
         </span>
         </section>
