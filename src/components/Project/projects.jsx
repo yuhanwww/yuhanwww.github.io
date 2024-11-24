@@ -7,7 +7,7 @@ import dinoWorld from '../../assets/projects/visualAnalytics/dinoWorld.png'
 import guerilla_girl from '../../assets/projects/guerillaAI/guerilla_girl.jpg'
 import hexagons from '../../assets/projects/phyllotaxis/hexagons.png';
 import artRecognizer from '../../assets/projects/artRecognizer/myster_art_recognizer.png';
-import bat_detection from '../../assets/projects/bttai/bat_detection.png';
+import conf_mtx_wordcloud from '../../assets/projects/bttai/conf_mtx_wordcloud.png';
 import makersmap from '../../assets/projects/makersmap/makersmap.png';
 import exploreCSR from '../../assets/projects/exploreCSR/exploreCSR.png';
 import valetbike from '../../assets/projects/valetbike/valetbike.png';
@@ -74,7 +74,7 @@ const Data = [
 
     {
         id: 4,
-        image: bat_detection,
+        image: conf_mtx_wordcloud,
         alt: "Bat Fungus Wordcloud",
         title: "Break Through Tech AI",
         description: "Apply Machine Learning on Bat Fungus Detection and Plant Speciman Classification",

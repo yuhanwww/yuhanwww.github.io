@@ -80,8 +80,8 @@ const ArtRecognizer = () => {
           Evaluation & Results
         </p>
         <p className="project-description">
-        <b>Training Result</b><br/>The model overall reached an accuracy around 60%, which is not as ideal. Because the training takes much time, and the artwroks from ancient cultures indeed have many similar features, it is hard to know whether this is a good stopping point, 
-        or there are some potential places to work on to improve the model. The model’s performance at this stage seems to really be dependent on the data available for one category. 
+          <b>Training Result</b><br/>The model overall reached an accuracy around 60%, which is not as ideal. Because the training takes much time, and the artwroks from ancient cultures indeed have many similar features, it is hard to know whether this is a good stopping point, 
+          or there are some potential places to work on to improve the model. The model’s performance at this stage seems to really be dependent on the data available for one category. 
         </p>
         <p className="project-description">
           Results of 2 models on the original dataset:

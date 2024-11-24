@@ -6,6 +6,7 @@ import conf_mtx_wordcloud from '../../../assets/projects/bttai/conf_mtx_wordclou
 import approach from '../../../assets/projects/bttai/approach.png';
 import two_model_comparison from '../../../assets/projects/bttai/2model_comparison.png';
 import NYBG_data_snippet from '../../../assets/projects/bttai/NYBG_data_snippet.png';
+import style_transfer_me from '../../../assets/gallery/digital/style_transfer.png';
 
 const BTTAI = () => {
     return (
@@ -57,22 +58,22 @@ const BTTAI = () => {
             <p className="project-description">Check out the <a target="_blank" rel="noopener noreferrer" href="https://github.com/yuhanwww/BTTAI-NYBG-Kaggle-Competition">BTTAI-NYBG-Kaggle-Competition Github Repo</a> for full record~</p>
             <hr className="project-line" />
 
-            {/* =========== Final Thoughts ============*/}
-            {/* <p className="project-subtitle">
-            Final Thoughts
+            {/* =========== CSC 370 ============*/}
+            <p className="project-subtitle">
+                ML, Vision, AI
             </p>
             <p className="project-description">
-            Does ML recognize artworks' origin culture? YES. Does ML recognize mystery artworks? Maybe. 
-            The takeaway of this study, opposite to what I expected on art insight, was more about how ML work.
-            I realized that ML's prediction is significantly dependent on the dataset distribution, and so it is inclined to predict the categories with the most representation.
-            It seems like a probability problem at this moment, not an art historical analysis. 
-            But still, it was an exciting trial with good insights on ML.
+                In my junior year, beyond BTTAI, I took a <i>Deep Learning</i> course and a <i>Computer Vision</i> course. 
+                Both of them inspired me to explore the interdisciplinary applications of ML, for example in art.
+                I made a <a href="#/project/art_recognizer"><i>Mystery Art Recognizer</i></a> and applied a <i>Style Transfer</i> model, which led to the following production lol:
+                <img src={style_transfer_me} alt="Style-transferred me" className="project-image" />
+                My grown understanding on AI also led to my artwork <a href=""><i>Stupid Machine Learning</i></a> reflecting on people's use of AI as well as an <a href="/#/project/thesis">honor thesis</a> on AI Trust.
             </p>
             <p className="project-description">
-            A similar project I am currently invovled in is using ML to prove Guerilla Girl's artwork. You can learn more through <a target="_blank" rel="noopener noreferrer" href="https://fangyizhu.github.io/guerilla-ai/">link to <b>Guerilla AI</b></a>.
-            <br />
-            An artwork reflecting on this idea where users need to fix a dataset to train a ML is stored on <a target="_blank" rel="noopener noreferrer" href=""><i><b>Stupid Machine Learning</b></i> page</a>.
-            </p> */}
+                I am so grateful to be one of the people who know a bit about AI, as when I was young, I often wondered who knew how complex machines like TV or the internet works.
+                AI is the current disruptive tool, and I am glad I know a bit about it so I'm not completely freaked out by its power.
+                That being said, I hope my work can help expand a little knowledge on AI, or improve people's experience when using it.
+            </p>
 
         </span>
         </section>
