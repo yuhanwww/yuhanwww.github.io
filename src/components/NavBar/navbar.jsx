@@ -1,4 +1,5 @@
 import React,{ useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 // import { NavLink } from 'react-router-dom';
 import './navbar.css';
 import logo from '../../assets/icons/logo.png';
@@ -6,13 +7,14 @@ import { HashLink } from "react-router-hash-link";
 
 const NavBar = () => {
     const [activeSection, setActiveSection] = useState('intro');
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
             const sections = document.querySelectorAll('section');
             let currentSection = '';
         
-            if (window.scrollY === 0) {
+            if (window.scrollY < window.innerHeight && location.pathname === '/') {
                 currentSection = 'intro';
             } else {
                 sections.forEach((section) => {
@@ -48,7 +50,7 @@ const NavBar = () => {
                         <li className="nav_item">
                             <HashLink
                                 sx={{ display: 'flex', alignItems: 'center'   }}
-                                className={`nav_link ${activeSection === 'intro' ? 'active-link' : ''}`}
+                                className={`nav_link ${activeSection === 'intro' && location.pathname === '/' ? 'active-link' : ''}`}
                                 to="/"
                                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                                 <i className="uil uil-user nav_icon"></i>

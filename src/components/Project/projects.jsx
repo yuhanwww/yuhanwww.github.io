@@ -99,7 +99,7 @@ const Data = [
         title: "Brown exploreCSR",
         description:"SVG creations from the exploreCSR program @Brown Spring 2023",
         category:["Website Design","Research"],
-        link: 'https://github.com/yuhanwww/SVG-creations',
+        link: 'https://yuhanwww.github.io/exploreCSR-poster-Wang-Zhang/',
     },
 
     // {

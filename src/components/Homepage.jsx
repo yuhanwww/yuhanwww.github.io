@@ -9,11 +9,11 @@ import Footer from './Footer/footer';
 const Homepage = () => {
   return (
     <div className="app-container">
-       <NavBar />
+       {/* <NavBar /> */}
         <Intro />
         <Project />
         <Artwork />
-       <Footer />
+       {/* <Footer /> */}
     </div>
   )
 }

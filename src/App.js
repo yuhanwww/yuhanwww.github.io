@@ -5,6 +5,9 @@ import {
   Route,
 } from "react-router-dom";
 
+import NavBar from './components/NavBar/navbar';
+import Footer from './components/Footer/footer';
+
 import Thesis from './components/Project/Project_pages/thesis';
 import Phyllo from './components/Project/Project_pages/phyllo';
 import ArtRecognizer from './components/Project/Project_pages/artRecognizer';
@@ -18,6 +21,7 @@ function App() {
   return (
     <HashRouter>
       <ScrollToTop/>
+      <NavBar/>
       <Routes>
         <Route exact path="/" element={<Homepage />} />
 
@@ -31,6 +35,7 @@ function App() {
         <Route path="/artwork/yuhans_map" element={<YuhansMap />} />
 
       </Routes>
+      <Footer />
     </HashRouter>
   );
 }
