@@ -8,11 +8,11 @@
   /*=====  Colors =====*/  
   /*Color mode rgb/rgba (r,g,b,a)*/
   --body-color: rgb(224, 224, 221); /*canvas*/
-  --text-color: rgb(70, 68, 63); /*dark grey*/
+  --text-color: rgb(35, 27, 21); /*dark grey*/
   --text-light-color:  rgba(70, 68, 63,0.6); /*light grey*/
   --highlight-color: rgb(241,60,31); /*red*/
   --title-color: rgb(4, 57, 39); /*green*/
-  --hover-color:rgba(4, 57, 39,0.5); /*green semi transparent*/
+  --hover-color:rgba(4, 57, 39, 0.5); /*green semi transparent*/
   --active-color: rgb(238, 183, 19); /*yellow*/
   --decoration-color: rgb(148,136,0); /*green brown*/
   --other-color: rgb(26, 85, 140); /*blue*/
@@ -22,7 +22,7 @@
   --subtitle-font: "Gideon Roman", serif;
   --body-font: "Open Sans", Helvetica, Arial, sans-serif; 
 
-  --big-font-size: 4rem;
+  --big-font-size: 3.5rem;
   --h1-font-size: 2.5rem;
   --h2-font-size: 2rem;
   --h3-font-size: 1.5rem;
@@ -32,8 +32,8 @@
   --tiny-font-size: 10px;
  
   /*=====  Font Weight =====*/  
-  --font-normal: 400;
-  --font-medium: 500;
+  --font-normal: 320;
+  --font-medium: 450;
   --font-semi-bold: 600;
  
   /*===== z-index =====*/
@@ -48,8 +48,8 @@
     --big-font-size: 2.5rem;
     --h1-font-size: 2rem;
     --h2-font-size: 1.75rem;
-    --h3-font-size: 1.5rem;
-    --h4-font-size: 1.25rem;
+    --h3-font-size: 1.25rem;
+    --h4-font-size: 1rem;
     --normal-font-size: 14px;
     --small-font-size: 11px;
     --tiny-font-size: 9px;
@@ -79,6 +79,7 @@ textarea{
 body{
   background-color: var(--body-color);
   color: var(--text-color);
+  font-weight: var(--font-normal);
 }
 
 h1,h2,h3{
@@ -115,6 +116,10 @@ button{
 img{
   max-width: 100%;
   height: auto;
+}
+
+b{
+  font-weight: var(--font-semi-bold);
 }
 
 /* REUSABLE CSS CLASSES */

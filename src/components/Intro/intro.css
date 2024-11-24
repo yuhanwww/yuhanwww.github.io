@@ -1,10 +1,12 @@
-.intro-container{
+.intro_container{
     row-gap: 7rem;
+    margin-bottom: 2vw;
 }
 
-.intro-content{
+.intro_content{
+    margin-left: 2vw;
     grid-template-columns: 116px repeat(2,1fr);
-    padding-top: 10rem;
+    padding-top: 5vw;
     column-gap: 2rem;
     align-items: center;
 }
@@ -27,7 +29,11 @@
     }
 }
 
-.intro-img {
+.intro_data{
+    margin-left: 1vw;
+}
+
+.intro_img {
     background: url('../../assets/profile_photos/profile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,32 +44,40 @@
         0 0 0 5px var(--title-color);
     order: 1;
     justify-self: center;
-    width: 300px;
-    height: 300px;
+    width: 257px;
+    height: 257px;
     animation: profile_animate 8s ease-in-out infinite 1s;
 }
 
-.intro-title{
+.intro_title{
     font-size: var(--big-font-size);
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.intro-subtitle {
+.intro_subtitle {
     position: relative;
-    font-size: var(--h3-font-size);
+    font-size: var(--h4-font-size);
     /* padding-left: 5.4rem; */
     font-family: var(--subtitle-font);
-    font-weight: var(--h3-font-size);
+    font-weight: var(--h4-font-size);
     margin-bottom: 1rem;
+}
+
+.intro_content-description{
+    margin-top: 5rem;
 }
 
 .intro-description{
-    max-width: 400px;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem auto;
+    width: 55vw;
+    max-width: 982px;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-normal);
 }
 
 .intro-subdescription {
     font-size: var(--small-font-size);
+    font-weight: var(--font-normal);
     color: var(--text-light-color);
     height: auto;
 }
@@ -82,11 +96,11 @@
     cursor: pointer;
 }
 
-.intro-scroll{
+.intro_scroll{
     margin-left: 9.25rem;
 }
 
-@keyframes scroll {
+/* @keyframes scroll {
     0%{
        transform: translateY(0);
     }
@@ -94,7 +108,7 @@
     30%{
         transform: translateY(3.75rem);
     }
-}
+} */
 
 .wheel {
     animation: scroll 2s ease infinite;
@@ -130,9 +144,13 @@
         margin-bottom: var(--mb-2-5);
     }
 
+    .intro_data{
+        margin-left: 0;
+    }
+
     .intro_img{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         box-shadow: 
             0 0 0 1px var(--body-color),
             0 0 0 2.5px var(--title-color),
@@ -156,7 +174,7 @@
   /*Medium Devices*/
   @media screen and (max-width: 768px) {
     .intro_content{
-        grid-template-columns: 0.5fr 3fr;
+        grid-template-columns: 1 2fr;
         padding-top: 3.5rem;
         padding: 1rem 1.75rem;
     }
@@ -187,9 +205,19 @@
   
   /*Small Devices*/
   @media screen and (max-width: 350px) {
+    .intro_content{
+        grid-template-columns: 0.5fr 3fr;
+    }
+
     .intro_img{
-        width: 180px;
-        height: 180px;
+        order: initial;
+        justify-self: center;
+        width: 150px;
+        height: 150px;
+    }
+
+    .intro_data{
+        grid-column: 1/3;
     }
 
 
