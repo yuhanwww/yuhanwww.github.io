@@ -17,7 +17,7 @@ const IntroDescription = () => {
         How is the way we interact with technology evolving and being changed by new inventions and systems?
       </i></p>
       <p className="intro-description">
-        These are the questions that have driven my academic and research pursuits, which in short is, I want to <b style={{color: "var(--title-color)"}}>centralize the human’s physical, emotional and sensory perceptions</b> in digital experiences. 
+        These are the questions that have driven my academic and research pursuits, which in short is, I want to <b style={{color: "var(--title-color)"}}>centralize human’s physical, emotional and sensory perceptions</b> in digital experiences. 
       </p>
       <p className="intro-description">
         In my free time, I practice <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=9VNg-ZDEr1I">artistic swimming</a>-- hoping to attend competition at HongKong in Summer 2025 :))
