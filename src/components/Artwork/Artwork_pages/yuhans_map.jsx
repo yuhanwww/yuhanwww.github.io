@@ -1,8 +1,6 @@
 import React from 'react';
 import './artwork_page.css';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import ArtworkSlider from './artwork_slider';
 
 import names_overlayed from '../../../assets/artworks/YuhansMap/names_overlayed.png';
 import names from '../../../assets/artworks/YuhansMap/names.png';
@@ -16,69 +14,7 @@ import inspiration from '../../../assets/artworks/YuhansMap/inspiration.png';
 
 const YuhansMap = () => {
 
-  function NextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={style}
-        onClick={onClick}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="var(--title-color)"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          style={{ cursor: "pointer" }}
-        >
-          <polyline points="9 18 15 12 9 6" />
-        </svg>
-      </div>
-    );
-  }
-  
-  function PrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={style}
-        onClick={onClick}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="var(--title-color)"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          style={{ cursor: "pointer" }}
-        >
-          <polyline points="15 18 9 12 15 6" />
-        </svg>
-      </div>
-    );
-  }
-  
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-  }
-
-  const images = [
+  const yuhans_map_images = [
     { src: yuhan_map, alt: "Yuhan's Map 2023", description: "Yuhan's Map 2023, names called on paths between on places of importance." },
     { src: places_names, alt: "Places with Names", description: "Map with names that I've been called in those places." },
     { src: places_routes, alt: "Places with Routes", description: "Map with paths I took in-between those places." },
@@ -96,14 +32,9 @@ const YuhansMap = () => {
       
       {/* Image Gallery */}
       <div className="artwork_page-gallery">
-        <Slider {...settings}>
-          {images.map((image, index) => (
-            <div key={index}>
-              <img src={image.src} alt={image.alt}  />
-              <p className="gallery-image-description">{image.description}</p>
-            </div>
-          ))}
-        </Slider>
+        <ArtworkSlider
+          images={yuhans_map_images}
+        />
       </div>
       <br/>
       

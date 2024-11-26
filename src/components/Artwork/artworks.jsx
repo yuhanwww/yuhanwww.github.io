@@ -63,7 +63,7 @@ const Artwork_Data = [
         alt: "A calligraphy piece where English is mapped on Chinese",
         title: "Self Writing",
         description:"A Map reflecting life journey and identity",
-        link: "",
+        link: "#/artwork/self_writing",
     },
 
     {
