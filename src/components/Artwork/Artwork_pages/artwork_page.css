@@ -15,7 +15,7 @@
 
 .artwork_page-gallery {
     width: 65vw; 
-    max-width: 678px;
+    max-width: 982px;
     margin: 0 auto;
     padding: 1.5rem 0;
 }
@@ -23,6 +23,18 @@
 .artwork_page-slide img {
     width: 100%; 
     height: auto; 
+}
+
+.slick-slide{
+    width: 65vw; 
+    max-width: 982px;
+    max-height: 60vh;
+}
+
+.slick-slide img{
+    max-width: 982px;
+    max-height: 60vh;
+    margin: 0 auto;
 }
 
 .slick-dots {
