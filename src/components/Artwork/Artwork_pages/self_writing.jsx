@@ -7,6 +7,7 @@ import random_writing_2 from '../../../assets/artworks/self_writing/random_writi
 import self_writing_zoom from '../../../assets/artworks/self_writing/self_writing_zoom.png';
 import self_collection from '../../../assets/artworks/self_writing/self_collection.JPG';
 import self_writing_whole from '../../../assets/artworks/self_writing/self_writing_whole.JPG';
+import line_art_cropped from '../../../assets/artworks/self_writing/line_art_cropped.jpeg';
 
 const SelfWriting = () => {
 
@@ -32,29 +33,38 @@ const SelfWriting = () => {
       <br/>
       
       <span className="artwork_page-content">
-      
-        <p className="artwork_page-description quote">
-          You are the sum total of everything you've ever seen, heard, eaten, smelled, been told, forgot - it's all there. Everything influences each of us, and because of that I try to make sure that my experiences are positive.
-        </p>
-        <p className="artwork_page-description quote" style={{textAlign:"right"}}>--Maya Angelou</p>
 
-        <p className="artwork_page-description">In <i>Yuhan's Map 2023</i>, I mapped out the places I've been to, names I've been called, and my paths in-between.
-          Names embody who I was with, what stage of life I was in, and how I remembered people's impression of me. The size of the place was drawn arbitrarily based on how well I know the place, with differnt gradiented colors reflecing on how much I felt belonged to that place.
-        </p>
         <p className="artwork_page-description">
-          Layering them with the paths I've taken in-between, it displayed who I was, how I became me at this moment, and what I have felt and took with me along the way.
-          <br/><br/>
-          Would I make another version for 2024? I would love to -- especially after given the name <i>Bruna</i> in Brasil ♥
+          As a calligraphy artist, I have always believed in an old saying in China: <i>One's writing resembles (represents) oneself.</i>
+          <br/><br/>I have developed my unique handwriting style, and I love when people compliment my writing. 
+          Chinese calligraphy, different from alphabets, are logographs, which offered a concrete abstraction / icons to play with when writing.
+          I have extended strokes from writing certain words and see how the lines interact with each other, which in some way represent the words' meanings, as shown below.
+        </p>
+        <img src={line_art_cropped} alt="Lina Bo Bardi's & Anna Bella Beiger's works" className="artwork_page-image" />
+        <br/><br/>
+        <p className="artwork_page-description">
+          Resembling this idea, here, I played with the shape of Chinese characters by filling them with English. So how does it work?
+        </p>
+        <hr className="artwork_page-line" />
+        <p className="artwork_page-description">
+        <div className="textIndent"><br/> 1. Listen to songs by <i>Chen Li 陈粒</i>-- a singer that really speaks to me.</div>
+        <div className="textIndent"> 2. When listening to her song, randomly pick a word form the current line and write them down in calligraphy in a formal, traditional way.</div>
+        <div className="textIndent"> 3. Do so until the whole page is filled. </div>
+        <div className="textIndent"> 4. *Interesting Part* Cover the calligraphy with a semi-transparent paper, read the word, make meaning of it, and write what I think about in English. </div>
+        <div className="textIndent"> 5. Continue writing in English, cover the whole Chinese character by filling in small words in English.</div>
         </p>
         <hr className="artwork_page-line" />
         <br/>
         <p className="artwork_page-description">
-          This work was the final project for my <i>Brazilian Art Inside & Out</i> course in Fall 2023. I took inspiration from 2 Brazilian female artists: the interconnectedness of <b>Lina Bo Bardi</b>'s SESC Pompéia Factory and <b>Anna Bella Beiger</b>'s questioning, blurring, and redrawing of maps. 
+          Multiple layers of personal meaning and reflection were thus presented: my handwriting in Chinese & English; words from songs that I echo with; 
+          my thoughts on the words; writing, rewriting, and overwriting my thoughts.
         </p>
-        {/* <img src={inspiration} alt="Lina Bo Bardi's & Anna Bella Beiger's works" className="artwork_page-image" /> */}
-        <br/><br/>
         <p className="artwork_page-description">
-          After the course, I was fortunate to participate in the <i>Global FLEX Program</i> to visit Brazil and appreciate many artworks we've learned in person, where I received a community / family. See <a href="/">here</a> for another work reflection on the trip.
+          It's a beautiful piece, as the Chinese orange characters are like drop down shadows.
+        </p>
+        <p className="artwork_page-description">
+          I love the process of writing and freely manipulating the strokes in different shapes for aesthetic appearances. Writing is also very de-stressing. 
+          I guess part of the reason why I chose Art History + CS is that I really can't give up the sentimental part of myself, doing things with hands, appreciating things.
         </p>
 
 
