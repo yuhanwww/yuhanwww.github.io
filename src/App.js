@@ -16,6 +16,7 @@ import BTTAI from './components/Project/Project_pages/btt_ai_mit';
 import YuhansMap from './components/Artwork/Artwork_pages/yuhans_map';
 import SelfWriting from './components/Artwork/Artwork_pages/self_writing';
 import CampusMap from './components/Artwork/Artwork_pages/campus_map';
+import BoyMother from './components/Artwork/Artwork_pages/boy_mother';
 
 import Homepage from './components/Homepage';
 import ScrollToTop from './components/scroll_to_top';
@@ -38,6 +39,7 @@ function App() {
         <Route path="/artwork/yuhans_map" element={<YuhansMap />} />
         <Route path="/artwork/self_writing" element={<SelfWriting />} />
         <Route path="/artwork/campus_map" element={<CampusMap />} />
+        <Route path="/artwork/boy_mother" element={<BoyMother />} />
 
       </Routes>
       <Footer />

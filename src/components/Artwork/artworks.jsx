@@ -8,7 +8,7 @@ import theGame from "../../assets/artworks/TheGame/r3.PNG";
 import yuhanMap from "../../assets/artworks/YuhansMap/yuhan_map.png";
 import self_writing from "../../assets/artworks/self_writing/self_writing_zoom.png"
 import nurse_shave_hair from '../../assets/artworks/nurse_shave_hair/nurseshavehair.png';
-import mother_claw from "../../assets/artworks/boymother/mother_claw.JPG";
+import mother_talon from "../../assets/artworks/boymother/bm2_mother_claw.JPG";
 import campus_map from "../../assets/artworks/campus_map/campus_map.png";
 
 const Artwork_Data = [
@@ -77,11 +77,11 @@ const Artwork_Data = [
 
     {
         id: 1,
-        image: mother_claw,
+        image: mother_talon,
         alt: "Clay Figurine work of Boy running away from mother",
         title: "Run from Mother’s Talon",
         description:"A clay figurine work reflecting on suicide among adolescents",
-        link: "",
+        link: "#/artwork/boy_mother",
     },
 
     {
