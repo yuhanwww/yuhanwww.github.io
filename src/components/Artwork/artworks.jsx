@@ -70,9 +70,9 @@ const Artwork_Data = [
         id: 2,
         image: campus_map,
         alt: "Campus Map",
-        title: "Collective Campus Map",
+        title: "Campus Mental Map",
         description:"A Map created collectively inspired by Papunya Tula art",
-        link: "",
+        link: "#/artwork/campus_map",
     },
 
     {

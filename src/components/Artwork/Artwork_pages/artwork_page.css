@@ -20,10 +20,10 @@
     padding: 1.5rem 0;
 }
   
-.artwork_page-slide img {
+/* .artwork_page-slide img {
     width: 100%; 
     height: auto; 
-}
+} */
 
 .slick-slide{
     width: 65vw; 
@@ -86,8 +86,8 @@
 }
 
 .artwork_page-image {
-    width: 50vw;
-    height: auto;
+    max-width: 50vw;
+    max-height: 65vh;
     margin: 1rem auto 0.5rem auto;
     display: flex;
     justify-content: center;
