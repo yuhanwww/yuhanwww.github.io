@@ -7,7 +7,7 @@ import stupid_ml from "../../assets/artworks/StupidML/stupid_ml.png";
 import theGame from "../../assets/artworks/TheGame/r3.PNG";
 import yuhanMap from "../../assets/artworks/YuhansMap/yuhan_map.png";
 import self_writing from "../../assets/artworks/self_writing/self_writing_zoom.png"
-import nurse_shave_hair from '../../assets/artworks/nurse_shave_hair/nurseshavehair.png';
+import nurse_shave_hair from '../../assets/artworks/nurses_have_hair/nurses_have_hair.png';
 import mother_talon from "../../assets/artworks/boymother/bm2_mother_claw.JPG";
 import campus_map from "../../assets/artworks/campus_map/campus_map.png";
 
@@ -90,7 +90,7 @@ const Artwork_Data = [
         alt: "Clay Figurine work of nurses being shaved hair on the left & a bald female doctor walking determinated on the right",
         title: "Nurses Have Hair",
         description:"A clay figurine work reflection on nurses shave hair incident during Covid-19",
-        link: "",
+        link: "#/artwork/nurses_have_hair",
     },
 ];
 

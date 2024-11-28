@@ -54,6 +54,7 @@ const BoyMother = () => {
       <img src={bm2_side} alt="Boy Running from His Mother's Talon" className="artwork_page-image" />
       <p className="artwork_page-description">
         <br/>I drew inspiration from <i>the Creation of Adam</i> from the Sistine Chapel to emphasize the hand interaction between the boy and the mother.
+        The desperate emotions of the figurines and unreachable distance between the mother and boy together bring up suffocation. 
         By exaggerating the mother's hand to a talon, I want to emphasize how parents put strong will on their children to become successful. 
       </p>
       <img src={bm2_mother_talon} alt="Mother's Talon zoom view" className="artwork_page-image" />
