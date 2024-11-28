@@ -2,15 +2,15 @@ import React from 'react';
 import './project_page.css';
 import ReactEmbedGist from 'react-embed-gist';
 
-import two_model_vis_bar from '../../../assets/projects/artRecognizer/2model_vis_bar.png';
-import two_model_vis_conv from '../../../assets/projects/artRecognizer/2model_vis_conf.png';
-import three_model_vis_bar from '../../../assets/projects/artRecognizer/3cate_vis_bar.png';
-import img_augmentation from '../../../assets/projects/artRecognizer/Image_Augmentation.png';
-import sample_from_data from '../../../assets/projects/artRecognizer/Sample_from_Data.png';
-import data_distribution from '../../../assets/projects/artRecognizer/data_distribution.png'
-import model_snippet from '../../../assets/projects/artRecognizer/model_snippet.png'; 
-// import mystery_art_recognizer from '../../../assets/projects/artRecognizer/myster_art_recognizer.png'; 
-import mystery_pred from '../../../assets/projects/artRecognizer/mystery_pred.png'; 
+import two_model_vis_bar from '../../../assets/projects/art_recognizer/2model_vis_bar.png';
+import two_model_vis_conv from '../../../assets/projects/art_recognizer/2model_vis_conf.png';
+import three_model_vis_bar from '../../../assets/projects/art_recognizer/3cate_vis_bar.png';
+import img_augmentation from '../../../assets/projects/art_recognizer/Image_Augmentation.png';
+import sample_from_data from '../../../assets/projects/art_recognizer/Sample_from_Data.png';
+import data_distribution from '../../../assets/projects/art_recognizer/data_distribution.png'
+import model_snippet from '../../../assets/projects/art_recognizer/model_snippet.png'; 
+// import mystery_art_recognizer from '../../../assets/projects/art_recognizer/myster_art_recognizer.png'; 
+import mystery_pred from '../../../assets/projects/art_recognizer/mystery_pred.png'; 
 
 const ArtRecognizer = () => {
   return (

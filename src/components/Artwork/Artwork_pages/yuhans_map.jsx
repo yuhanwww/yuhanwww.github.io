@@ -2,15 +2,15 @@ import React from 'react';
 import './artwork_page.css';
 import ArtworkSlider from './artwork_slider';
 
-import names_overlayed from '../../../assets/artworks/YuhansMap/names_overlayed.png';
-import names from '../../../assets/artworks/YuhansMap/names.png';
-import places from '../../../assets/artworks/YuhansMap/places.png';
-import places_names from '../../../assets/artworks/YuhansMap/places_names.png';
-import places_routes from '../../../assets/artworks/YuhansMap/places_routes.png';
-import routes from '../../../assets/artworks/YuhansMap/routes.png';
-import routes_names from '../../../assets/artworks/YuhansMap/routes_names.png';
-import yuhan_map from '../../../assets/artworks/YuhansMap/yuhan_map.png';
-import inspiration from '../../../assets/artworks/YuhansMap/inspiration.png';
+import names_overlayed from '../../../assets/artworks/yuhans_map/names_overlayed.png';
+import names from '../../../assets/artworks/yuhans_map/names.png';
+import places from '../../../assets/artworks/yuhans_map/places.png';
+import places_names from '../../../assets/artworks/yuhans_map/places_names.png';
+import places_routes from '../../../assets/artworks/yuhans_map/places_routes.png';
+import routes from '../../../assets/artworks/yuhans_map/routes.png';
+import routes_names from '../../../assets/artworks/yuhans_map/routes_names.png';
+import yuhan_map from '../../../assets/artworks/yuhans_map/yuhan_map.png';
+import inspiration from '../../../assets/artworks/yuhans_map/inspiration.png';
 
 const YuhansMap = () => {
 

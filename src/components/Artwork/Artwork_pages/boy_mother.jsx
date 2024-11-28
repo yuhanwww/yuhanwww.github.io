@@ -2,16 +2,16 @@ import React from 'react';
 import './artwork_page.css';
 import ArtworkSlider from './artwork_slider';
 
-import bm1_front from '../../../assets/artworks/boymother/bm1_front.jpg';
-import bm1_top from '../../../assets/artworks/boymother/bm1_top.jpg';
-import bm2_back from '../../../assets/artworks/boymother/bm2_back.JPG';
-import bm2_boy_front from '../../../assets/artworks/boymother/bm2_boy_front.JPG';
-import bm2_mother_talon from '../../../assets/artworks/boymother/bm2_mother_claw.JPG';
-import bm2_mother_top from '../../../assets/artworks/boymother/bm2_mother_top.JPG';
-import bm2_front from '../../../assets/artworks/boymother/bm2_front.JPG';
-import bm2_side from '../../../assets/artworks/boymother/bm2_side.JPG';
-import boymother1 from '../../../assets/artworks/boymother/boymother1.JPG';
-import boymother2 from '../../../assets/artworks/boymother/boymother2.JPG';
+import bm1_front from '../../../assets/artworks/boy_mother/bm1_front.jpg';
+import bm1_top from '../../../assets/artworks/boy_mother/bm1_top.jpg';
+import bm2_back from '../../../assets/artworks/boy_mother/bm2_back.JPG';
+import bm2_boy_front from '../../../assets/artworks/boy_mother/bm2_boy_front.JPG';
+import bm2_mother_talon from '../../../assets/artworks/boy_mother/bm2_mother_claw.JPG';
+import bm2_mother_top from '../../../assets/artworks/boy_mother/bm2_mother_top.JPG';
+import bm2_front from '../../../assets/artworks/boy_mother/bm2_front.JPG';
+import bm2_side from '../../../assets/artworks/boy_mother/bm2_side.JPG';
+import boymother1 from '../../../assets/artworks/boy_mother/boymother1.JPG';
+import boymother2 from '../../../assets/artworks/boy_mother/boymother2.JPG';
 
 const BoyMother = () => {
 

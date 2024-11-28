@@ -6,7 +6,7 @@ import wechat_prototype from '../../assets/projects/HCI/wechat_prototype.png'
 import dinoWorld from '../../assets/projects/visualAnalytics/dinoWorld.png'
 import guerilla_girl from '../../assets/projects/guerillaAI/guerilla_girl.jpg'
 import hexagons from '../../assets/projects/phyllotaxis/hexagons.png';
-import artRecognizer from '../../assets/projects/artRecognizer/myster_art_recognizer.png';
+import artRecognizer from '../../assets/projects/art_recognizer/myster_art_recognizer.png';
 import conf_mtx_wordcloud from '../../assets/projects/bttai/conf_mtx_wordcloud.png';
 import makersmap from '../../assets/projects/makersmap/makersmap.png';
 import exploreCSR from '../../assets/projects/exploreCSR/exploreCSR.png';

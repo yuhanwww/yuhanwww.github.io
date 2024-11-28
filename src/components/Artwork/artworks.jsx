@@ -1,20 +1,20 @@
 import React from 'react';
 import './artworks.css';
 
-import flipBrasil from "../../assets/artworks/FlipBrasil/flipBrasil.png";
-import infoShredder from "../../assets/artworks/InfoShredder/working.png";
-import stupid_ml from "../../assets/artworks/StupidML/stupid_ml.png";
-import theGame from "../../assets/artworks/TheGame/r3.PNG";
-import yuhanMap from "../../assets/artworks/YuhansMap/yuhan_map.png";
+import flip_brasil from "../../assets/artworks/flip_brasil/flipBrasil.png";
+import ingo_shredder from "../../assets/artworks/info_shredder/working.png";
+import stupid_ml from "../../assets/artworks/stupid_ml/stupid_ml.png";
+import you_are_programmed from "../../assets/artworks/you_are_programmed/programmed.PNG";
+import yuhans_map from "../../assets/artworks/yuhans_map/yuhan_map.png";
 import self_writing from "../../assets/artworks/self_writing/self_writing_zoom.png"
 import nurse_shave_hair from '../../assets/artworks/nurses_have_hair/nurses_have_hair.png';
-import mother_talon from "../../assets/artworks/boymother/bm2_mother_claw.JPG";
+import mother_talon from "../../assets/artworks/boy_mother/bm2_mother_claw.JPG";
 import campus_map from "../../assets/artworks/campus_map/campus_map.png";
 
 const Artwork_Data = [
     {
         id: 8,
-        image: flipBrasil,
+        image: flip_brasil,
         alt: "flipBrasil",
         title: "Flip Brasil",
         description: "An interactive installation based on 10 day experience of Brasil art and culture",
@@ -23,7 +23,7 @@ const Artwork_Data = [
 
     {
         id: 7,
-        image: infoShredder,
+        image: ingo_shredder,
         alt: "infoShredder interface",
         title: "Information Destruction",
         description: "A mixed-media installation that shreds information physically & ritually",
@@ -41,16 +41,16 @@ const Artwork_Data = [
 
     {
         id: 5,
-        image: theGame,
+        image: you_are_programmed,
         alt: "The Game Interface",
         title: "You are Programmed.",
         description: "A phone-based program that reflects on how phone shapes one's actions",
-        link: "",
+        link: "#/artwork/you_are_programmed",
     },
 
     {
         id: 4,
-        image: yuhanMap,
+        image: yuhans_map,
         alt: "Yuhan's Map",
         title: "Yuhan's Map 2023",
         description:"A Map reflecting life journey and identity",

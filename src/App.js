@@ -10,7 +10,7 @@ import Footer from './components/Footer/footer';
 
 import Thesis from './components/Project/Project_pages/thesis';
 import Phyllo from './components/Project/Project_pages/phyllo';
-import ArtRecognizer from './components/Project/Project_pages/artRecognizer';
+import ArtRecognizer from './components/Project/Project_pages/art_recognizer';
 import BTTAI from './components/Project/Project_pages/btt_ai_mit';
 
 import YuhansMap from './components/Artwork/Artwork_pages/yuhans_map';
@@ -18,6 +18,7 @@ import SelfWriting from './components/Artwork/Artwork_pages/self_writing';
 import CampusMap from './components/Artwork/Artwork_pages/campus_map';
 import BoyMother from './components/Artwork/Artwork_pages/boy_mother';
 import NursesHaveHair from './components/Artwork/Artwork_pages/nurse_have_hair';
+import YouAreProgrammed from './components/Artwork/Artwork_pages/you_are_programmed';
 
 import Homepage from './components/Homepage';
 import ScrollToTop from './components/scroll_to_top';
@@ -42,6 +43,7 @@ function App() {
         <Route path="/artwork/campus_map" element={<CampusMap />} />
         <Route path="/artwork/boy_mother" element={<BoyMother />} />
         <Route path="/artwork/nurses_have_hair" element={<NursesHaveHair />} />
+        <Route path="/artwork/you_are_programmed" element={<YouAreProgrammed />} />
 
       </Routes>
       <Footer />
