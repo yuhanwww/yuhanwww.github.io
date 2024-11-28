@@ -81,3 +81,16 @@
     margin: 0 auto;
     margin: 1rem 0;
 }
+
+.project_image-column {
+    float: left;
+    width: 24vw;
+    padding: 5px;
+}
+
+.project_image-row {
+    margin: 0 auto 1rem auto;
+    content: "";
+    clear: both;
+    display: table;
+}

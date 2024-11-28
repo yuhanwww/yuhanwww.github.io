@@ -2,11 +2,14 @@ import React from 'react';
 import './project_page.css';
 
 import hexagons from '../../../assets/projects/phyllotaxis/hexagons.png';
+import disk_stacking_origin from '../../../assets/projects/phyllotaxis/disk_stacking_origin.png';
 import tripetala from '../../../assets/projects/phyllotaxis/tripetala.png';
 import example_disk from '../../../assets/projects/phyllotaxis/example_disk.png';
 import megatile from '../../../assets/projects/phyllotaxis/megatile.png';
 import poster from '../../../assets/projects/phyllotaxis/TDA_on_Phyllotaxis_Collaboration_Poster.png';
 import posterPDF from '../../../assets/files/TDA_on_Phyllotaxis_Collaboration_Poster.pdf'; 
+import SkunkCabbage00_persistence from '../../../assets/projects/phyllotaxis/SkunkCabbage00_persistence.gif';
+import Tripetala03_persistence from '../../../assets/projects/phyllotaxis/Tripetala03_persistence.gif';
 
 const Phyllo = () => {
   return (
@@ -22,15 +25,18 @@ const Phyllo = () => {
         <p className="project-description">
           This is a year-long project in Prof. Christophe Golé’s Phyllotaxis Plant lab as a research assistant. Phyllotaxis is the arrangement of plant organs on a stem, and we are studying the Fibonacci ones from the Quasi Symmtery ones, the latter being more irregular. By applying topological data analysis on phyllotaxis, we can measure and quantify the irregularity of both kinds. 
         </p>
-        <br/>
         <p className="project-description">
           Below is an example species (Tripetala). We unroll the plant and generate triangulation of the points to output data for analyisis. The triangulation forms "fronts," and we use TDA to analyze the pattern of the fronts. 
         </p>
         <img src={tripetala} alt="Example of Unrolled Tripetala" className="project-image" />
         <p className="project-subdescription">Example of Unrolled Tripetala, Delaunay Triangulation is applyed on the points on the plant to form "fronts" -- up & down vectors of the point relationship</p>
         <p className="project-description">
-          Apart from real plant data, we also have a Python simulation model, a disk stacking model, that systematically represent plants growth and the pattern transformation. As disk stacking implies, we use disks to represent the points in the plant, and created the ideal situation where all the points are equally distributed, attaching to each other. The model will take in uv coordinates, which represent points in a hexagon. The model represents the mathematical theory that Prof. Golé’s proposed to represent conditions that will prompt plant models to have Fibonacci phyllotaxis or Quasi-symmetry phyllotaxis.
+          Apart from real plant data, we also have a Python simulation model, a disk stacking model, that systematically represent plants growth and the pattern transformation.
+          As disk stacking implies, we use disks to represent the points in the plant, and created the ideal situation where all the points are equally distributed, attaching to each other. 
+          The model will take in uv coordinates, which represent points in a hexagon. The model represents the mathematical theory that Prof. Golé’s proposed to represent conditions that will prompt plant models to have Fibonacci phyllotaxis or Quasi-symmetry phyllotaxis.
         </p>
+        <img src={disk_stacking_origin} alt="Disk Stacking Model origin hexagon" className="project-image" />
+        <p className="project-subdescription">Disk Stacking Model from its hexagon origin. Source: C. Golé and S. Douady, “Convergence in a disk stacking model on the cylinder,” Physica D: Nonlinear Phenomena, vol. 403, p. 132278, Dec. 2019, doi: https://doi.org/10.1016/j.physd.2019.132278</p>
         <hr className="project-line" />
 
         {/* =========== TDA Part ============*/}
@@ -38,11 +44,21 @@ const Phyllo = () => {
           Topological Data Analysis(TDA)
         </p>
         <img src={hexagons} alt="Hexagonal Heatmap Visualizations from the TDA measurements" className="project-image" />
+        <p className="project-description">
+          Above are 4 hexagons from 3 TDA methods, with variations of a central star-like, symmetrically radiating outward pattern. 
+          The color and pattern difference among the hexagons offered a multi-dimensional evaluation of the regularity distribution -- some are in accordance with another, some are different.
+          As each TDA method focuses on a different aspect of topological features, we can compare and contrast how disk stacking models differ from each other.
+          <br/><br/>
+          My favorite hexagon is the 3rd one : )
+        </p>
         <p className="project-subtitle">
           TDA based on periodicity
         </p>
         <p className="project-description">
-         To perform TDA on the plant data, we will generate a brave lattice from the points. A brave lattice is a regular pointcloud, which can be represented by 2 vectors, u & v, both being unit vectors. To generate a brave lattice, the 1st attempt we used is to remove points from the disk stacking model based on certain pattern. According to Prof. Golé’s prior study, disk stacking model generated under different circumstances have different periodicity, meaning that the model will have a pattern repeating after certain points, so we can keep the points of the model by period, which will generate a regular pattern. With this pattern, we will use TDA to measure the difference between the original model and the brave lattice we generated, to quantify irregularity in different areas.
+         To perform TDA on the plant data, we will generate a brave lattice from the points. A Bravais Lattice is a regular pointcloud, which can be represented by 2 vectors, u & v, both being unit vectors. 
+         To generate a brave lattice, the 1st attempt we used is to remove points from the disk stacking model based on certain pattern. 
+         According to Prof. Golé’s prior study, disk stacking model generated under different circumstances have different periodicity, meaning that the model will have a pattern repeating after certain points, so we can keep the points of the model by period, which will generate a regular pattern. 
+         With this pattern, we will use TDA to measure the difference between the original model and the brave lattice we generated, to quantify irregularity in different areas.
         </p>
         <img src={example_disk} alt="Example Disk Stacking Model" className="project-image" />
         <p className="project-subdescription">Example Disk Stacking Model</p>
@@ -69,8 +85,13 @@ const Phyllo = () => {
         <p className="project-title">
           TDA on real specices
         </p>
+        <div className="project_image-row">
+          <img src={SkunkCabbage00_persistence} alt="TDA from Megatile explanation" className="project_image-column" />
+          <img src={Tripetala03_persistence} alt="TDA from Megatile explanation" className="project_image-column" />
+        </div>
+        <p className="project-subdescription">Look at the 2 animated persistence diagram, can you guess which one is from a plant with a more regular pattern? Hint: look at the orange dots' distribution </p>
         <p className="project-description">
-        At the end of the day, we want to land theories in practice. In Fall 2023, we mainly worked on transforming plant data to be applicable for TDA, and then apply TDA on different species. The first step is to normalize the pointcloud so that all point data from different species will be relatively the same size. We implemented procrustes, an algorithm that scales the translates the points toward the origin. Then coming to the choice of which TDA to apply, we noticed that the plant data is horizontally longer. As they are not stacking tall enough to be regular, we observe periods of 30 to 50 for a pointcloud of around 80 points, which means that if we apply TDA based on periodicity, we might end up with only 2 points to look at, so the 1st variation of TDA is abandoned. Delaunay Triangulation, on the other hand, was easy to implement and record its measurement. So the challenge is to apply TDA from megatile.
+         At the end of the day, we want to land theories in practice. In Fall 2023, we mainly worked on transforming plant data to be applicable for TDA, and then apply TDA on different species. The first step is to normalize the pointcloud so that all point data from different species will be relatively the same size. We implemented procrustes, an algorithm that scales the translates the points toward the origin. Then coming to the choice of which TDA to apply, we noticed that the plant data is horizontally longer. As they are not stacking tall enough to be regular, we observe periods of 30 to 50 for a pointcloud of around 80 points, which means that if we apply TDA based on periodicity, we might end up with only 2 points to look at, so the 1st variation of TDA is abandoned. Delaunay Triangulation, on the other hand, was easy to implement and record its measurement. So the challenge is to apply TDA from megatile.
         </p><p className="project-description">
           To implement TDA from megatile, we need to find a period of points that best conclude the whole geometry. However, as the plant points are not as ideal and regular, the choice of the period of points is arbitrary and might vary from plant to plant. Thus, we redesigned the megatile generation to create a mega-megatile. We will look at every period of points from the model, roughly 7-8, record all the up and down vectors from the model, and then build the power set of all_up_vectors * all_down_vectors. This mega-megatile preserves all the geometric relationships between points in a period, and thus conclude the plant model geneogically.
         </p><p className="project-description">
@@ -84,7 +105,7 @@ const Phyllo = () => {
         </p>
         <p className="project-subdescription">This part does not include TDA on real species.</p>
         <p className="project-description">
-        Phyllotaxis is the arrangement of plant organs on a stem. Frequently, these organs are arranged into spirals; the numbers of spirals in each direction are often two consecutive Fibonacci numbers. However, some plants display similar numbers of spirals in each direction. Stephane Douady coined the term “quasi-symmetric” to describe this. The goal of our research is to statistically distinguish quasi-symmetric from Fibonacci phyllotaxis, and determine which conditions prompt the formation of each. Throughout, we use the geometric tool of primordia fronts, which gives a local count of spirals.
+          Phyllotaxis is the arrangement of plant organs on a stem. Frequently, these organs are arranged into spirals; the numbers of spirals in each direction are often two consecutive Fibonacci numbers. However, some plants display similar numbers of spirals in each direction. Stephane Douady coined the term “quasi-symmetric” to describe this. The goal of our research is to statistically distinguish quasi-symmetric from Fibonacci phyllotaxis, and determine which conditions prompt the formation of each. Throughout, we use the geometric tool of primordia fronts, which gives a local count of spirals.
         </p><p className="project-description">
           During SURF, I worked on a Python program that simulates phyllotactic pattern growth, built by previous students and was based on programs generated by Professor Christophe Golé. The program generates disks to a cylinder’s surface without overlap, providing numerical and visual simulations of how the system stabilizes into periodic rhombic tiling structures.
         </p><p className="project-description">
