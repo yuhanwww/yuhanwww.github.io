@@ -1,6 +1,6 @@
 import React from 'react';
 import './intro.css';
-import scrollIcon from '../../assets/icons/cvIcon.svg';
+// import scrollIcon from '../../assets/icons/cvIcon.svg';
 
 const IntroData = () => {
   return (

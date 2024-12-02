@@ -6,6 +6,7 @@ import logo from '../../assets/icons/logo.png';
 import { HashLink } from "react-router-hash-link";
 
 const NavBar = () => {
+    /* ===== Active Section ===== */
     const [activeSection, setActiveSection] = useState('intro');
     const location = useLocation();
 
@@ -37,6 +38,9 @@ const NavBar = () => {
             window.removeEventListener('scroll', handleScroll);
             };
         }, []);
+
+    /* ===== Toggle Menu ===== */
+    const [Toggle, showMenu] = useState(false);
         
     return (
         <header className="navbar">
@@ -45,42 +49,44 @@ const NavBar = () => {
                     <img src={logo} alt="YW" className="nav_logo-img" />
                 </a>
 
-                <div className= "nav_menu">
+                <div className= {Toggle ? "nav_menu show-menu" : "nav_menu"}>
                     <ul className="nav_list grid">
                         <li className="nav_item">
                             <HashLink
-                                sx={{ display: 'flex', alignItems: 'center'   }}
                                 className={`nav_link ${activeSection === 'intro' && location.pathname === '/' ? 'active-link' : ''}`}
                                 to="/"
                                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                                <i className="uil uil-user nav_icon"></i>
                                 Home
                             </HashLink>
                         </li>
 
                         <li className="nav_item">
                             <HashLink
-                                sx={{ display: 'flex', alignItems: 'center'   }}
                                 className={`nav_link ${activeSection === 'project' ? 'active-link' : ''}`}
                                 to="/#project">
-                                <i className="uil uil-user nav_icon"></i>
                                 Project
                             </HashLink>
                         </li>
 
                         <li className="nav_item">
                             <HashLink
-                                sx={{ display: 'flex', alignItems: 'center'   }}
                                 className={`nav_link ${activeSection === 'artwork' ? 'active-link' : ''}`}
                                 to="/#artwork">
-                                <i className="uil uil-user nav_icon"></i>
                                 Artwork
                             </HashLink>
                         </li>
 
                     </ul>
+
+                    <i 
+                        className="uil uil-times nav_close" 
+                        onClick={ () => showMenu(!Toggle)}
+                    ></i>
                 </div>
 
+            <div className="nav_toggle" onClick={ () => showMenu(!Toggle)}>
+                <i className="uil uil-apps"></i>
+            </div>
             </nav>
         </header>
     )
