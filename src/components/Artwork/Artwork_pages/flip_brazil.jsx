@@ -40,7 +40,7 @@ const FlipBrazil = () => {
           This work is meant to be a projected installaion. 
           Audience would "touch" the images and "flip" them, which would reveal a different perspective you could view Brasil.
           As more photos are flipped to the hidden side, the original text turns dark and a reflection of the text as “Brasil” appears. 
-          <br/><br/>
+          <br/>
         </p>
         <hr className="artwork_page-line" />
         <br/>
