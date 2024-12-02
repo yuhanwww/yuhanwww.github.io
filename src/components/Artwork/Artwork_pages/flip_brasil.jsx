@@ -4,8 +4,8 @@ import ArtworkSlider from './artwork_slider';
 
 import interaction from '../../../assets/artworks/flip_brasil/interaction.JPG';
 import flip_brasil from '../../../assets/artworks/flip_brasil/flip_brasil.png';
+import fb_initial from '../../../assets/artworks/flip_brasil/fb_initial.png';
 import fb_start from '../../../assets/artworks/flip_brasil/fb_start.png';
-import fb_before from '../../../assets/artworks/flip_brasil/fb_before.png';
 import fb_during from '../../../assets/artworks/flip_brasil/fb_during.png';
 import fb_almost from '../../../assets/artworks/flip_brasil/fb_almost.png';
 import fb_flipped from '../../../assets/artworks/flip_brasil/fb_flipped.png';
@@ -14,7 +14,7 @@ const FlipBrasil = () => {
   const flip_brasil_images = [
     { src: flip_brasil, alt: "Flip Brasil Projection", description: "Flip Brasil projected on the wall" },
     { src: interaction, alt: "Flip Brasil Installation", description: "Using hand to flip the image" },
-    { src: fb_before, alt: "Flip Brasil Initial Display", description: "Initial Display with Brazil vital scenes" },
+    { src: fb_initial, alt: "Flip Brasil Initial Display", description: "Initial Display with Brazil vital scenes" },
     { src: fb_start, alt: "One image flipped, drop shadow of 'Brasil' appears", description: "As images are flipped showing the other side of Brazil, drop shadow of 'Brasil' appears" },
     { src: fb_during, alt: "Half images flipped, original 'Brazil' fades", description: "More images are flipped, and 'Brasil' start to be more apparent" },
     { src: fb_almost, alt: "Most images flipped, 'Brasil' starts to take over", description: "Most images are flipped, and we see 'Brasil' more clearly" },
