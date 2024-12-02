@@ -166,6 +166,7 @@
         grid-template-columns: 0.5fr 3fr;
         justify-self: center;
         padding: 0 auto;
+        margin-left: 2rem;
     }
 
     .intro_img{
