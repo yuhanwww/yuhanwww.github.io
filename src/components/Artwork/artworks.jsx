@@ -1,7 +1,7 @@
 import React from 'react';
 import './artworks.css';
 
-import flip_brasil from "../../assets/artworks/flip_brasil/flip_brasil.png";
+import flip_brazil from "../../assets/artworks/flip_brasil/flip_brazil.png";
 import ingo_shredder from "../../assets/artworks/info_shredder/working.png";
 import stupid_ml from "../../assets/artworks/stupid_ml/stupid_ml.png";
 import you_are_programmed from "../../assets/artworks/you_are_programmed/programmed.PNG";
@@ -14,11 +14,11 @@ import campus_map from "../../assets/artworks/campus_map/campus_map.png";
 const Artwork_Data = [
     {
         id: 8,
-        image: flip_brasil,
-        alt: "flipBrasil",
-        title: "Flip Brasil",
+        image: flip_brazil,
+        alt: "flipBrazil",
+        title: "Flip Brazil",
         description: "An interactive installation based on 10 day experience of Brasil art and culture",
-        link: "#/artwork/flip_brasil",
+        link: "#/artwork/flip_brazil",
     },
 
     {
