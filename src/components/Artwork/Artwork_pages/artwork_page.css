@@ -32,8 +32,10 @@
 }
 
 .slick-slide img{
+    width: 60vw;
     max-width: 982px;
     max-height: 60vh;
+    object-fit: contain;
     margin: 0 auto;
 }
 
