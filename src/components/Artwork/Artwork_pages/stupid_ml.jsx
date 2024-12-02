@@ -1,35 +1,34 @@
 import React from 'react';
-
 import './artwork_page.css';
 import ArtworkSlider from './artwork_slider';
+import Iframe from 'react-iframe';
 
-import example from '../../../assets/artworks/you_are_programmed/example.PNG';
-import final from '../../../assets/artworks/you_are_programmed/final.PNG';
-import r1 from '../../../assets/artworks/you_are_programmed/r1.PNG';
-import r2 from '../../../assets/artworks/you_are_programmed/r2.PNG';
-import programmed from '../../../assets/artworks/you_are_programmed/programmed.PNG';
-import rule from '../../../assets/artworks/you_are_programmed/rule.PNG';
+import stupid_ml from '../../../assets/artworks/stupid_ml/stupid_ml.png';
+import sml_start from '../../../assets/artworks/stupid_ml/sml_start.png';
+import sml_rule from '../../../assets/artworks/stupid_ml/sml_rule.png';
+import sml_input from '../../../assets/artworks/stupid_ml/sml_input.png';
+import sml_almost from '../../../assets/artworks/stupid_ml/sml_almost.png';
+import sml_end from '../../../assets/artworks/stupid_ml/sml_end.png';
 
-const YouAreProgrammed = () => {
-  
-  const you_are_programmed_images = [
-    { src: programmed, alt: "You are programmed interface", description: "You are programmed page, triggered by users' predicted action." },
-    { src: rule, alt: "Rule", description: "Rule of the game: users need to put 5 fingers on the screen under certain instructions" },
-    { src: example, alt: "Rule page for users to put 5 fingers on the screen", description: "Accomodation page for users to try putting 5 fingers on the screen" },
-    { src: r1, alt: "Screen going dark", description: "Round 1, users need to put 5 fingers on the screen when they see a blue triangle. " },
-    { src: r2, alt: "No action page", description: "Round 2, users need to put 5 fingers on the screen when they see the description coincides with the shape." },
-    { src: final, alt: "Final phase", description: "Final page to maybe help ease users' paranoid about being programmed. " },
+const StupidML = () => {
+  const stupid_ml_images = [
+    { src: stupid_ml, alt: "Stupid Machine Learning being played", description: "Stupid Machine Learning in campus exhibition -- someone stopped at training count 14" },
+    { src: sml_rule, alt: "Introduction to Stupid Machine Learning", description: "Introduction to Stupid Machine Learning" },
+    { src: sml_start, alt: "Initial interface with a 'brain' of the computer, an option to ask an answer from the computer, and to train the computer through a 'cyan' button", description: "Initial interface with a wordcloud, an ask button, and a train button" },
+    { src: sml_input, alt: "Initial interface but with option to type in for training after round 5", description: "After 5 rounds of training, the option to type in answers to train the computer appears." },
+    { src: sml_almost, alt: "Interface after 8 rounds of training", description: "Some 'BLACK' appears in the brain after 8 rounds of training" },
+    { src: sml_end, alt: "Training ends as the computer gets the right answer", description: "Training ends when the computer gets the right answer. A final 'dataset' is shown." },
   ];
 
   return (
     <section className="artwork_page section">
-      <h2 className="section_title artwork_page-header">You Are Programmed.</h2>
-      <span className="section_subtitle artwork_page-header">You are programmed. Unfortunately? Fortunately?</span>
+      <h2 className="section_title artwork_page-header">Stupid Machine Learning</h2>
+      <span className="section_subtitle artwork_page-header">Do you know how AI works? Learn AI through this work.</span>
       
       {/* Image Gallery */}
       <div className="artwork_page-gallery">
         <ArtworkSlider
-          images={you_are_programmed_images}
+          images={stupid_ml_images}
         />
       </div>
       <br/>
@@ -38,17 +37,21 @@ const YouAreProgrammed = () => {
         <p className="artwork_page-description">
           In the <i>Interactive Digital Multimedia</i> course, I created 3 artworks exploring how technology shapes human behavior, perception, and self-concept.  
           <br/><br/>
-          <i>The Game</i> is the 2nd piece, which leads the users to notice unconscious habits people have when interacting with phone.
+          <i> Stupid Machine Learning</i> is the 1st piece. 
+          Considering how many people use AI tools without knowing their mechanism, this work ask users to train an AI by fixing a biased dataset, which explains the behind-the-scenes of AI in a gamified, approachable way.
         </p>
         <hr className="artwork_page-line" />
         <br/>
         <p className="artwork_page-description" style={{textAlign:"center"}}>
-        <a target="_blank" rel="noopener noreferrer" href="https://editor.p5js.org/ywang70/full/wJNTF-Hiw">Link to <i>You are programmed.</i> (recommended for phone use)</a>
+        {/* <a target="_blank" rel="noopener noreferrer" href="https://editor.p5js.org/ywang70/full/xWfxB3nz_">Link to <i>Stupid Machine Learning</i></a> */}
         </p>
-        <p className="artwork_page-subdescription">
-          To play with this piece, I recommend pulling up this link with phone. 
-          Enjoy!
-        </p>
+        <Iframe url="https://editor.p5js.org/ywang70/full/xWfxB3nz_"
+          width="400"
+          height="600"
+          id=""
+          className=""
+          display="block"
+          position="center"/>
         <hr className="artwork_page-line" />
         {/* <img src={example} alt="Lina Bo Bardi's & Anna Bella Beiger's works" className="artwork_page-image" />
         <br/><br/>
@@ -84,4 +87,4 @@ const YouAreProgrammed = () => {
   )
 }
 
-export default YouAreProgrammed;
+export default StupidML;

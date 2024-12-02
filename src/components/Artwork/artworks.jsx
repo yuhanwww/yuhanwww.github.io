@@ -31,21 +31,21 @@ const Artwork_Data = [
     },
 
     {
-        id: 6,
-        image: stupid_ml,
-        alt: "Stupid Machine Learning Interface",
-        title: "Stupid Machine Learning",
-        description: "A digital program that asks users to train an AI by fixing a biased dataset",
-        link: "",
-    },
-
-    {
         id: 5,
         image: you_are_programmed,
         alt: "The Game Interface",
         title: "You are Programmed.",
         description: "A phone-based program that reflects on how phone shapes one's actions",
         link: "#/artwork/you_are_programmed",
+    },
+
+    {
+        id: 6,
+        image: stupid_ml,
+        alt: "Stupid Machine Learning Interface",
+        title: "Stupid Machine Learning",
+        description: "A digital program that asks users to train an AI by fixing a biased dataset",
+        link: "#/artwork/stupid_ml",
     },
 
     {

@@ -20,6 +20,7 @@ import BoyMother from './components/Artwork/Artwork_pages/boy_mother';
 import NursesHaveHair from './components/Artwork/Artwork_pages/nurse_have_hair';
 import YouAreProgrammed from './components/Artwork/Artwork_pages/you_are_programmed';
 import FlipBrazil from './components/Artwork/Artwork_pages/flip_brazil';
+import StupidML from './components/Artwork/Artwork_pages/stupid_ml';
 
 import Homepage from './components/Homepage';
 import ScrollToTop from './components/scroll_to_top';
@@ -46,6 +47,7 @@ function App() {
         <Route path="/artwork/nurses_have_hair" element={<NursesHaveHair />} />
         <Route path="/artwork/you_are_programmed" element={<YouAreProgrammed />} />
         <Route path="/artwork/flip_brazil" element={<FlipBrazil />} />
+        <Route path="/artwork/stupid_ml" element={<StupidML />} />
 
       </Routes>
       <Footer />

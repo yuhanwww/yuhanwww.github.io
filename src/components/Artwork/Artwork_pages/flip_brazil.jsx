@@ -12,7 +12,7 @@ import fb_flipped from '../../../assets/artworks/flip_brazil/fb_flipped.png';
 import brazil_memory from '../../../assets/artworks/flip_brazil/brazil_memory.png';
 
 const FlipBrazil = () => {
-  const flip_brasil_images = [
+  const flip_brazil_images = [
     { src: flip_brazil, alt: "Flip Brasil Projection", description: "Flip Brasil projected on the wall" },
     { src: interaction, alt: "Flip Brasil Installation", description: "Using hand to flip the image" },
     { src: fb_initial, alt: "Flip Brasil Initial Display", description: "Initial Display with Brazil vital scenes" },
@@ -30,7 +30,7 @@ const FlipBrazil = () => {
       {/* Image Gallery */}
       <div className="artwork_page-gallery">
         <ArtworkSlider
-          images={flip_brasil_images}
+          images={flip_brazil_images}
         />
       </div>
       <br/>
@@ -45,8 +45,8 @@ const FlipBrazil = () => {
         <hr className="artwork_page-line" />
         <br/>
         <p className="artwork_page-description" style={{textAlign:"center"}}>
-        <a target="_blank" rel="noopener noreferrer" href="https://editor.p5js.org/ywang70/full/E6AS9n1kw">Link to Artwork (hand control version) </a>
-        <br/><a target="_blank" rel="noopener noreferrer" href="https://editor.p5js.org/ywang70/full/H76su7-Zv">Link to Artwork (mouse control version) </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://editor.p5js.org/ywang70/full/E6AS9n1kw">Link to <i>Flip Brazil</i>(hand control version) </a>
+        <br/><a target="_blank" rel="noopener noreferrer" href="https://editor.p5js.org/ywang70/full/H76su7-Zv">Link to <i>Flip Brazil</i>(mouse control version) </a>
         </p>
         <iframe 
           width="560" 
