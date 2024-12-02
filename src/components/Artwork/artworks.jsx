@@ -1,7 +1,7 @@
 import React from 'react';
 import './artworks.css';
 
-import flip_brazil from "../../assets/artworks/flip_brasil/flip_brazil.png";
+import flip_brazil from "../../assets/artworks/flip_brazil/flip_brazil.png";
 import ingo_shredder from "../../assets/artworks/info_shredder/working.png";
 import stupid_ml from "../../assets/artworks/stupid_ml/stupid_ml.png";
 import you_are_programmed from "../../assets/artworks/you_are_programmed/programmed.PNG";

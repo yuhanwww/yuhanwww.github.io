@@ -2,14 +2,14 @@ import React from 'react';
 import './artwork_page.css';
 import ArtworkSlider from './artwork_slider';
 
-import interaction from '../../../assets/artworks/flip_brasil/interaction.JPG';
-import flip_brazil from '../../../assets/artworks/flip_brasil/flip_brazil.png';
-import fb_initial from '../../../assets/artworks/flip_brasil/fb_initial.png';
-import fb_start from '../../../assets/artworks/flip_brasil/fb_start.png';
-import fb_during from '../../../assets/artworks/flip_brasil/fb_during.png';
-import fb_almost from '../../../assets/artworks/flip_brasil/fb_almost.png';
-import fb_flipped from '../../../assets/artworks/flip_brasil/fb_flipped.png';
-import brazil_memory from '../../../assets/artworks/flip_brasil/brazil_memory.png';
+import interaction from '../../../assets/artworks/flip_brazil/interaction.JPG';
+import flip_brazil from '../../../assets/artworks/flip_brazil/flip_brazil.png';
+import fb_initial from '../../../assets/artworks/flip_brazil/fb_initial.png';
+import fb_start from '../../../assets/artworks/flip_brazil/fb_start.png';
+import fb_during from '../../../assets/artworks/flip_brazil/fb_during.png';
+import fb_almost from '../../../assets/artworks/flip_brazil/fb_almost.png';
+import fb_flipped from '../../../assets/artworks/flip_brazil/fb_flipped.png';
+import brazil_memory from '../../../assets/artworks/flip_brazil/brazil_memory.png';
 
 const FlipBrazil = () => {
   const flip_brasil_images = [
