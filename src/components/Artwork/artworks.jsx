@@ -1,7 +1,7 @@
 import React from 'react';
 import './artworks.css';
 
-import flip_brasil from "../../assets/artworks/flip_brasil/flipBrasil.png";
+import flip_brasil from "../../assets/artworks/flip_brasil/flip_brasil.png";
 import ingo_shredder from "../../assets/artworks/info_shredder/working.png";
 import stupid_ml from "../../assets/artworks/stupid_ml/stupid_ml.png";
 import you_are_programmed from "../../assets/artworks/you_are_programmed/programmed.PNG";
@@ -18,7 +18,7 @@ const Artwork_Data = [
         alt: "flipBrasil",
         title: "Flip Brasil",
         description: "An interactive installation based on 10 day experience of Brasil art and culture",
-        link: "",
+        link: "#/artwork/flip_brasil",
     },
 
     {

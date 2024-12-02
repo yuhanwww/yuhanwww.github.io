@@ -16,7 +16,7 @@ const IntroDescription = () => {
       <p className="intro-description"><i>
         How does the way we view art differ from the way we view data visualization? 
         How do we alter the way we present information, from scientific data to artworks, to ease, engage, and enrich interpretations? 
-        How is the way we interact with technology evolving and being changed by new inventions and systems?
+        How are new paradigms reshaping our interactions with art and technology?
       </i></p>
       <br/>
       <p className="intro-description">

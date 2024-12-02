@@ -63,7 +63,7 @@
 }
   
 .gallery-image-description {
-    margin-top: 10px;
+    margin: 12px auto 3px auto;
     font-size: 14px;
     color: var(--text-color);
 }

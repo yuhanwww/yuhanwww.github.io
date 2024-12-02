@@ -61,7 +61,7 @@ const YuhansMap = () => {
         <img src={inspiration} alt="Lina Bo Bardi's & Anna Bella Beiger's works" className="artwork_page-image" />
         <br/><br/>
         <p className="artwork_page-description">
-          After the course, I was fortunate to participate in the <i>Global FLEX Program</i> to visit Brazil and appreciate many artworks we've learned in person, where I received a community / family. See <a href="/">here</a> for another work reflection on the trip.
+          After the course, I was fortunate to participate in the <i>Global FLEX Program</i> to visit Brazil and appreciate many artworks we've learned in person, where I received a community / family. See <a href="#/artwork/flip_brasil">here</a> for another work reflection on the trip.
         </p>
 
 

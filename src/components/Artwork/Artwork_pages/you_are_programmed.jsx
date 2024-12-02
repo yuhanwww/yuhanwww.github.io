@@ -9,24 +9,22 @@ import r1 from '../../../assets/artworks/you_are_programmed/r1.PNG';
 import r2 from '../../../assets/artworks/you_are_programmed/r2.PNG';
 import programmed from '../../../assets/artworks/you_are_programmed/programmed.PNG';
 import rule from '../../../assets/artworks/you_are_programmed/rule.PNG';
-import start from '../../../assets/artworks/you_are_programmed/start.PNG';
 
 const YouAreProgrammed = () => {
   
   const you_are_programmed_images = [
-    { src: programmed, alt: "Self Writing Whole", description: "Self Writing in its whole form" },
-    { src: r1, alt: "Self Writing Whole", description: "Self Writing in its whole form" },
-    { src: r2, alt: "Self Writing Whole", description: "Self Writing in its whole form" },
-    { src: example, alt: "Self Writing Whole", description: "Self Writing in its whole form" },
-    { src: rule, alt: "Self Writing Whole", description: "Self Writing in its whole form" },
-    { src: start, alt: "Self Writing Whole", description: "Self Writing in its whole form" },
-    { src: final, alt: "Self Writing Whole", description: "Self Writing in its whole form" },
+    { src: programmed, alt: "You are programmed interface", description: "You are programmed page, triggered by users' predicted action." },
+    { src: rule, alt: "Rule", description: "Rule of the game: users need to put 5 fingers on the screen under certain instructions" },
+    { src: example, alt: "Rule page for users to put 5 fingers on the screen", description: "Accomodation page for users to try putting 5 fingers on the screen" },
+    { src: r1, alt: "Screen going dark", description: "Round 1, users need to put 5 fingers on the screen when they see a blue triangle. " },
+    { src: r2, alt: "No action page", description: "Round 2, users need to put 5 fingers on the screen when they see the description coincides with the shape." },
+    { src: final, alt: "Final phase", description: "Final page to maybe help ease users' paranoid about being programmed. " },
   ];
 
   return (
     <section className="artwork_page section">
       <h2 className="section_title artwork_page-header">You Are Programmed.</h2>
-      <span className="section_subtitle artwork_page-header">You are programmed. Fortunately? Unfortunately?</span>
+      <span className="section_subtitle artwork_page-header">You are programmed. Fortunate of Unfortunate?</span>
       
       {/* Image Gallery */}
       <div className="artwork_page-gallery">
