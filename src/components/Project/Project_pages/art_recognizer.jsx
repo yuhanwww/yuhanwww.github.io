@@ -16,7 +16,7 @@ const ArtRecognizer = () => {
   return (
     <section className="project section">
       <h2 className="section_title project-header">Mystery Art Recognizer</h2>
-      <span className="section_subtitle project-header">Final Project for MTH 353 Deep Learning Seminar & ARH 212 Ancient Cities & Sanctuaries</span>
+      <span className="section_subtitle project-header">A Machine Learning Model to Recognize Artworks -- Final Project for MTH 353 Deep Learning Seminar & ARH 212 Ancient Cities & Sanctuaries</span>
       <img src={sample_from_data} alt="TDA on Phyllotaxis Poster" className="project_title-image" />
       <span className="project-content">
 

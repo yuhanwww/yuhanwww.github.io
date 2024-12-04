@@ -1,7 +1,5 @@
 import './project_page.css';
-import ReactEmbedGist from 'react-embed-gist';
 
-import arrow from '../../../assets/icons/arrow.svg';
 import conf_mtx_wordcloud from '../../../assets/projects/bttai/conf_mtx_wordcloud.png';
 import approach from '../../../assets/projects/bttai/approach.png';
 import two_model_comparison from '../../../assets/projects/bttai/2model_comparison.png';

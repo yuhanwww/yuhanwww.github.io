@@ -12,6 +12,7 @@ import Thesis from './components/Project/Project_pages/thesis';
 import Phyllo from './components/Project/Project_pages/phyllo';
 import ArtRecognizer from './components/Project/Project_pages/art_recognizer';
 import BTTAI from './components/Project/Project_pages/btt_ai_mit';
+import HCI from './components/Project/Project_pages/hci';
 
 import YuhansMap from './components/Artwork/Artwork_pages/yuhans_map';
 import SelfWriting from './components/Artwork/Artwork_pages/self_writing';
@@ -39,6 +40,7 @@ function App() {
         <Route path="/project/phyllo" element={<Phyllo />} />
         <Route path="/project/art_recognizer" element={<ArtRecognizer />} />
         <Route path="/project/btt_ai_mit" element={<BTTAI />} />
+        <Route path="/project/hci" element={<HCI />} />
 
         {/* ===Artwork Pages=== */}
         <Route path="/artwork/yuhans_map" element={<YuhansMap />} />

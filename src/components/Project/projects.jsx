@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './projects.css';
 
 import ai_poster from '../../assets/projects/thesis/ai_poster.png';
-import wechat_prototype from '../../assets/projects/HCI/wechat_prototype.png'
+import interfaces from '../../assets/projects/hci/interfaces.png';
 import dinoWorld from '../../assets/projects/visualAnalytics/dinoWorld.png'
 import guerilla_girl from '../../assets/projects/guerillaAI/guerilla_girl.jpg'
 import hexagons from '../../assets/projects/phyllotaxis/hexagons.png';
@@ -33,14 +33,15 @@ const Data = [
     //     category:["Visualization"],
     // },
 
-    // {
-    //     id: 8,
-    //     image: wechat_prototype,
-    //     alt: "JAYC App Front Page",
-    //     title: "JAYC App for international community",
-    //     description: "Final Project for CS 325 HCI",
-    //     category:["HCI"],
-    // },
+    {
+        id: 8,
+        image: interfaces,
+        alt: "InterNest App Interfaces",
+        title: "InterNest",
+        description: "An App Prototype for Internatioanl Community -- Final Project for CS 325 Human-Computer Interaction",
+        category:["HCI"],
+        link:"#/project/hci"
+    },
 
     {
         id: 7,
@@ -67,7 +68,7 @@ const Data = [
         image: artRecognizer,
         alt: "Artwork Matrix",
         title: "Mystery Art Recognizer",
-        description: "Final Project for MTH 353 Deep Learning Seminar & ARH 212 Ancient Cities & Sanctuaries",
+        description: "A Machine Learning Model to Recognize Artworks -- Final Project for MTH 353 Deep Learning Seminar & ARH 212 Ancient Cities & Sanctuaries",
         category:["Machine Learning","Art History"],
         link: '#/project/art_recognizer',
     },
