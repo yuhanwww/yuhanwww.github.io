@@ -172,6 +172,15 @@ b{
   padding-left: 1.5rem;
 } 
 
+.row{
+  display: flex;
+}
+
+.column{
+  flex: 40%;
+  align-self: center;
+}
+
 /* BUTTONS */
 .button {
   display: inline-block;

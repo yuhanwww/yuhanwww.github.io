@@ -9,6 +9,7 @@ import r1 from '../../../assets/artworks/you_are_programmed/r1.PNG';
 import r2 from '../../../assets/artworks/you_are_programmed/r2.PNG';
 import programmed from '../../../assets/artworks/you_are_programmed/programmed.PNG';
 import rule from '../../../assets/artworks/you_are_programmed/rule.PNG';
+import yrp_qr from '../../../assets/artworks/you_are_programmed/yrp_qr_code.png';
 
 const YouAreProgrammed = () => {
   
@@ -42,13 +43,19 @@ const YouAreProgrammed = () => {
         </p>
         <hr className="artwork_page-line" />
         <br/>
-        <p className="artwork_page-description" style={{textAlign:"center"}}>
-        <a target="_blank" rel="noopener noreferrer" href="https://editor.p5js.org/ywang70/full/wJNTF-Hiw">Link to <i>You are programmed.</i> (recommended for phone use)</a>
-        </p>
-        <p className="artwork_page-subdescription">
-          To play with this piece, I recommend pulling up this link with phone. 
-          Enjoy!
-        </p>
+        <div class="row">
+          <div class="column">
+            <img src={yrp_qr} alt="Lina Bo Bardi's & Anna Bella Beiger's works" className="artwork_page-image-qr"/>
+          </div>
+          <div class="column">
+            <p className="artwork_page-description">
+              <a target="_blank" rel="noopener noreferrer" href="https://editor.p5js.org/ywang70/full/wJNTF-Hiw">
+                Link to <i>You are programmed.</i> 
+                <br/>(recommended experience on mobile device)
+              </a>
+            </p>
+          </div>
+        </div>
         <hr className="artwork_page-line" />
         {/* <img src={example} alt="Lina Bo Bardi's & Anna Bella Beiger's works" className="artwork_page-image" />
         <br/><br/>
