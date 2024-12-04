@@ -21,6 +21,7 @@ import NursesHaveHair from './components/Artwork/Artwork_pages/nurse_have_hair';
 import YouAreProgrammed from './components/Artwork/Artwork_pages/you_are_programmed';
 import FlipBrazil from './components/Artwork/Artwork_pages/flip_brazil';
 import StupidML from './components/Artwork/Artwork_pages/stupid_ml';
+import InfoShredder from './components/Artwork/Artwork_pages/info_shredder';
 
 import Homepage from './components/Homepage';
 import ScrollToTop from './components/scroll_to_top';
@@ -48,6 +49,7 @@ function App() {
         <Route path="/artwork/you_are_programmed" element={<YouAreProgrammed />} />
         <Route path="/artwork/flip_brazil" element={<FlipBrazil />} />
         <Route path="/artwork/stupid_ml" element={<StupidML />} />
+        <Route path="/artwork/info_shredder" element={<InfoShredder />} />
 
       </Routes>
       <Footer />

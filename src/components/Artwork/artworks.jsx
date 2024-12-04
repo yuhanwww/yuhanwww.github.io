@@ -24,10 +24,10 @@ const Artwork_Data = [
     {
         id: 7,
         image: ingo_shredder,
-        alt: "infoShredder interface",
-        title: "Information Destruction",
+        alt: "info Destruction interface",
+        title: "Information Shredder",
         description: "A mixed-media installation that shreds information physically & ritually",
-        link: "",
+        link: "#/artwork/info_shredder",
     },
 
     {
