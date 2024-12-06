@@ -6,7 +6,7 @@ import ArtworkSlider from './artwork_slider';
 import example from '../../../assets/artworks/you_are_programmed/example.PNG';
 import final from '../../../assets/artworks/you_are_programmed/final.PNG';
 import r1 from '../../../assets/artworks/you_are_programmed/r1.PNG';
-import r2 from '../../../assets/artworks/you_are_programmed/r2.png';
+import r2 from '../../../assets/artworks/you_are_programmed/r2.PNG';
 import r3 from '../../../assets/artworks/you_are_programmed/r3.png';
 import programmed from '../../../assets/artworks/you_are_programmed/programmed.PNG';
 import rule from '../../../assets/artworks/you_are_programmed/rule.PNG';
