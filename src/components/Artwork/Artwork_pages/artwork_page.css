@@ -149,6 +149,14 @@
     margin: 0 auto; 
 }
 
+.artwork_page-embed-p5 {
+    /* max-width: 50vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+  }
+
 @media screen and (max-width: 768px) {
     .artwork_page-gif {
         max-width: 25vw; 

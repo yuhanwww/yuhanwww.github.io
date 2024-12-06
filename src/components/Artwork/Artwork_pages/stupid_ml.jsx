@@ -34,6 +34,8 @@ const StupidML = () => {
       <br/>
       
       <span className="artwork_page-content">
+        
+        {/* =========== Intro ============*/}
         <p className="artwork_page-description">
           In the <i>Interactive Digital Multimedia</i> course, I created 3 artworks exploring how technology shapes human behavior, perception, and self-concept.  
           <br/><br/>
@@ -41,44 +43,31 @@ const StupidML = () => {
           Considering how many people use AI tools without knowing their mechanism, this work ask users to train an AI by fixing a biased dataset, which explains the behind-the-scenes of AI in a gamified, approachable way.
         </p>
         <hr className="artwork_page-line" />
+
+        {/* =========== Display ============*/}
         <br/>
         <p className="artwork_page-description" style={{textAlign:"center"}}>
         {/* <a target="_blank" rel="noopener noreferrer" href="https://editor.p5js.org/ywang70/full/xWfxB3nz_">Link to <i>Stupid Machine Learning</i></a> */}
         </p>
         <Iframe url="https://editor.p5js.org/ywang70/full/xWfxB3nz_"
           width="400"
-          height="600"
-          id=""
-          className=""
-          display="block"
-          position="center"/>
+          height="650"
+          className='artwork_page-embed-p5'/>
+        <br/>
+        <br/>
         <hr className="artwork_page-line" />
-        {/* <img src={example} alt="Lina Bo Bardi's & Anna Bella Beiger's works" className="artwork_page-image" />
-        <br/><br/>
-        <p className="artwork_page-description">
-          Resembling this idea, here, I played with the shape of Chinese characters by filling them with English. So how does it work?
-        </p>
-        <hr className="artwork_page-line" />
-        <p className="artwork_page-description">
-        <div className="textIndent"><br/> 1. Listen to songs by <i>Chen Li 陈粒</i>-- a singer that really speaks to me.</div>
-        <div className="textIndent"> 2. When listening to her song, randomly pick a word form the current line and write them down in calligraphy in a formal, traditional way.</div>
-        <div className="textIndent"> 3. Do so until the whole page is filled. </div>
-        <div className="textIndent"> 4. *Interesting Part* Cover the calligraphy with a semi-transparent paper, read the word, make meaning of it, and write what I think about in English. </div>
-        <div className="textIndent"> 5. Continue writing in English, cover the whole Chinese character by filling in small words in English.</div>
-        </p>
-        <hr className="artwork_page-line" />
+
+        {/* =========== Explanation ============*/}
         <br/>
         <p className="artwork_page-description">
-          Multiple layers of personal meaning and reflection were thus presented: my handwriting in Chinese & English; words from songs that I echo with; 
-          my thoughts on the words; writing, rewriting, and overwriting my thoughts.
+          In my junior year, I was emerged in Machine Learning(ML), in <a href="#/project/btt_ai_mit">Break Through Tech AI</a> program, in <a href="#/project/art_recognizer">Mathematics of Deep Learning</a> course, and in <i>Computer Vision</i> course. 
+          I felt lucky to know AI in depth when AI is prevailing, but at the same time I felt powerless. 
+          The amount of time I spent learning AI is huge, but the extent I know about it is tiny. 
+          It's developing crazily. 
+          At a certain moment, I just thought, <i>'AI is SO stupid.' </i>  
+          I decided to do this project because, at the very bottom basic level, AI or ML is 'randomly' picking answers from a dataset. 
+          Realizing this fact might help ease some's fear of AI, maybe help demystify a bit about AI. 
         </p>
-        <p className="artwork_page-description">
-          It's a beautiful piece, as the Chinese orange characters are like drop down shadows.
-        </p>
-        <p className="artwork_page-description">
-          I love the process of writing and freely manipulating the strokes in different shapes for aesthetic appearances. Writing is also very de-stressing. 
-          I guess part of the reason why I chose Art History + CS is that I really can't give up the sentimental part of myself, doing things with hands, appreciating things.
-        </p> */}
 
 
       </span>
