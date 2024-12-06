@@ -180,7 +180,7 @@ b{
 }
 
 .column{
-  /* flex: 40%; */
+  flex: 40%;
   align-self: center;
 }
 
