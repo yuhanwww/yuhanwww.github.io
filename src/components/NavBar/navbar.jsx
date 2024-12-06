@@ -76,13 +76,13 @@ const NavBar = () => {
                             </HashLink>
                         </li>
 
-                        <li className="nav_item">
+                        {/* <li className="nav_item">
                             <HashLink
-                                className={`nav_link ${activeSection === 'gallery' ? 'active-link' : ''}`}
+                                className={`nav_link ${location.pathname === '/gallery' ? 'active-link' : ''}`}
                                 to="/gallery">
                                 Gallery
                             </HashLink>
-                        </li>
+                        </li> */}
 
                     </ul>
 
