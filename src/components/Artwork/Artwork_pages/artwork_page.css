@@ -140,3 +140,23 @@
 .quote{
     font-family: var(--subtitle-font);
 }
+
+.artwork_page-gif {
+    max-width: 17vw; 
+    width: 100%; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+}
+
+@media screen and (max-width: 768px) {
+    .artwork_page-gif {
+        max-width: 25vw; 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .artwork_page-gif {
+        max-width: 40vw; 
+    }
+}
