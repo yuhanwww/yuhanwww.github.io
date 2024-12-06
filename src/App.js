@@ -26,6 +26,7 @@ import InfoShredder from './components/Artwork/Artwork_pages/info_shredder';
 
 import Homepage from './components/Homepage';
 import ScrollToTop from './components/scroll_to_top';
+import Gallery from './components/Gallery/gallery';
 
 function App() {
   return (
@@ -52,6 +53,8 @@ function App() {
         <Route path="/artwork/flip_brazil" element={<FlipBrazil />} />
         <Route path="/artwork/stupid_ml" element={<StupidML />} />
         <Route path="/artwork/info_shredder" element={<InfoShredder />} />
+
+        <Route path="/gallery" element={<Gallery />} />
 
       </Routes>
       <Footer />
