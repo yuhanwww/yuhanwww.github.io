@@ -56,6 +56,9 @@ const ArtworkSlider = ({ images }) => {
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    cssEase: "linear",
   };
 
   return (
