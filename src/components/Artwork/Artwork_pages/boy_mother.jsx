@@ -24,7 +24,7 @@ const BoyMother = () => {
     { src: bm2_boy_front, alt: "Boy running with painful frowns", description: "Boy running with painful frowns" },
     { src: boymother2, alt: "Boy running with painful frowns Process Collage", description: "Boy Running from His Mother's Talon Process Snippets" },
     { src: bm1_front, alt: "Boy Running from Mother version 1", description: "Boy Running from Mother Version 1" },
-    { src: bm1_top, alt: "Boy Running from Mother version 1 Top View", description: "Boy Running from Mother Version 1 Top View" },
+    // { src: bm1_top, alt: "Boy Running from Mother version 1 Top View", description: "Boy Running from Mother Version 1 Top View" },
     { src: boymother1, alt: "Boy Running from Mother version 1 detail collage", description: "Boy Running from Mother Version 1 Detail Snippets" },
   ];
 
