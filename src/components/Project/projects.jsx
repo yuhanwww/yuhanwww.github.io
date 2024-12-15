@@ -113,15 +113,6 @@ const Data = [
     //     link: '',
     // },
 
-    // {
-    //     id: 0,
-    //     image: phyllotaxis,
-    //     alt: "Health App Wireframe",
-    //     title: "Campus Mental Health App",
-    //     description:"A Mental Health App Prototype for EGR 100 Topics in Health",
-    //     category:["Prototype","HCI"],
-    // },
-
 ];
 
 

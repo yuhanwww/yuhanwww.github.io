@@ -1,5 +1,4 @@
 import React from 'react';
-import Iframe from 'react-iframe';
 
 import key_features from '../../../assets/projects/hci/key_features.png';
 import interfaces from '../../../assets/projects/hci/interfaces.png';

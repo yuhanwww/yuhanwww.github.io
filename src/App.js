@@ -26,6 +26,7 @@ import Homepage from './components/Homepage';
 import ScrollToTop from './components/scroll_to_top';
 import Gallery from './components/Gallery/gallery';
 
+{/* ===Entry Text Effect=== */}
 const Text = ({ value }) => (
   <div className='entry-text'>
     {value.split('').map((char, i) => (
@@ -44,6 +45,8 @@ const Text = ({ value }) => (
 );
 
 function App() {
+
+  {/* ===Entry Animation=== */}
   const [showEntry, setShowEntry] = useState(true);
 
   useEffect(() => {
@@ -68,12 +71,14 @@ function App() {
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Homepage />} />
+
         {/* ===Project Pages=== */}
         <Route path="/project/thesis" element={<Thesis />} />
         <Route path="/project/phyllo" element={<Phyllo />} />
         <Route path="/project/art_recognizer" element={<ArtRecognizer />} />
         <Route path="/project/btt_ai_mit" element={<BTTAI />} />
         <Route path="/project/hci" element={<HCI />} />
+        
         {/* ===Artwork Pages=== */}
         <Route path="/artwork/yuhans_map" element={<YuhansMap />} />
         <Route path="/artwork/self_writing" element={<SelfWriting />} />

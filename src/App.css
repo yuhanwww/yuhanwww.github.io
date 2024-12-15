@@ -13,10 +13,10 @@
   --text-light-color:  rgba(70, 68, 63,0.6); /*light grey*/
   --highlight-color: rgb(241,60,31); /*red*/
   --title-color: rgb(4, 57, 39); /*green*/
-  --hover-color:rgba(4, 57, 39, 0.5); /*green semi transparent*/
+  --hover-color:rgba(4, 57, 39, 0.45); /*green semi transparent*/
   --active-color: rgb(238, 183, 19); /*yellow*/
   --decoration-color: rgb(148,136,0); /*green brown*/
-  --other-color: rgb(26, 85, 140); /*blue*/
+  --other-color: rgb(26, 85, 140,0.5); /*blue*/
 
   /*=====  Font & Typography =====*/  
   --header-font: "Fredericka the Great", serif;
