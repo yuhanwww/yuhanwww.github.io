@@ -7,6 +7,7 @@ import names from '../../../assets/artworks/yuhans_map/names.png';
 import places from '../../../assets/artworks/yuhans_map/places.png';
 import places_names from '../../../assets/artworks/yuhans_map/places_names.png';
 import places_routes from '../../../assets/artworks/yuhans_map/places_routes.png';
+import process from '../../../assets/artworks/yuhans_map/process.png';
 import routes from '../../../assets/artworks/yuhans_map/routes.png';
 import routes_names from '../../../assets/artworks/yuhans_map/routes_names.png';
 import yuhan_map from '../../../assets/artworks/yuhans_map/yuhan_map.png';
@@ -21,6 +22,7 @@ const YuhansMap = () => {
     { src: places, alt: "Places", description: "Map with places, sizes & colors were based on how well I know the place and sense of belongingness." },
     { src: names, alt: "Names", description: "Names I've been called in blocks." },
     { src: routes, alt: "Routes", description: "Routes in-between. An aesthetic choice of how to draw the lines was involved." },
+    { src: process, alt:"Adding places to the map", description: "Process that I add the places to the map." },
     { src: routes_names, alt: "Routes with Names", description: "Names overlayed with places." },
     { src: names_overlayed, alt:"Name Overlayed", description: "Names overlayed. May it showed my accumulated identity." },
   ];

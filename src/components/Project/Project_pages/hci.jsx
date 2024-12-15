@@ -28,7 +28,8 @@ const HCI = () => {
           <p className="project-description">
             As an international student, it was natural for me to immediately think about the international community when the prompt for the final project for my HCI course was to design for a specific group. 
             An App for internationals, I hope, can help ease overwhelmingness from the US-centric context. 
-            I will admit though, wireframing and desining has brought me so much fun during the busy application season.
+            I will admit though, wireframing and desining has brought me so much fun during the busy application season. 
+            View our Final Report on <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@tmle0/internest-empowering-international-students-together-22208a623e52">Medium</a>.
           </p>
           <hr className="project-line" />
           <br/>

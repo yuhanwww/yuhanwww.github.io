@@ -6,6 +6,8 @@ import two_model_comparison from '../../../assets/projects/bttai/2model_comparis
 import NYBG_data_snippet from '../../../assets/projects/bttai/NYBG_data_snippet.png';
 import style_transfer_me from '../../../assets/gallery/digital/style_transfer.png';
 
+import final_report from '../../../assets/files/CSC370-Final_Project_Report-Yuhan_Wang.pdf';
+
 const BTTAI = () => {
     return (
         <section className="project section">
@@ -19,7 +21,8 @@ const BTTAI = () => {
                 From Summer 2023 - Spring 2024, I participated in the <a target="_blank" rel="noopener noreferrer" href="https://www.breakthroughtech.org/programs/the-ai-program/"><i>Break Through Tech AI @ MIT</i></a>, where I took the Machine Learning (ML) Foundation course and applied ML in 2 projects
                 -- <a target="_blank" rel="noopener noreferrer" href="https://github.com/yuhanwww/Bat-Detection-Model">bat fungus detection</a> and <a target="_blank" rel="noopener noreferrer" href="https://github.com/yuhanwww/BTTAI-NYBG-Kaggle-Competition">NYBG plant classification</a>.
                 <br/><br/>
-                The year-long program allowed me to gain essential knowledge in ML and apply ML in multiple fields, which also led to my reflection on AI & technology in general.
+                The year-long program allowed me to gain essential knowledge in ML and apply ML in multiple fields, which also led to my reflection on AI & technology in general. 
+                View my <a target="_blank" rel="noopener noreferrer" href={final_report}>Final Report writeup</a> (Academic Paper Version) for <i>Computer Vision Seminar</i>.
             </p>
             <hr className="project-line" />
 
