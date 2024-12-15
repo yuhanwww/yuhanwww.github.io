@@ -24,7 +24,7 @@ const IntroDescription = () => {
       </p>
       <br/>
       <p className="intro-description">
-        In my free time, I practice <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=9VNg-ZDEr1I">artistic swimming</a>-- hoping to attend competition at HongKong in Summer 2025 :))
+        In my free time, I practice <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=9VNg-ZDEr1I" style={{color:"var(--other-color"}}>artistic swimming</a>-- hoping to attend an amateur competition at HongKong in Summer 2025 :))
       </p>
 
     </div>
