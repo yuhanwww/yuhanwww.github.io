@@ -7,6 +7,7 @@
   justify-content: center;
   height: 100vh;
   background-color: var(--hover-color);
+  animation: fade-in-out 5s ease-in-out;
 }
 
 .entry-text {
@@ -71,5 +72,14 @@
   }
   10% {
     transform: rotateY(0deg) skew(0, 0);
+  }
+}
+
+@keyframes fade-in-out {
+  85%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
