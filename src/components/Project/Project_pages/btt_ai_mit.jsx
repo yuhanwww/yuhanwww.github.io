@@ -4,7 +4,7 @@ import conf_mtx_wordcloud from '../../../assets/projects/bttai/conf_mtx_wordclou
 import approach from '../../../assets/projects/bttai/approach.png';
 import two_model_comparison from '../../../assets/projects/bttai/2model_comparison.png';
 import NYBG_data_snippet from '../../../assets/projects/bttai/NYBG_data_snippet.png';
-import style_transfer_me from '../../../assets/gallery/digital/style_transfer.png';
+import style_transfer_me from '../../../assets/gallery/photos/style_transfer.png';
 
 import final_report from '../../../assets/files/CSC370-Final_Project_Report-Yuhan_Wang.pdf';
 

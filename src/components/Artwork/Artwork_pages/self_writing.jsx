@@ -8,6 +8,7 @@ import self_writing_zoom from '../../../assets/artworks/self_writing/self_writin
 import self_collection from '../../../assets/artworks/self_writing/self_collection.JPG';
 import self_writing_whole from '../../../assets/artworks/self_writing/self_writing_whole.JPG';
 import line_art_cropped from '../../../assets/artworks/self_writing/line_art_cropped.jpeg';
+import exploration from '../../../assets/artworks/self_writing/exploration.JPG';
 
 const SelfWriting = () => {
 
@@ -15,6 +16,7 @@ const SelfWriting = () => {
     { src: self_writing_whole, alt: "Self Writing Whole", description: "Self Writing in its whole form" },
     { src: self_writing_zoom, alt: "Self Writing Zoom", description: "Self Writing in its whole form" },
     { src: self_collection, alt: "From top to bottom, left to right, Self Portrait, Self Writing, Flower Piece, Self Portrait", description: "A collection of drawings that represent my  identity" },
+    { src: exploration, alt: "Exploratory play with character shapes", description: "Exploratory writings of characters and play with shapes" },
     { src: random_writing_1, alt: "Random Writing Piece 1", description: "Random Writing with corrections" },
     { src: random_writing_2, alt: "Random Writing Piece 2", description: "Random writing Piece 2" },
   ];

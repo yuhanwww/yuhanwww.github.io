@@ -10,13 +10,13 @@ import places_routes from '../../../assets/artworks/yuhans_map/places_routes.png
 import process from '../../../assets/artworks/yuhans_map/process.png';
 import routes from '../../../assets/artworks/yuhans_map/routes.png';
 import routes_names from '../../../assets/artworks/yuhans_map/routes_names.png';
-import yuhan_map from '../../../assets/artworks/yuhans_map/yuhan_map.png';
+import yuhans_map from '../../../assets/artworks/yuhans_map/yuhans_map.png';
 import inspiration from '../../../assets/artworks/yuhans_map/inspiration.png';
 
 const YuhansMap = () => {
 
   const yuhans_map_images = [
-    { src: yuhan_map, alt: "Yuhan's Map 2023", description: "Yuhan's Map 2023, names called on paths between on places of importance." },
+    { src: yuhans_map, alt: "Yuhan's Map 2023", description: "Yuhan's Map 2023, names called on paths between on places of importance." },
     { src: places_names, alt: "Places with Names", description: "Map with names that I've been called in those places." },
     { src: places_routes, alt: "Places with Routes", description: "Map with paths I took in-between those places." },
     { src: places, alt: "Places", description: "Map with places, sizes & colors were based on how well I know the place and sense of belongingness." },

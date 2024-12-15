@@ -5,7 +5,7 @@ import flip_brazil from "../../assets/artworks/flip_brazil/flip_brazil.png";
 import ingo_shredder from "../../assets/artworks/info_shredder/working.png";
 import stupid_ml from "../../assets/artworks/stupid_ml/stupid_ml.png";
 import you_are_programmed from "../../assets/artworks/you_are_programmed/programmed.PNG";
-import yuhans_map from "../../assets/artworks/yuhans_map/yuhan_map.png";
+import yuhans_map from "../../assets/artworks/yuhans_map/yuhans_map.png";
 import self_writing from "../../assets/artworks/self_writing/self_writing_zoom.png"
 import nurse_shave_hair from '../../assets/artworks/nurses_have_hair/nurses_have_hair.png';
 import mother_talon from "../../assets/artworks/boy_mother/bm2_mother_claw.JPG";
