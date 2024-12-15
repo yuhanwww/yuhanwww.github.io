@@ -76,7 +76,7 @@
 }
 
 @keyframes fade-in-out {
-  85%{
+  90%{
     opacity: 1;
   }
   100% {
