@@ -1,6 +1,7 @@
 /* GOOGLE FONTS*/
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gideon+Roman&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
 /* VARIABLE CSS*/
 :root {
   --header-height: 3rem;
@@ -22,6 +23,7 @@
   --subtitle-font: "Gideon Roman", serif;
   --body-font: "Open Sans", Helvetica, Arial, sans-serif; 
 
+  --huge-font-size: 5rem;
   --big-font-size: 3.5rem;
   --h1-font-size: 2.5rem;
   --h2-font-size: 2rem;

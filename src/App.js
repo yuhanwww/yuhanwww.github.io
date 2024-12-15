@@ -1,9 +1,7 @@
+import React, { useState, useEffect } from 'react';
 import './App.css';
-import {
-  HashRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import './entry.css';
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import NavBar from './components/NavBar/navbar';
 import Footer from './components/Footer/footer';
@@ -28,21 +26,54 @@ import Homepage from './components/Homepage';
 import ScrollToTop from './components/scroll_to_top';
 import Gallery from './components/Gallery/gallery';
 
+const Text = ({ value }) => (
+  <div className='entry-text'>
+    {value.split('').map((char, i) => (
+      <React.Fragment key={i}>
+        {char === ' ' && <div className='space' />}
+        {char !== ' ' && (
+          <div className='entry-letter' style={{ '--delay': `${i * 0.2}s` }}>
+            <span className='entry-source'>{char}</span>
+            <span className='entry-shadow'>{char}</span>
+            <span className='entry-overlay'>{char}</span>
+          </div>
+        )}
+      </React.Fragment>
+    ))}
+  </div>
+);
+
 function App() {
+  const [showEntry, setShowEntry] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowEntry(false);
+    }, 6000); 
+    return () => clearTimeout(timer); 
+  }, []);
+
+  if (showEntry) {
+    return (
+      <div className="entry">
+        <Text value="Yuhan's"/>
+        <Text value='Portfolio'/>
+      </div>
+    );
+  }
+
   return (
     <HashRouter>
-      <ScrollToTop/>
-      <NavBar/>
+      <ScrollToTop />
+      <NavBar />
       <Routes>
         <Route exact path="/" element={<Homepage />} />
-
         {/* ===Project Pages=== */}
         <Route path="/project/thesis" element={<Thesis />} />
         <Route path="/project/phyllo" element={<Phyllo />} />
         <Route path="/project/art_recognizer" element={<ArtRecognizer />} />
         <Route path="/project/btt_ai_mit" element={<BTTAI />} />
         <Route path="/project/hci" element={<HCI />} />
-
         {/* ===Artwork Pages=== */}
         <Route path="/artwork/yuhans_map" element={<YuhansMap />} />
         <Route path="/artwork/self_writing" element={<SelfWriting />} />
@@ -53,9 +84,7 @@ function App() {
         <Route path="/artwork/flip_brazil" element={<FlipBrazil />} />
         <Route path="/artwork/stupid_ml" element={<StupidML />} />
         <Route path="/artwork/info_shredder" element={<InfoShredder />} />
-
         <Route path="/gallery" element={<Gallery />} />
-
       </Routes>
       <Footer />
     </HashRouter>
