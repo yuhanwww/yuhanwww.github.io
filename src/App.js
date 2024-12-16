@@ -72,14 +72,14 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Homepage />} />
 
-        {/* ===Project Pages=== */}
+        {/* === Project Pages === */}
         <Route path="/project/thesis" element={<Thesis />} />
         <Route path="/project/phyllo" element={<Phyllo />} />
         <Route path="/project/art_recognizer" element={<ArtRecognizer />} />
         <Route path="/project/btt_ai_mit" element={<BTTAI />} />
         <Route path="/project/hci" element={<HCI />} />
         
-        {/* ===Artwork Pages=== */}
+        {/* === Artwork Pages === */}
         <Route path="/artwork/yuhans_map" element={<YuhansMap />} />
         <Route path="/artwork/self_writing" element={<SelfWriting />} />
         <Route path="/artwork/campus_map" element={<CampusMap />} />
@@ -89,6 +89,8 @@ function App() {
         <Route path="/artwork/flip_brazil" element={<FlipBrazil />} />
         <Route path="/artwork/stupid_ml" element={<StupidML />} />
         <Route path="/artwork/info_shredder" element={<InfoShredder />} />
+
+        {/* === Gallery Page === */}
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer />
