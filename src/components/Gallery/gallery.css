@@ -1,24 +1,17 @@
-.grid-wrap {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1rem;
-    justify-content: center;
-    margin: 0 10vw;
+.gallery-image {
+    max-width: 50vw;
+    height: auto;
+    padding: 0 0.5rem;
+    /* object-fit: cover; */
 }
 
-.grid-item{
-    margin-bottom: 1rem;
-}
-
-.grid-item-media{ 
+.gallery-wrapper {
     width: 100%;
-    object-fit: cover;
+    height: 10rem;
+    overflow: hidden;
 }
 
-.grid-item-description{
-    margin-top: 0.5rem;
-    font-size: var(--normal-font-size);
-    text-align: right;
+.wrapper .gallery-images {
+    display: flex;
 }
-
 
