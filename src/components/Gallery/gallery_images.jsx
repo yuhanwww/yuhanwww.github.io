@@ -1,16 +1,14 @@
 import React from 'react';
-import './gallery.css'
+import './gallery.css';
 
 const ImageSection = ({ images, speed }) => {
-  const imagesStyle = {
-    animation: `swipe ${speed}ms linear infinite`,
-  };
+  const duplicatedImages = [...images, ...images];
 
   return (
-    <div className="gallery-images" style={imagesStyle}>
-      {images.map(({ src, name }, index) => (
+    <div className="gallery-images" style={{ animationDuration: `${speed}ms` }}>
+      {duplicatedImages.map(({ src, name }, index) => (
         <div className="gallery-image" key={index}>
-          <img src={src} alt={name} />
+          <img className="gallery-image_media" src={src} alt={name} />
         </div>
       ))}
     </div>

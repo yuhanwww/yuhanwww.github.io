@@ -11,12 +11,24 @@ import DataPhotos from './data_photos';
 
 const Gallery = () => {
   return (
-    <div className="section gallery">
-        <GalleryImages images={DataCrafts} speed={20000} />
-        <GalleryImages images={DataCrochets} speed={20000} />
-        <GalleryImages images={DataDigitals} speed={20000} />
-        <GalleryImages images={DataFineArts} speed={20000} />
-        <GalleryImages images={DataPhotos} speed={20000} />
+    <div className="gallery section">
+      <div className="container">
+        <p className="gallery_page-title">Fine Art</p>
+        <GalleryImages images={DataFineArts} speed={40000} />
+
+        <p className="gallery_page-title">Digital Works</p>
+        <GalleryImages images={DataDigitals} speed={40000} />
+
+        <p className="gallery_page-title">Crafts</p>
+        <GalleryImages images={DataCrafts} speed={40000} />
+
+        <p className="gallery_page-title">Crochet Collection</p>
+        <GalleryImages images={DataCrochets} speed={40000} />
+
+        <p className="gallery_page-title">Photos</p>
+        <GalleryImages images={DataPhotos} speed={40000} />
+      </div>
+      
     </div>
   )
 }
