@@ -36,7 +36,7 @@ const Thesis = () => {
           To learn more about the project, you could check the following links:
           <div className="textIndent">
             <br/><a href = {thesis_proposal} target = "_blank" >Thesis Proposal</a>
-            <br/><a target="_blank" rel="noopener noreferrer" href="https://circular-perigee-85a.notion.site/Thesis-Log-11bf380ecde480af93faf1616f169f62">Thesis Log</a>
+            <br/><a target="_blank" rel="noopener noreferrer" href="https://circular-perigee-85a.notion.site/Thesis-118f380ecde4803cbb9ece1d95b9214c">Thesis Updates</a>
           </div>
         </p>
         <hr className="project-line" />
