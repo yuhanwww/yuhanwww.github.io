@@ -5,9 +5,9 @@ const IntroDescription = () => {
   return (
     <div className="intro_content-description">
       <p className="intro-description">
-        I am a senior at <a target="_blank" rel="noopener noreferrer" href="https://www.smith.edu/">Smith College</a>, double major in <a target="_blank" rel="noopener noreferrer" href="https://www.smith.edu/academics/programs-courses/academic-programs/art">Art History</a> & <a target="_blank" rel="noopener noreferrer" href="https://www.smith.edu/academics/computer-science">Computer Science</a>.
-        I love design and creation(both physical and digital) and I work as a studio design partner at the <a target="_blank" rel="noopener noreferrer" href="https://www.smith.edu/academics/design-thinking">Design Thinking Initiative</a> at Smith. 
-      </p>
+        I am a first-year student at <a target="_blank" rel="noopener noreferrer" href="https://ic.gatech.edu/">Georgia Institute of Technology</a> in <b>Human-Centered Computing</b>. 
+        I graduated May 2025 from <a target="_blank" rel="noopener noreferrer" href="https://www.smith.edu/">Smith College</a>, with Highest Honors in Computer Science and double major in Art History.
+      </p>  
       <br/>
       <p className="intro-description">
         As an art historian and computer scientist, I often think that both artwork and technology gain their meanings from interaction with a viewer or user. 
@@ -24,7 +24,7 @@ const IntroDescription = () => {
       </p>
       <br/>
       <p className="intro-description">
-        In my free time, I practice <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=9VNg-ZDEr1I" style={{color:"var(--other-color"}}>artistic swimming</a>-- hoping to attend an amateur competition at HongKong in Summer 2025 :))
+        In my free time, I practice <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=9VNg-ZDEr1I" style={{color:"var(--other-color"}}>artistic swimming</a>-- hoping to attend an amateur competition at HongKong someday... :))
       </p>
 
     </div>
