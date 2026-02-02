@@ -7,11 +7,11 @@
   justify-content: center;
   height: 100vh;
   background-color: var(--hover-color);
-  animation: fade-in-out 5s ease-in-out;
+  animation: fade-in-out 3s ease-in-out;
 }
 
 .entry-text {
-  font-size: var(--huge-font-size);
+  font-size: var(--big-font-size);
   position: relative;
   text-transform: full-width;
   display: flex;
@@ -43,7 +43,7 @@
   -webkit-text-fill-color: transparent;
   transform: rotateY(-30deg) skew(0, -10deg);
   transform-origin: left;
-  animation: entry-overlay 3s infinite ease-out var(--delay);
+  animation: entry-overlay 2s infinite ease-out var(--delay);
 }
 
 .entry-text .entry-letter .entry-shadow {
@@ -52,7 +52,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: skew(0, 20deg) translateY(0.1em) translateX(0.05em);
-  animation: entry-shadow 3s infinite var(--delay);
+  animation: entry-shadow 2s infinite var(--delay);
 }
 
 @keyframes entry-shadow {
@@ -76,7 +76,7 @@
 }
 
 @keyframes fade-in-out {
-  80%{
+  50%{
     opacity: 1;
   }
   100% {

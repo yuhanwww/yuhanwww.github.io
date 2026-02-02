@@ -56,7 +56,7 @@ const NavBar = () => {
                                 className={`nav_link ${activeSection === 'intro' && location.pathname === '/' ? 'active-link' : ''}`}
                                 to="/"
                                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                                Home
+                                About
                             </HashLink>
                         </li>
 

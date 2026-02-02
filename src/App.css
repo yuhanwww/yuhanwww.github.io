@@ -8,7 +8,7 @@
 
   /*=====  Colors =====*/  
   /*Color mode rgb/rgba (r,g,b,a)*/
-  --body-color: rgb(224, 224, 221); /*canvas*/
+  --body-color: rgb(231, 231, 231); /*canvas*/
   --text-color: rgb(35, 27, 21); /*dark grey*/
   --text-light-color:  rgba(70, 68, 63,0.6); /*light grey*/
   --highlight-color: rgb(241,60,31); /*red*/

@@ -33,7 +33,7 @@ const Text = ({ value }) => (
       <React.Fragment key={i}>
         {char === ' ' && <div className='space' />}
         {char !== ' ' && (
-          <div className='entry-letter' style={{ '--delay': `${i * 0.2}s` }}>
+          <div className='entry-letter' style={{ '--delay': `${i * 0.1}s` }}>
             <span className='entry-source'>{char}</span>
             <span className='entry-shadow'>{char}</span>
             <span className='entry-overlay'>{char}</span>
@@ -52,7 +52,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowEntry(false);
-    }, 5000); 
+    }, 2000); 
     return () => clearTimeout(timer); 
   }, []);
 
