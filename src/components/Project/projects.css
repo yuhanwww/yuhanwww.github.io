@@ -55,9 +55,10 @@
 }
 
 .project-card:hover {
-    /* box-shadow: 2px 2px 2px var(--text-light-color); */
-    border-block: solid var(--hover-color);
-    border-radius: 1rem;
+    background-color: var(--hover-light-color);
+    /* border-block: solid var(--hover-color); */
+    border-radius: 0.5rem;
+    padding: 1rem 0.5rem 0.5rem 1rem;
     writing-mode: horizontal-tb;
 }
 
