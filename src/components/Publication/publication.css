@@ -1,0 +1,98 @@
+.pub {
+    padding: 2rem 5rem;
+    min-height: auto;
+}
+
+.pub-title {
+    text-align: center;
+    font-size: var(--h2-font-size);
+    margin-bottom: 2rem;
+    font-family: var(--subtitle-font);
+}
+
+.pub-list {
+    align-items: center;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 1.5rem auto;
+    width: 75vw;
+    max-width: 982px;
+    align-items: center;
+}
+
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-self: center;
+}
+
+.filter-tag {
+    cursor: pointer;
+    padding: 0.15rem 0.5rem;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    border: 1px solid var(--hover-color);
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+    justify-content: center;
+}
+
+.filter-tag:hover {
+    background-color: var(--hover-color);
+    color: white;
+}
+
+.filter-tag.selected {
+    background-color: var(--hover-color);
+    color: white;
+}
+
+.pub-list {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 75vw;
+}
+
+.pub-list_content {
+    padding: 0.5rem 0.5rem;
+    text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+    .pubs-list {
+        width: 95%;
+        max-width: 85vw;
+    }
+
+    .filter-container {
+        width: 80vw;
+    }
+
+    .pub-citation {
+        font-size: var(--small-font-size);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .pubs-list {
+        width: 100%;
+        max-width: 95vw;
+    }
+
+    .filter-container {
+        width: 90vw;
+    }
+
+    .pub-list_content {
+        padding: 0.75rem 0.25rem;
+    }
+
+    .pub-citation {
+        font-size: var(--small-font-size);
+        line-height: 1.5;
+    }
+}
