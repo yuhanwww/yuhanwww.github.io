@@ -60,6 +60,14 @@ const NavBar = () => {
                             </HashLink>
                         </li>
 
+                        {/* <li className="nav_item">
+                            <HashLink
+                                className={`nav_link ${activeSection === 'publication' ? 'active-link' : ''}`}
+                                to="/#publication">
+                                Publication
+                            </HashLink>
+                        </li> */}
+
                         <li className="nav_item">
                             <HashLink
                                 className={`nav_link ${activeSection === 'project' ? 'active-link' : ''}`}

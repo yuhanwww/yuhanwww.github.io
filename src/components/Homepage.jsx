@@ -12,7 +12,7 @@ const Homepage = () => {
     <div className="app-container">
        {/* <NavBar /> */}
         <Intro />
-        <Publication />
+        {/* <Publication /> */}
         <Project />
         <Artwork />
        {/* <Footer /> */}

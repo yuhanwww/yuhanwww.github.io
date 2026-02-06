@@ -190,7 +190,7 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className="projects-list container">
+            <div className="container">
                 {filteredData.map((project) => (
                     <Card
                         key={project.id}
