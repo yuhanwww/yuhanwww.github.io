@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ce4ebb31.css",
-    "main.js": "/static/js/main.253e640c.js",
+    "main.js": "/static/js/main.be4dd804.js",
     "static/media/Milestone_2.pdf": "/static/media/Milestone_2.419ba4334b0331e35d00.pdf",
     "static/media/Milestone_3.pdf": "/static/media/Milestone_3.2ff247a8dd721f0d08b8.pdf",
     "static/media/dice.gif": "/static/media/dice.a3efa27a07d7e449902a.gif",
@@ -195,7 +195,7 @@
     "static/media/sml_input.png": "/static/media/sml_input.ac60a8e53fdf529b91d5.png",
     "static/media/r3.png": "/static/media/r3.a752c9c0a384ffa88933.png",
     "static/media/sml_start.png": "/static/media/sml_start.fb7435be93557ac6b12c.png",
-    "static/media/CV_Yuhan_Wang.pdf": "/static/media/CV_Yuhan_Wang.d1e0c3402911786595a6.pdf",
+    "static/media/CV_Yuhan_Wang.pdf": "/static/media/CV_Yuhan_Wang.6439b731b5211667cd77.pdf",
     "static/media/example.PNG": "/static/media/example.92e876d70a57e0cdb089.PNG",
     "static/media/hw2_creative_design.png": "/static/media/hw2_creative_design.027efc7389fdcffbd4cb.png",
     "static/media/sml_almost.png": "/static/media/sml_almost.114fe0efb83be7129303.png",
@@ -226,10 +226,10 @@
     "static/media/linkedinIcon.svg": "/static/media/linkedinIcon.ca59de7dbde6b9c5565004912352c7f1.svg",
     "static/media/emailIcon.svg": "/static/media/emailIcon.f4793796a6b4e696ef3cd96de241adfd.svg",
     "main.ce4ebb31.css.map": "/static/css/main.ce4ebb31.css.map",
-    "main.253e640c.js.map": "/static/js/main.253e640c.js.map"
+    "main.be4dd804.js.map": "/static/js/main.be4dd804.js.map"
   },
   "entrypoints": [
     "static/css/main.ce4ebb31.css",
-    "static/js/main.253e640c.js"
+    "static/js/main.be4dd804.js"
   ]
 }
