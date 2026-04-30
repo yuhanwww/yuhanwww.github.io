@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce4ebb31.css",
-    "main.js": "/static/js/main.be4dd804.js",
+    "main.css": "/static/css/main.f63cae71.css",
+    "main.js": "/static/js/main.357ef279.js",
     "static/media/Milestone_2.pdf": "/static/media/Milestone_2.419ba4334b0331e35d00.pdf",
+    "static/media/edtech.gif": "/static/media/edtech.8603dd5c7a19685ce030.gif",
     "static/media/Milestone_3.pdf": "/static/media/Milestone_3.2ff247a8dd721f0d08b8.pdf",
     "static/media/dice.gif": "/static/media/dice.a3efa27a07d7e449902a.gif",
     "static/media/CS325_Team_JAYC_Poster.pdf": "/static/media/CS325_Team_JAYC_Poster.c6c17460dfbffef813ce.pdf",
@@ -150,12 +151,16 @@
     "static/media/Image_Augmentation.png": "/static/media/Image_Augmentation.5f0437c670e214e7b69f.png",
     "static/media/round2.gif": "/static/media/round2.9e88c1d207c8ffd19100.gif",
     "static/media/spring_poster.png": "/static/media/spring_poster.bec0db4762353dbe35ae.png",
+    "static/media/affinity.png": "/static/media/affinity.37317e142888e3317b2a.png",
+    "static/media/ux_storyboard.png": "/static/media/ux_storyboard.c4cac9af37a754b8f51e.png",
     "static/media/create_1.JPG": "/static/media/create_1.9b7f64944acd745ab91d.JPG",
     "static/media/inspiration.png": "/static/media/inspiration.84ee93ba4539f31a6ced.png",
     "static/media/faces.png": "/static/media/faces.d388d8fd36505101e087.png",
     "static/media/explanation.JPG": "/static/media/explanation.3bf70f9c13fbca9eaf29.JPG",
     "static/media/disk_stacking_origin.png": "/static/media/disk_stacking_origin.32c7e216c0fa369a4835.png",
     "static/media/SkunkCabbage00_persistence.gif": "/static/media/SkunkCabbage00_persistence.3e33685c77253ac6f686.gif",
+    "static/media/interface_storyboard_improved.png": "/static/media/interface_storyboard_improved.c89ef886c330c90d8452.png",
+    "static/media/interface_storyboard.png": "/static/media/interface_storyboard.d15e351b09b355457447.png",
     "static/media/interaction.JPG": "/static/media/interaction.d6a5ec3e805135a0ea04.JPG",
     "static/media/2model_comparison.png": "/static/media/2model_comparison.56e4537bcd8f6e0ca07d.png",
     "static/media/example_disk.png": "/static/media/example_disk.61f0aab8bc4af2474a43.png",
@@ -189,6 +194,7 @@
     "static/media/approach.png": "/static/media/approach.ea5ffb234768fd47f719.png",
     "static/media/wireframe.png": "/static/media/wireframe.d9640d158503d482ab35.png",
     "static/media/Thesis_Proposal-Yuhan_Wang.pdf": "/static/media/Thesis_Proposal-Yuhan_Wang.06af5db387a720bdcc4b.pdf",
+    "static/media/persona.jpg": "/static/media/persona.75f4997ad93862aa1450.jpg",
     "static/media/sml_end.png": "/static/media/sml_end.492ae0f55a903006c912.png",
     "static/media/final.PNG": "/static/media/final.6fb78c391c61f2aba0b1.PNG",
     "static/media/logo.png": "/static/media/logo.92eda1a35cf26fa431cf.png",
@@ -225,11 +231,11 @@
     "static/media/instagram.svg": "/static/media/instagram.ee7f754d9a9865df8656a316bb9d3df9.svg",
     "static/media/linkedinIcon.svg": "/static/media/linkedinIcon.ca59de7dbde6b9c5565004912352c7f1.svg",
     "static/media/emailIcon.svg": "/static/media/emailIcon.f4793796a6b4e696ef3cd96de241adfd.svg",
-    "main.ce4ebb31.css.map": "/static/css/main.ce4ebb31.css.map",
-    "main.be4dd804.js.map": "/static/js/main.be4dd804.js.map"
+    "main.f63cae71.css.map": "/static/css/main.f63cae71.css.map",
+    "main.357ef279.js.map": "/static/js/main.357ef279.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce4ebb31.css",
-    "static/js/main.be4dd804.js"
+    "static/css/main.f63cae71.css",
+    "static/js/main.357ef279.js"
   ]
 }
