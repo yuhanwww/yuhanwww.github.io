@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './projects.css';
 
+import prototype from '../../assets/projects/edtech/final_prototype.gif';
 import ai_poster from '../../assets/projects/thesis/ai_poster.png';
 import interfaces from '../../assets/projects/hci/interfaces.png';
 import dinoWorld from '../../assets/projects/visualAnalytics/dinoWorld.png'
@@ -14,6 +15,17 @@ import valetbike from '../../assets/projects/valetbike/valetbike.png';
 
 
 const Data = [
+
+    {
+        id: 11,
+        image: prototype,
+        alt: "Interactive demo of redesigned W3school prototype with learning science principles",
+        title: "W3School Reimagined",
+        description: "Applying learning science principles to boost motivation in OG online coding classroom",
+        category:["HCI","Research","Learning Science"],
+        link:"#/project/edtech"
+    },
+
     {
         id: 10,
         image: ai_poster,
